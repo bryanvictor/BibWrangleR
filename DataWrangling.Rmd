@@ -1,7 +1,6 @@
 ---
-title: "MeasurementCitations"
+title: "Data Wrangling Functions"
 author: "Brian Perron"
-date: "December 11, 2014"
 output: html_document
 ---
 
@@ -14,15 +13,20 @@ rm(list=ls())
 library(stringi)
 library(stringr)
 library(dplyr)
-#record <- readLines("PATH AND FILE NAME")
-record <- readLines("/Users/beperron/Desktop/records.txt")
+library(gdata)
 ```
 
 
 # Data Wrangling of Ebsco Files
 
+
+The Ebsco file must be exported from the web application as _Generic bibliographic management format_.  This function will not work for any other format.  
+```{r}
+record <- readLines("/Users/beperron/Desktop/RSWP-ebsco/ebsco.txt")
+#record <- readLines("PATH AND FILE NAME")
+```
 ## Attributes
-The raw file is quite messy.  The first step is to extract the attribute IDs from each record and save them in a separate vector `attributes`.  Each unique record is separated by a blank row.  This blank row will be retained in the first part of data wrangling to serve as an end-of-record marker; thus, it is named `END` in the attribute column. The title tag `TI` is replaced with `START` to signify the beginning-of-record marker.  The data file does not contain a blank row for the last record, so a blank row must be added.  
+The raw file (in the generic bibliographic format) is quite messy.  The first step is to extract the attribute IDs from each record and save them in a separate vector `attributes`.  Each unique record is separated by a blank row.  This blank row will be retained in the first part of data wrangling to serve as an end-of-record marker; thus, it is named `END` in the attribute column. The title tag `TI` is replaced with `START` to signify the beginning-of-record marker.  The data file does not contain a blank row for the last record, so a blank row must be added.  
 
 ```{r}
 attributes <- unlist(lapply(record, function(x) stri_sub(x, 1,2)))
@@ -59,7 +63,7 @@ for(i in 1:length(START)){ebsco$articleID[START[i]:END[i]] <- i}
 
 ## Final Touches
 
-A few final touches are needed before moving to analyses.    
+A few final touches are needed before moving to analyses.      
 
 ```{r}
 #Remove fators from a data frame
@@ -75,13 +79,16 @@ ebsco <- filter(ebsco, attributes != "END")
 ebsco$record <- sub("^\\s+|\\s+$", "", ebsco$record)
 
 #Untoggle to write as a csv-file for a visual inspection
-#write.csv(DF, "DF.csv")
+#write.csv(ebsco, "ebsco.csv")
 
 #delete everything but ebsco
 rm(list=(ls()[ls()!="ebsco"])) 
 ```
 
+
 # Data wrangling of Web of Science files
+
+A Web Of Science file is process as a citation report and exported as a csv.  It will not work with any other file type.  Note that a limit of the WOS web application is 500 records to be exported at a single time.  Therefore, this function has been written to read a series of files.  
 
 ```{r}
 library(gdata) # To read .*xls files
@@ -91,6 +98,7 @@ library(gdata) # To read .*xls files
 
 ```{r}
 my.path <- getwd()
+
 temp <- list.files(my.path, pattern = ".xls")
 dat <- lapply(temp, read.xls, stringsAsFactors=FALSE)
 WOSvariableNames <- dat[[1]][7,]
@@ -99,6 +107,7 @@ colnames(WOSvariableNames) <- NULL
 
 ## Clean data files
 ```{r}
+library(plyr)
 cleaner.f <- function(x){
      colnames(x) <- NULL
      #x <- x[6:nrow(x), ]
@@ -111,7 +120,9 @@ colnames(wos) <- WOSvariableNames
 rm(list=ls()[ls() != "ebsco" & ls() != "wos"])
 ```
 
+# To-Do's
 
++ Extract DOI's from the article and
 
 
 
