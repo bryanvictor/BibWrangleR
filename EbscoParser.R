@@ -1,4 +1,4 @@
-parser.f <- function(dat){
+ebscoParser.f <- function(dat){
             attributes <- unlist(lapply(dat, function(x) stri_sub(x, 1,2)))
             attributes[length(attributes)+1] <- "" #add blank row
             attributes <- ifelse(attributes == "", "END", attributes)
@@ -22,7 +22,33 @@ parser.f <- function(dat){
             DF <- filter(DF, attributes != "END")
 
             DF$record <- sub("^\\s+|\\s+$", "", DF$record)
-            DF
+            DF <- filter(DF,
+                    attributes == "SO" |
+                    attributes == "TI" |
+                    attributes == "AU" |
+                    attributes == "AF" |
+                    attributes == "YR" |
+                    attributes == "KP" |
+                    attributes == "SU" |
+                    attributes == "AB" |
+                    attributes == "MJ" |
+                    attributes == "CL" |
+                    attributes == "PO" |
+                    attributes == "AG" |
+                    attributes == "TM" |
+                    attributes == "MD" |
+                    attributes == "LO" |
+                    attributes == "DO")
+
+            ebsco.titles <- filter(DF, attributes == "TI") %>%
+                select(record) %>%
+                mutate(record = tolower(record))
+            ebsco.titles <- ebsco.titles[, 'record']
+            ebsco.titles <- unlist(lapply(ebsco.titles, function(x) gsub(" ", "", x)))
+            ebsco.titles <- unlist(lapply(ebsco.titles, function(x) gsub("[[:punct:]]", "", x)))
+            ebsco.titles <<- ebsco.titles
+
+            ebsco.df <<- DF
     }
 
 

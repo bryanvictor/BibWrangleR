@@ -14,15 +14,18 @@ library(stringi)
 library(stringr)
 library(dplyr)
 library(gdata)
+
+#Replace your file name here  
+
+my.file.ebsco <- "/Users/beperron/Desktop/RSWP-ebsco/ebsco.txt"
 ```
 
 
 # Data Wrangling of Ebsco Files
 
-
 The Ebsco file must be exported from the web application as _Generic bibliographic management format_.  This function will not work for any other format.  
 ```{r}
-record <- readLines("/Users/beperron/Desktop/RSWP-ebsco/ebsco.txt")
+record <- readLines(my.file.ebsco)
 #record <- readLines("PATH AND FILE NAME")
 ```
 ## Attributes
@@ -81,8 +84,6 @@ ebsco$record <- sub("^\\s+|\\s+$", "", ebsco$record)
 #Untoggle to write as a csv-file for a visual inspection
 #write.csv(ebsco, "ebsco.csv")
 
-#delete everything but ebsco
-rm(list=(ls()[ls()!="ebsco"])) 
 ```
 
 
@@ -97,9 +98,10 @@ library(gdata) # To read .*xls files
 ## Read data files and obtain column names
 
 ```{r}
-my.path <- getwd()
 
-temp <- list.files(my.path, pattern = ".xls")
+setwd("~/Desktop/RSWP-wos")
+my.path.wos <- getwd()
+temp <- list.files(my.path.wos, pattern = ".xls")
 dat <- lapply(temp, read.xls, stringsAsFactors=FALSE)
 WOSvariableNames <- dat[[1]][7,]
 colnames(WOSvariableNames) <- NULL
@@ -122,7 +124,9 @@ rm(list=ls()[ls() != "ebsco" & ls() != "wos"])
 
 # To-Do's
 
-+ Extract DOI's from the article and
++ Extract DOI's from the article 
++ Clean dates to the year
+
 
 
 
