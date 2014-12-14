@@ -4,8 +4,11 @@ library(stringr)
 library(dplyr)
 library(gdata)
 
-#Load the function
+#Load the user-defined functions
 source("/Users/beperron/Git/DataWranglers/ebscoParser.R")
+source("/Users/beperron/Git/DataWranglers/wosParser.R")
+source("/Users/beperron/Git/DataWranglers/pmatch.R")
+
 
 #Read original data that is saved as *.txt file
 ebsco.file <- readLines("/Users/beperron/Git/DataWranglers/RSWP-ebsco/ebsco.txt")
@@ -14,11 +17,11 @@ ebsco.file <- readLines("/Users/beperron/Git/DataWranglers/RSWP-ebsco/ebsco.txt"
 ebscoParser.f(ebsco.file)
 
 #Parse the wos data
-source("/Users/beperron/Git/DataWranglers/wosParser.R")
+
 wosParser.f()
 
 #Find matches using partial matching function
-source("/Users/beperron/Git/DataWranglers/pmatch.R")
+
 
 #Create a matched and merged data file
 a.matching <- pmatch.f(ebsco.titles$short.title, wos.df$short.title)
