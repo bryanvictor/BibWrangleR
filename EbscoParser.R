@@ -46,6 +46,13 @@ ebscoParser.f <- function(dat){
             ebsco.titles <- ebsco.titles[, 'record']
             ebsco.titles <- unlist(lapply(ebsco.titles, function(x) gsub(" ", "", x)))
             ebsco.titles <- unlist(lapply(ebsco.titles, function(x) gsub("[[:punct:]]", "", x)))
+
+            ebsco.titles <- as.data.frame(ebsco.titles, stringsAsFactors = FALSE)
+            ebsco.titles <- mutate(ebsco.titles, short.title = ebsco.titles) %>%
+                            select(-ebsco.titles) %>%
+                            mutate(articleID = c(1:nrow(ebsco.titles))) %>%
+                            select(articleID, short.title)
+
             ebsco.titles <<- ebsco.titles
 
             ebsco.df <<- DF

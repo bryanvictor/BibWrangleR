@@ -2,6 +2,7 @@ rm(list=ls())
 library(stringi)
 library(stringr)
 library(dplyr)
+library(gdata)
 
 #Load the function
 source("/Users/beperron/Git/DataWranglers/ebscoParser.R")
@@ -20,13 +21,22 @@ wosParser.f()
 source("/Users/beperron/Git/DataWranglers/pmatch.R")
 
 #Create a matched and merged data file
-a.matching <- pmatch.f(ebsco.titles, wos.titles)
-b.matching <- pmatch.f(wos.titles, ebsco.titles)
-ebsco.match <- ebsco.titles[b.matching[[3]]]
-wos.match <- wos.titles[a.matching[[3]]]
+a.matching <- pmatch.f(ebsco.titles$short.title, wos.df$short.title)
+b.matching <- pmatch.f(wos.df$short.title, ebsco.titles$short.title)
 
-ebsco.match <- ebsco.match[order(ebsco.match)]
-wos.match <- wos.match[order(wos.match)]
+
+ebsco.match <- ebsco.titles[b.matching[[3]],]
+wos.match <- wos.df[a.matching[[3]],]
+
+ebsco.match <- ebsco.match[order(ebsco.match$titles),]
+wos.match <- wos.match[order(wos.match$titles),]
+wos.match <- wos.match[!is.na(wos.match$articleID),]
+
+ebsc.final.match <- ebsco.df[ebsco.df$articleID %in% ebsco.match$articleID, ]
+
+#General cleanup
+rm(list = c("a.matching", "b.matching", "ebsco.file",
+          "ebscoParser.f", "pmatch.f", "wosParser.f"))
 
 
 

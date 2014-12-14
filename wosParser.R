@@ -1,7 +1,7 @@
-
 wosParser.f <- function(){
 
     library(plyr)
+    library(gdata)
     my.path.wos <- getwd()
     temp <- list.files(my.path.wos, pattern = ".xls")
     dat <- lapply(temp, read.xls, stringsAsFactors=FALSE)
@@ -10,7 +10,6 @@ wosParser.f <- function(){
 
         cleaner.f <- function(x){
                 colnames(x) <- NULL
-                #x <- x[6:nrow(x), ]
                 x <- x[8:nrow(x),]
                 }
 
@@ -18,15 +17,14 @@ wosParser.f <- function(){
     wos <- ldply(wos, data.frame)
     colnames(wos) <- WOSvariableNames
     wos <- wos[,c(1:21, 112:137)]
+    wos$articleID <- c(1:nrow(wos))
 
-    wos.titles <- select(wos, Title) %>%
-    mutate(title = tolower(Title)) %>%
-    select(-Title)
-    wos.titles <- wos.titles[, 'title']
-    wos.titles <- unlist(lapply(wos.titles, function(x) gsub(" ",  "", x)))
-    wos.titles <- unlist(lapply(wos.titles, function(x) gsub("[[:punct:]]", "", x)))
+    wos   <- mutate(wos, short.title = tolower(Title)) %>%
+             mutate(short.title = gsub(" ",  "", short.title)) %>%
+             mutate(short.title = gsub("[[:punct:]]", "", short.title))
 
-    wos.titles <<- wos.titles
+    colnames(wos)[22:47] <- paste0("y", colnames(wos)[22:47])
+    wos <- select(wos, articleID, Title, short.title, Authors:y2015)
+
     wos.df <<- wos
-
 }
