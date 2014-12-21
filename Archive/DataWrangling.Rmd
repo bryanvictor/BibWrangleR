@@ -1,0 +1,135 @@
+---
+title: "Data Wrangling Functions"
+author: "Brian Perron"
+output: html_document
+---
+
+# Initialization of Workspace
+
+Clear workspace, load relevant libraries, and then read in the data.  User will need to specify path
+
+```{r}
+rm(list=ls())
+library(stringi)
+library(stringr)
+library(dplyr)
+library(gdata)
+
+#Replace your file name here  
+
+my.file.ebsco <- "/Users/beperron/Desktop/RSWP-ebsco/ebsco.txt"
+```
+
+
+# Data Wrangling of Ebsco Files
+
+The Ebsco file must be exported from the web application as _Generic bibliographic management format_.  This function will not work for any other format.  
+```{r}
+record <- readLines(my.file.ebsco)
+#record <- readLines("PATH AND FILE NAME")
+```
+## Attributes
+The raw file (in the generic bibliographic format) is quite messy.  The first step is to extract the attribute IDs from each record and save them in a separate vector `attributes`.  Each unique record is separated by a blank row.  This blank row will be retained in the first part of data wrangling to serve as an end-of-record marker; thus, it is named `END` in the attribute column. The title tag `TI` is replaced with `START` to signify the beginning-of-record marker.  The data file does not contain a blank row for the last record, so a blank row must be added.  
+
+```{r}
+attributes <- unlist(lapply(record, function(x) stri_sub(x, 1,2)))
+attributes[length(attributes)+1] <- "" #add blank row
+attributes <- ifelse(attributes == "", "END", attributes)
+attributes <- ifelse(attributes == "TI", "START", attributes)
+attributes.df <- data.frame(attributes) #Save as a data frame
+```
+
+
+## Records
+
+Records needs removal of the first five characters.  These are the attribute abbreviations followed by a space, `-`, space.  Then, convert this to a data frame. 
+
+```{r}
+record <- substring(record, 5)
+record[length(record)+1] <- ""
+record.df <- data.frame(record)
+```
+
+## Article ID
+
+An article ID `articleID` is created to serve as a logical identifier of all the attributes for a given record.  This column is created and initialized with NAs based on the length of attributes (after the blank row was inserted).   Next, we refer to the `attributes` and find the places containing the words `START` and `END`.   These index positions are used to identify all the rows for a given record.  The loop iterates over these grouping and assigns and ID to `articleID`.  The article ID is based on the index in the loop.   
+
+```{r}
+articleID <- rep(NA, length(attributes))
+START <- which(attributes== "START")
+END <- which(attributes == "END")
+ebsco <- cbind(attributes.df, articleID, record.df)
+
+for(i in 1:length(START)){ebsco$articleID[START[i]:END[i]] <- i}
+```
+
+
+## Final Touches
+
+A few final touches are needed before moving to analyses.      
+
+```{r}
+#Remove fators from a data frame
+ebsco <- data.frame(lapply(ebsco, as.character), stringsAsFactors = FALSE)
+
+#Replace START with original "TI" tag
+ebsco$attributes <- ifelse(ebsco$attributes == "START", "TI", ebsco$attributes)
+
+#Remove all empty rows that contain "END"
+ebsco <- filter(ebsco, attributes != "END")
+
+#Remove all leading and trailing white space from record column
+ebsco$record <- sub("^\\s+|\\s+$", "", ebsco$record)
+
+#Untoggle to write as a csv-file for a visual inspection
+#write.csv(ebsco, "ebsco.csv")
+
+```
+
+
+# Data wrangling of Web of Science files
+
+A Web Of Science file is process as a citation report and exported as a csv.  It will not work with any other file type.  Note that a limit of the WOS web application is 500 records to be exported at a single time.  Therefore, this function has been written to read a series of files.  
+
+```{r}
+library(gdata) # To read .*xls files
+```
+
+## Read data files and obtain column names
+
+```{r}
+
+setwd("~/Desktop/RSWP-wos")
+my.path.wos <- getwd()
+temp <- list.files(my.path.wos, pattern = ".xls")
+dat <- lapply(temp, read.xls, stringsAsFactors=FALSE)
+WOSvariableNames <- dat[[1]][7,]
+colnames(WOSvariableNames) <- NULL
+```
+
+## Clean data files
+```{r}
+library(plyr)
+cleaner.f <- function(x){
+     colnames(x) <- NULL
+     #x <- x[6:nrow(x), ]
+     x <- x[8:nrow(x),]
+}
+
+wos <- lapply(dat, cleaner.f)
+wos <- ldply(wos, data.frame)
+colnames(wos) <- WOSvariableNames
+rm(list=ls()[ls() != "ebsco" & ls() != "wos"])
+```
+
+# To-Do's
+
++ Extract DOI's from the article 
++ Clean dates to the year
+
+
+
+
+
+
+
