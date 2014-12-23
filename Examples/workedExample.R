@@ -8,10 +8,10 @@ source("/Users/beperron/Git/BibWrangleR/functions/wosWrangleR.R")
 my.path <- "/Users/beperron/Git/BibWrangleR/Files2Process"
 
 #Parse the ebsco data
-ebsco.data <- psychInfoWrangleR.f(csv=TRUE, path=my.path)
+ebsco.data <- psychInfoBWR.f(csv=TRUE, path=my.path)
 
 #Parse the wos data
-wos.data <- wosWrangleR.f(csv=TRUE, path=my.path)
+wos.data <- wosBWR.f(csv=TRUE, path=my.path)
 
 
 

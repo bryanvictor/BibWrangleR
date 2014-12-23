@@ -1,4 +1,4 @@
-wosWrangleR.f <- function(csv = FALSE, path){
+wosBWR.f <- function(csv = FALSE, path){
 
     packages.f()
 

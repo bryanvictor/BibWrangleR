@@ -1,4 +1,4 @@
-psychInfoWrangleR.f <- function(csv = FALSE, path){
+psychInfoBWR.f <- function(csv = FALSE, path){
 
 #______________Install and Load Packages
 
@@ -23,10 +23,14 @@ psychInfoWrangleR.f <- function(csv = FALSE, path){
     attributes <- ifelse(attributes == "TI", "START", attributes)
     attributes.df <- data.frame(attributes)
 
+    #Take first five characters from each row
     record <- substring(unlist(dat), 5)
+
+    #Add a blank row to end of the record vector
     record[length(record)+1] <- ""
     record.df <- data.frame(record)
 
+    #Initialize an empty vector
     articleID <- rep(NA, length(attributes))
     START <- which(attributes== "START")
     END <- which(attributes == "END")
