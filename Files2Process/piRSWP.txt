@@ -1,0 +1,2539 @@
+TI- Learning teams and virtual communities of practice: Managing evidence and expertise beyond the stable state.
+PS- Publication Status: Fully Published
+AU- Sabah, Yekutiel
+AU- Cook-Craig, Patricia
+AF- Sabah, Yekutiel, CoutyS@molsa.gov.il, Hebrew University, Jerusalem, Israel
+AF- Cook-Craig, Patricia, University of Kentucky, Lexington, KY, US
+AD- Sabah, Yekutiel, Hebrew University, 2 Kaplan St., Jerusalem, Israel, 91008, CoutyS@molsa.gov.il
+SO- Research on Social Work Practice
+VI- 20
+IP- 4
+SD- Jul, 2010
+YR- 2010
+PM- Jul, 2010
+SI- Research on social work practice in Israel
+PG- 435-446
+PC- 12
+SP- 435
+PU- US : Sage Publications
+PN- 12
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731509339031
+LA- English
+KP- virtual communities of practice
+KP- social science organizations
+KP- social workers
+KP- learning teams
+SU- Communities of Practice; Learning Environment; Social Services; Social Workers; Teams
+AB- In the past decade, the Israeli Ministry of Social Affairs has been engaged in an ongoing effort to change the capacity of social service organizations and social workers across the country to use and create knowledge in order to achieve the best outcomes for the people they serve. Although there is an ever-growing mandate in Israel to demonstrate outcomes and use effective strategies, social workers have historically experienced unique challenges in accessing and assessing available evidence-based practice when they are available. The first step to addressing these challenges, the intra-organizational phase, was to design, implement, and test a model of organizational learning designed to teach social workers how to use learning to change practice. The second step, the inter-organizational phase, was the introduction of virtual communities of practice as a tool to support workers in the acquisition and dissemination of new knowledge. This paper presents a case study of this effort including a description of the development and implementation of the two phases and an agenda for future research. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Communities of Practice; Learning Environment; Social Services; Social Workers; Teams
+CL- Community & Social Services (3373)
+PO- Human (10)
+LO- Israel
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20100906
+AN- 2010-13259-009
+FR- 73
+CP- The Author(s). 2010
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2010-13259-009&site=ehost-live&scope=site
+
+TI- Opinions of people who self-identify with autism and Asperger’s on DSM-5 criteria.
+PS- Publication Status: Fully Published
+AU- Linton, Kristen Faye
+AU- Krcek, Taylor E.
+AU- Sensui, Leonard M.
+AU- Spillers, Jessica L. H.
+AF- Linton, Kristen Faye, kfbean@hawaii.edu, Myron B. Thompson School of Social Work, University of Hawaii at Manoa, Honolulu, HI, US
+AF- Krcek, Taylor E., College of Social Work, University of Tennessee at Knoxville, Knoxville, TN, US
+AF- Sensui, Leonard M., Myron B. Thompson School of Social Work, University of Hawaii at Manoa, Honolulu, HI, US
+AF- Spillers, Jessica L. H., Myron B. Thompson School of Social Work, University of Hawaii at Manoa, Honolulu, HI, US
+AD- Linton, Kristen Faye, Myron B. Thompson School of Social Work, University of Hawaii at Manoa, 1800 East-West Road, Honolulu, HI, US, 96822, kfbean@hawaii.edu
+SO- Research on Social Work Practice
+VI- 24
+IP- 1
+SD- Jan, 2014
+YR- 2014
+PM- Jan, 2014
+PG- 67-77
+PC- 11
+SP- 67
+PU- US : Sage Publications
+PN- 11
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+LA- English
+KP- self identification
+KP- autism
+KP- Asperger’s syndrome
+KP- DSM
+KP- pervasive developmental disorders
+KP- social workers
+SU- Aspergers Syndrome; Autism; Diagnostic and Statistical Manual; Self Evaluation
+AB- Purpose: Autistic disorder (AD), Asperger’s syndrome (AS), and pervasive developmental disorder–not otherwise specified (PDD-NOS) have been removed from the Diagnostic and Statistical Manual of Mental Disorders–Fifth Edition (DSM-5). It now contains the autism spectrum disorder (ASD) diagnosis. This study assessed how people with AD and AS felt about the DSM-5 ASD criteria. Method: Phenomenological analysis of discussion forum dialogue among participants (N = 76) with AD and AS was conducted. Results: Discussions demonstrated agreement that the PDD-NOS diagnosis should be removed from the DSM-5. People with AD and AS were concerned about the inclusion of medical or neurobiological research, functioning, reciprocity, and gender bias in the ASD diagnosis. Discussion: Social workers should acknowledge the feelings of people with AD and AS when they use the DSM-5. (PsycINFO Database Record (c) 2014 APA, all rights reserved) (journal abstract)
+MJ- Aspergers Syndrome; Autism; Diagnostic and Statistical Manual; Self Evaluation
+MN- Pervasive Developmental Disorders; Social Workers
+CL- Developmental Disorders & Autism (3250)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- China
+LO- Canada
+LO- United Kingdom
+LO- New Zealand
+LO- South Africa
+LO- Spain
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20140224
+AN- 2013-43593-007
+FR- 41
+CP- The Author(s). 2013
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2013-43593-007&site=ehost-live&scope=site
+
+TI- Apprehensions and expectations of the adoption of systematically planned, outcome-oriented practice.
+PS- Publication Status: Fully Published
+AU- Savaya, Riki
+AU- Altschuler, Dorit
+AU- Melamed, Sharon
+AF- Savaya, Riki, Bob Shapell School of Social Work, Tel Aviv University, Tel Aviv, Israel
+AF- Altschuler, Dorit, Welfare, Public Health and Human Services Administration, Tel Aviv–Yafo Municipality, Tel Aviv, Israel
+AF- Melamed, Sharon, Welfare, Public Health and Human Services Administration, Tel Aviv–Yafo Municipality, Tel Aviv, Israel
+AD- Savaya, Riki, Bob Shapell School of Social Work, Tel Aviv University, Ramat Aviv, Tel Aviv, Israel, 69978, savaya@post.tau.ac.il
+SO- Research on Social Work Practice
+VI- 23
+IP- 4
+SD- Jul, 2013
+YR- 2013
+PM- Jul, 2013
+PG- 437-446
+PC- 10
+SP- 437
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731513484365
+LA- English
+KP- apprehensions
+KP- expectations
+KP- social workers
+KP- systematically planned outcome oriented practice
+KP- intervention
+KP- treatment guidelines
+SU- Anxiety; Expectations; Intervention; Social Workers; Treatment Guidelines
+AB- Objectives: The study examined social workers’ apprehensions and expectations of the impending adoption of systematically planned, empirically based, outcome-oriented practice (SEOP). Method: Employing a mixed methods longitudinal design, the study used concept mapping to identify and map workers’ apprehensions and expectations and a self-reported questionnaire to measure their levels. Results: Apprehensions were that SEOP will increase monitoring and financial considerations in decision making and undermine professional intervention and professional responsibility. Expectations were that it will (a) empower social workers to provide better service and better cope with counterpressures and (b) systemize work procedures and improve organizational efficiency, effectiveness, and governance. Findings also showed that workers, who participated in formulating the system’s guidelines and principles, reported lower apprehensions and higher expectations than those who did not. Conclusions: In introducing SEOP, it is important to take workers’ apprehensions and expectations into consideration and to include workers in the development stage. (PsycINFO Database Record (c) 2013 APA, all rights reserved) (journal abstract)
+MJ- Anxiety; Expectations; Intervention; Social Workers; Treatment Guidelines
+MN- Practice
+CL- Professional Personnel Attitudes & Characteristics (3430)
+PO- Human (10)
+LO- Israel
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Longitudinal Study
+MD- Field Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20131104
+AN- 2013-20275-007
+FR- 54
+CP- The Author(s). 2013
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2013-20275-007&site=ehost-live&scope=site
+
+TI- “If you build it, they may not come”: Lessons from a funded project.
+PS- Publication Status: Fully Published
+AU- Lee, Robert E.
+AF- Lee, Robert E., relee@fsu.edu, Florida State University, Tallahassee, FL, US
+AD- Lee, Robert E., Marriage and Family Therapy Program, Florida State University, 240 Sandels Building, Tallahassee, FL, US, 32306, relee@fsu.edu
+SO- Research on Social Work Practice
+VI- 19
+IP- 2
+SD- Mar, 2009
+YR- 2009
+PM- Mar, 2009
+SI- Intervention outcome research with Latinos: Social work’s contributions
+PG- 251-260
+PC- 10
+SP- 251
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731508329416
+LA- English
+KP- barriers
+KP- marital enrichment program participation
+KP- couples
+KP- program evaluation
+SU- Couples Therapy; Marriage Counseling; Mental Health Program Evaluation; Treatment Barriers
+AB- Objective: This study attempts to uncover barriers to participation in a marital enrichment program that had been expected to be attractive to eligible couples. Method: Work products associated with a multiyear demonstration project were subjected to ethnographic analysis. Results: Eligible couples did not see congruence between the program’s goals and their needs, and some were alienated from community agencies. Also, program personnel and the social systems in which they were embedded could not use feedback to change. Conclusions: Recruitment success requires shared goals, good-enough personal relationships to support work on those goals, and subsystem flexibility, throughout the intervention system. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Couples Therapy; Marriage Counseling; Mental Health Program Evaluation; Treatment Barriers
+CL- Group & Family Therapy (3313)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+AG- Aged (65 yrs & older) (380)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090316
+AN- 2009-02952-011
+FR- 21
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2009-02952-011&site=ehost-live&scope=site
+
+TI- Factor structure of the Chinese virtues questionnaire.
+PS- Publication Status: Fully Published
+AU- Duan, Wenjie
+AU- Ho, Samuel M. Y.
+AU- Yu, Bai
+AU- Tang, Xiaoqing
+AU- Zhang, Yonghong
+AU- Li, Tingting
+AU- Yuen, Tom
+AF- Duan, Wenjie, Southwest University, Chongqing, China
+AF- Ho, Samuel M. Y., munyinho@cityu.edu.hk, City University of Hong Kong, Kowloon Tong, Hong Kong
+AF- Yu, Bai, Institute of Psychology, Beijing, China
+AF- Tang, Xiaoqing, Southwest University, Chongqing, China
+AF- Zhang, Yonghong, Southwest University, Chongqing, China
+AF- Li, Tingting, Southwest University, Chongqing, China
+AF- Yuen, Tom, City University of Hong Kong, Kowloon Tong, Hong Kong
+AD- Ho, Samuel M. Y., City University of Hong Kong, Kowloon Tong, Hong Kong, munyinho@cityu.edu.hk
+SO- Research on Social Work Practice
+VI- 22
+IP- 6
+SD- Nov, 2012
+YR- 2012
+PM- Nov, 2012
+PG- 680-688
+PC- 9
+SP- 680
+PU- US : Sage Publications
+PN- 9
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731512450074
+LA- English
+KP- factor structure
+KP- Chinese Virtues Questionnaire
+KP- undergraduate students
+KP- psychometrics
+KP- test validity
+KP- culture
+SU- College Students; Culture (Anthropological); Psychometrics; Test Validity
+AB- Objectives: The present study examined the factorial invariance and functional equivalence of the Values in Action Inventory of Strengths (VIA-IS) among the Chinese. Methods: A total of 839 undergraduate students completed the 240-item Simplified Chinese version of the VIA-IS online. Another 40 students participated in qualitative interviews to examine the meaning and function of the items in Chinese culture. Results: A total of 144 items were removed from the original version questionnaire (240-item) because of low item-loading and lack of cultural validity. A Chinese Virtues Questionnaire-96 (CVQ-96) in simplified Chinese containing 96 items (4 items per strength) was adopted. Three subscales (interpersonal, vitality, and cautiousness) were developed after exploratory factor analysis and confirmatory factor analysis. Conclusion: A theoretically meaningful 3-factor model of virtue, comparable to some virtue structures proposed in previous studies conducted in Western countries, was obtained. The inventories being developed can facilitate positive social work assessment and intervention. (PsycINFO Database Record (c) 2013 APA, all rights reserved) (journal abstract)
+MJ- College Students; Culture (Anthropological); Psychometrics; Test Validity
+MN- Factor Structure; Questionnaires; Virtue
+CL- Tests & Testing (2220)
+CL- Social Processes & Social Issues (2900)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- China
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+TM- Chinese Virtues Questionnaire
+TM- Values in Action Inventory of Strengths
+MD- Empirical Study
+MD- Interview
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20121119
+CD- 20130909
+AN- 2012-27356-009
+FR- 37
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-27356-009&site=ehost-live&scope=site
+
+TI- Child welfare worker perception of the implementation of family-centered practice.
+PS- Publication Status: Fully Published
+AU- Michalopoulos, Lynn
+AU- Ahn, Haksoon
+AU- Shaw, Terry V.
+AU- O’Connor, Julia
+AF- Michalopoulos, Lynn, lmichalopoulos@ssw.umaryland.edu, University of Maryland, School of Social Work, Baltimore, MD, US
+AF- Ahn, Haksoon, Ruth H. Young Center for Families and Children, University of Maryland, School of Social Work, Baltimore, MD, US
+AF- Shaw, Terry V., University of Maryland, School of Social Work, Baltimore, MD, US
+AF- O’Connor, Julia, Ruth H. Young Center for Families and Children, University of Maryland, School of Social Work, Baltimore, MD, US
+AD- Michalopoulos, Lynn, University of Maryland, School of Social Work, Michalopoulos 525 West Redwood Street, Baltimore, MD, US, 21201, lmichalopoulos@ssw.umaryland.edu
+SO- Research on Social Work Practice
+VI- 22
+IP- 6
+SD- Nov, 2012
+YR- 2012
+PM- Nov, 2012
+PG- 656-664
+PC- 9
+SP- 656
+PU- US : Sage Publications
+PN- 9
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731512453344
+LA- English
+KP- child welfare worker perception
+KP- family centered practice
+KP- policy making
+SU- Child Welfare; Community Welfare Services; Family; Policy Making
+AB- Objectives: The purpose of this study was to explore perceptions of Family-Centered Practice (FCP) among child welfare workers who are expected to use FCP principles in their work with children and families. Method: Nine focus groups were conducted among child welfare workers across seven different regions within one state to assess caseworker’s experiences with FCP. Results: Themes related to time, resources and opportunities, work climate, and engagement emerged from the analysis in relation to the implementation of FCP. Conclusions: Implications of the implementation of the FCP framework for social work policy and practice are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Child Welfare; Community Welfare Services; Family; Policy Making
+CL- Community & Social Services (3373)
+PO- Human (10)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20121119
+AN- 2012-27356-006
+FR- 29
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-27356-006&site=ehost-live&scope=site
+
+TI- Validation of the Child and Youth Resilience Measure-28 (CYRM-28) among Canadian youth.
+PS- Publication Status: Fully Published
+AU- Liebenberg, Linda
+AU- Ungar, Michael
+AU- Van de Vijver, Fons
+AF- Liebenberg, Linda, Linda.Liebenberg@dal.ca, Dalhousie University, Halifax, NS, Canada
+AF- Ungar, Michael, Dalhousie University, Halifax, NS, Canada
+AF- Van de Vijver, Fons, Tilburg University, Tilburg, Netherlands
+AD- Liebenberg, Linda, Dalhousie University, 6420 Coburg Road, PO Box 15000, Halifax, NS, Canada, B3H 4R2, Linda.Liebenberg@dal.ca
+SO- Research on Social Work Practice
+VI- 22
+IP- 2
+SD- Mar, 2012
+YR- 2012
+PM- Mar, 2012
+PG- 219-226
+PC- 8
+SP- 219
+PU- US : Sage Publications
+PN- 8
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511428619
+LA- English
+KP- Child and Youth Resilience Measure
+KP- test validity
+KP- factor analysis
+KP- resilience
+KP- psychometrics
+SU- Adolescent Development; Childhood Development; Resilience (Psychological); Test Reliability; Test Validity
+AB- Objectives: This article presents the validation of the 28-item Child and Youth Resilience Measure (CYRM-28) among two Canadian samples of youth with complex needs. Method: The CYRM-28 was administered to two groups of concurrent service using youth in Atlantic Canada (n₁ = 497; n₂ = 410) allowing for use of exploratory and confirmatory factor analysis. Results: Reproducibility agreement is achieved and subscales of the measure are confirmed and show adequate psychometric properties. Conclusions: Findings add support to the CYRM-28 as a reliable and valid self-report instrument that measures three components of resilience processes in the lives of complex needs youth. Advanced statistical modeling yielded evidence that the scale, originally developed for use in various countries, can be used to assess resilience in youth from various ethnocultural backgrounds in Atlantic Canada. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Adolescent Development; Childhood Development; Resilience (Psychological); Test Reliability; Test Validity
+MN- Factor Analysis; Psychometrics; Test Construction
+CL- Personality Scales & Inventories (2223)
+CL- Psychosocial & Personality Development (2840)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- Canada
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20120326
+AN- 2012-04558-013
+FR- 44
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-04558-013&site=ehost-live&scope=site
+
+TI- Promoting evidence-informed practice in child welfare in Ontario: Progress, challenges and future directions.
+PS- Publication Status: Fully Published
+AU- Shera, Wes
+AU- Dill, Katharine
+AF- Shera, Wes, Factor-Inwentash Faculty of Social Work, University of Toronto, Toronto, ON, Canada
+AF- Dill, Katharine, kdill@partontario.org, Practice And Research Together, Toronto, ON, Canada
+AD- Dill, Katharine, Practice And Research Together, 75 Front Street East, Toronto, ON, Canada, M5E 1V9, kdill@partontario.org
+SO- Research on Social Work Practice
+VI- 22
+IP- 2
+SD- Mar, 2012
+YR- 2012
+PM- Mar, 2012
+PG- 204-213
+PC- 10
+SP- 204
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511406552
+LA- English
+KP- Practice and Research Together
+KP- Part
+KP- child welfare
+KP- social casework
+SU- Child Welfare; Evidence Based Practice; Health Care Utilization; Social Casework
+AB- Practice and Research Together (PART) is an Ontario-based research utilization initiative, the core function of which is to distil and disseminate practice-relevant research findings to child welfare practitioners. This article addresses (a) the mission and goals of the PART program; (b) the key components of the program design; (c) the conceptual foundations of evidence-informed practice (EIP) as it relates to the program; (d) the successes and challenges of implementation to date; (e) the results of a comprehensive evaluation; and (f) areas for future research and development. Key findings of the formative evaluation include Link PARTners (LPs—organizational representatives) feeling isolated in their role in promoting organizational change; frontline practitioners reporting that they have little time or resources to use the program materials; supervisors stating that they support the concept of EIP but lack the skills and abilities to move these ideas forward; and executive directors are requesting more evidence to promote organizational and systemic change. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Child Welfare; Evidence Based Practice; Health Care Utilization; Social Casework
+CL- Health & Mental Health Services (3370)
+CL- Professional Psychological & Health Personnel Issues (3400)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- Canada
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20120326
+AN- 2012-04558-011
+FR- 26
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-04558-011&site=ehost-live&scope=site
+
+TI- Effects of a low-element challenge course on abstinence self-efficacy and group cohesion.
+PS- Publication Status: Fully Published
+AU- Clem, Jamie M.
+AU- Smith, Thomas E.
+AU- Richards, Kristin V.
+AF- Clem, Jamie M., Jmc04y@my.fsu.edu, College of Social Work, Florida State University, Tallahassee, FL, US
+AF- Smith, Thomas E., College of Social Work, Florida State University, Tallahassee, FL, US
+AF- Richards, Kristin V., College of Social Work, Florida State University, Tallahassee, FL, US
+AD- Clem, Jamie M., College of Social Work-UCC, Florida State University, 296 Champions Way, Tallahassee, FL, US, 32306, Jmc04y@my.fsu.edu
+SO- Research on Social Work Practice
+VI- 22
+IP- 2
+SD- Mar, 2012
+YR- 2012
+PM- Mar, 2012
+PG- 151-158
+PC- 8
+SP- 151
+PU- US : Sage Publications
+PN- 8
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511423672
+LA- English
+KP- challenge course intervention
+KP- self-efficacy
+KP- group cohesion
+KP- chemical dependence
+SU- Drug Abstinence; Drug Abuse; Drug Rehabilitation; Group Cohesion; Self Efficacy
+AB- Substance abuse researchers identify self-efficacy and group cohesion as important components in alcohol and other drug-dependency treatment. Objectives: The purpose of this single-group, pretest–posttest study is to explore the therapeutic value of a challenge course intervention on the self-efficacy and group cohesion of nine chemically dependent, adult females. Methods: Data were collected using two validated outcome measures administered before and after the intervention. Focus groups provided insight into the experiences of participants and were examined using manifest and latent theme analysis. Results: Findings indicate statistically significant improvements on both outcome measures with medium to large effect sizes. Several themes were identified including group unity, trust, interpersonal growth, and self-confidence. Conclusions: Suggestions for practice and future research are provided. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Drug Abstinence; Drug Abuse; Drug Rehabilitation; Group Cohesion; Self Efficacy
+MN- Drug Dependency
+CL- Drug & Alcohol Rehabilitation (3383)
+PO- Human (10)
+PO- Female (40)
+PO- Inpatient (50)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+TM- Drug Abstinence Self-Efficacy Scale
+TM- Group Climate Questionnaire–Short Form
+TM- Alcohol Abstinence Self-Efficacy Scale DOI: 10.1037/t04226-000
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20120326
+CD- 20120827
+AN- 2012-04558-004
+FR- 52
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-04558-004&site=ehost-live&scope=site
+
+TI- Teaching standards–based group work competencies to social work students: An empirical examination.
+PS- Publication Status: Fully Published
+AU- Macgowan, Mark J.
+AU- Vakharia, Sheila P.
+AF- Macgowan, Mark J., macgowan@fiu.edu, School of Social Work, Robert Stempel College of Public Health and Social Work, Florida International University, Miami, FL, US
+AF- Vakharia, Sheila P., School of Social Work, Robert Stempel College of Public Health and Social Work, Florida International University, Miami, FL, US
+AD- Macgowan, Mark J., School of Social Work, Robert Stempel College of Public Health and Social Work, Florida International University, 11200 Sw 8th Street, GL 485, Miami, FL, US, 33199, macgowan@fiu.edu
+SO- Research on Social Work Practice
+VI- 22
+IP- 4
+SD- Jul, 2012
+YR- 2012
+PM- Jul, 2012
+PG- 380-388
+PC- 9
+SP- 380
+PU- US : Sage Publications
+PN- 9
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731512442249
+LA- English
+KP- teaching standards
+KP- group work competencies
+KP- social work students
+KP- social work courses
+SU- Educational Standards; Professional Competence; Social Work Education; Teaching; Social Group Work
+AB- Objectives: Accreditation standards and challenges in group work education require competency-based approaches in teaching social work with groups. The Association for the Advancement of Social Work with Groups developed Standards for Social Work Practice with Groups, which serve as foundation competencies for professional practice. However, there has been no empirical publication about using them in teaching. This pilot study tested a microskills teaching approach to improve competency in the Standards. Methods: The mixed-methods study used a preexperimental, pretest–posttest design involving 123 diverse baccalaureate and master’s students in introductory group work courses. Student responses about the experience were also collected. Results: There were significant, substantial increases in students’ perceived importance of and confidence in using the Standards. Confidence gain scores were significantly associated with performance in role-plays. Comments about the assignments were highly favorable and identified role-plays as contributing most to learning. Conclusions: The teaching approach advanced Standards-based group work education. (PsycINFO Database Record (c) 2013 APA, all rights reserved) (journal abstract)
+MJ- Educational Standards; Professional Competence; Social Work Education; Teaching; Social Group Work
+MN- College Students; Curriculum
+CL- Professional Education & Training (3410)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+TM- AASWG Standards for Social Work Practice with Groups
+MD- Empirical Study
+MD- Interview
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20120917
+CD- 20130909
+AN- 2012-15836-003
+FR- 22
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-15836-003&site=ehost-live&scope=site
+
+TI- Voucher users and revitalized public-housing residents 6 years after displacement.
+PS- Publication Status: Fully Published
+AU- Brooks, Fred
+AU- Lewinson, Terri
+AU- Aszman, Jennifer
+AU- Wolk, Jim
+AF- Brooks, Fred, fbrooks2@gsu.edu, School of Social Work, Georgia State University, Atlanta, GA, US
+AF- Lewinson, Terri, School of Social Work, Georgia State University, Atlanta, GA, US
+AF- Aszman, Jennifer, School of Social Work, Georgia State University, Atlanta, GA, US
+AF- Wolk, Jim, School of Social Work, Georgia State University, Atlanta, GA, US
+AD- Brooks, Fred, School of Social Work, Georgia State University, Atlanta, GA, US, 30302, fbrooks2@gsu.edu
+SO- Research on Social Work Practice
+VI- 22
+IP- 1
+SD- Jan, 2012
+YR- 2012
+PM- Jan, 2012
+PG- 10-19
+PC- 10
+SP- 10
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511412198
+LA- English
+KP- voucher users
+KP- revitalized public-housing residents
+KP- house displacements
+KP- economic well-being
+KP- HOPE VI
+KP- affordable housing
+KP- Section 8 housing
+KP- satisfaction with housing
+KP- application process
+KP- decision to move back
+KP- material hardship
+SU- Community Services; Housing; Welfare Services (Government)
+AB- Objective: A total of 6 years after displacement by a Housing Opportunities for People Everywhere (HOPE VI) project, this research examines residents who returned to the redeveloped community and residents who decided to keep their vouchers and were living in private sector housing. Respondents were compared on the following variables: application process and decision to move back, satisfaction with housing, material hardships, and perception of economic well-being. Method: The study employed a static group comparison research design. Quantitative and qualitative data were collected from 56 respondents through five focus groups. Results: Residents who moved back to the revitalized public housing were highly satisfied with their housing, had significantly fewer material hardships, and perceived their economic well-being more positively compared to residents remaining in the voucher program. Conclusions: Our results both support and expand upon previous empirical findings on the complex comparisons between voucher users and revitalized public-housing residents. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Community Services; Housing; Welfare Services (Government)
+MN- Satisfaction; Well Being
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Aged (65 yrs & older) (380)
+GR- Sponsor: City of Atlanta, Housing Authority, US; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20120319
+CD- 20120618
+AN- 2011-30628-002
+FR- 33
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2011-30628-002&site=ehost-live&scope=site
+
+TI- Risky business: An ecological analysis of intimate partner violence disclosure.
+PS- Publication Status: Fully Published
+AU- Alaggia, Ramona
+AU- Regehr, Cheryl
+AU- Jenney, Angelique
+AF- Alaggia, Ramona, ramona.alaggia@utoronto.ca, Factor-Inwentash Faculty of Social Work, University of Toronto, Toronto, ON, Canada
+AF- Regehr, Cheryl, Factor-Inwentash Faculty of Social Work, Academic Programs, University of Toronto, Toronto, ON, Canada
+AF- Jenney, Angelique, Child Development Institute, Toronto, ON, Canada
+AD- Alaggia, Ramona, Factor-Inwentash Faculty of Social Work, University of Toronto, 246 Bloor Street West, Toronto, ON, Canada, M5S 1A1, ramona.alaggia@utoronto.ca
+SO- Research on Social Work Practice
+VI- 22
+IP- 3
+SD- May, 2012
+YR- 2012
+PM- May, 2012
+PG- 301-312
+PC- 12
+SP- 301
+PU- US : Sage Publications
+PN- 12
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511425503
+LA- English
+KP- risky business
+KP- intimate partner violence
+KP- ecology
+SU- Ecology; Intimate Partner Violence; Risk Factors
+AB- Objective: A multistage, mixed-methods study using grounded theory with descriptive data was conducted to examine factors in disclosure of intimate partner violence (IPV). Method: In-depth interviews with individuals and focus groups were undertaken to collect data from 98 IPV survivors and service providers to identify influential factors. Quantitative data were also collected on adult trauma levels and child concerns from 20 women. Results: An ecological analysis revealed that IPV disclosure occurs within a complex interplay of distinct individual and environmental considerations. Specific system level factors of the ecological framework—ontogenic, micro, exo, and macro—emerged as influencing disclosure and ultimately shaped womens’ disclosure processes. Conclusion: IPV disclosure remains a "risky business" with perceived negative outcomes outweighing benefits. Results reinforce that social work interventions need to occur at all levels of the human ecology in order to provide effective responses. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Ecology; Intimate Partner Violence; Risk Factors
+MN- Self Disclosure
+CL- Behavior Disorders & Antisocial Behavior (3230)
+PO- Human (10)
+PO- Female (40)
+LO- Canada
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+TM- Child Behavior Checklist
+GR- Sponsor: Social Sciences and Humanities Research Council of Canada, Canada; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20120528
+AN- 2012-09652-005
+FR- 48
+CP- The Author(s). 2012
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2012-09652-005&site=ehost-live&scope=site
+
+TI- Preschool social–emotional skills training: A controlled pilot test of the making choices and strong families programs.
+PS- Publication Status: Fully Published
+AU- Conner, Natalie W.
+AU- Fraser, Mark W.
+AF- Conner, Natalie W., natalie@connerclinic.com, Children, Youth, and Families Counseling and Consulting, Inc., Charlotte, NC, US
+AF- Fraser, Mark W., School of Social Work, University of North Carolina, Chapel Hill, NC, US
+AD- Conner, Natalie W., Children, Youth, and Families Counseling and Consulting, Inc, 1417 LaRochelle Lane, Charlotte, NC, US, 28226, natalie@connerclinic.com
+SO- Research on Social Work Practice
+VI- 21
+IP- 6
+SD- Nov, 2011
+YR- 2011
+PM- Nov, 2011
+PG- 699-711
+PC- 13
+SP- 699
+PU- US : Sage Publications
+PN- 13
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511408115
+LA- English
+KP- preschool children
+KP- social–emotional skills training
+KP- choice making
+KP- strong families programs
+KP- aggressive behavior
+SU- Choice Behavior; Emotional Development; Parenting Skills; Preschool Students; Social Skills Training
+AB- Objective: The purpose of this study was to pilot test a multicomponent program designed to prevent aggressive behavior in preschool children. The first program component was comprised of social–emotional skills training. It focused on improving the social information processing and emotional-regulation skills of children. The second component was a group-based parenting education. It focused on child development and discipline. Method: Participants, recruited from four preschools in high-risk neighborhoods within a large metropolitan area, were assigned to an intervention (n = 31) or a waitlist comparison (n = 36) condition. Using worker ratings and child puppet-play assessments, pretest and posttest data were collected on 14 child and caregiver/parent behaviors. Results: The gain scores of children in the intervention group differed significantly from those in the comparison group on academic competence, social competence, depression, and aggressive behavior. Caretaker gain scores differed significantly, favoring the intervention group on parental bonding, child supervision, communication, and developmental expectations. Conditioned on the limitations of the design, skills training for preschool children and their caregivers appears to promote social and academic skills. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Choice Behavior; Emotional Development; Parenting Skills; Preschool Students; Social Skills Training
+MN- Aggressive Behavior; School Based Intervention
+CL- Promotion & Maintenance of Health & Wellness (3365)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Childhood (birth-12 yrs) (100)
+AG- Preschool Age (2-5 yrs) (160)
+AG- Adulthood (18 yrs & older) (300)
+TM- Berkeley Puppet Interview
+TM- North Carolina Family Assessment Scale-Version 2.0
+GR- Sponsor: North Carolina Department of Developmental Disabilities, Substance Abuse, and Mental Health Services, US; Recipients: No recipient indicated
+GR- Sponsor: Z. Smith Reynolds Foundation; Recipients: No recipient indicated
+GR- Sponsor: Foundation for the Carolinas; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20111226
+CD- 20120618
+AN- 2011-24459-010
+FR- 42
+CP- The Author(s). 2011
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2011-24459-010&site=ehost-live&scope=site
+
+TI- Outcome evaluation of the Hands-on Parent Empowerment (HOPE) program.
+PS- Publication Status: Fully Published
+AU- Leung, Cynthia
+AU- Tsang, Sandra
+AU- Dean, Suzanne
+AF- Leung, Cynthia, ssleung@inet.polyu.edu.hk, Department of Applied Social Sciences, Hong Kong Polytechnic University, Hung Hom, Hong Kong
+AF- Tsang, Sandra, Department of Social Work and Social Administration, University of Hong Kong, Pokfulam, Hong Kong
+AF- Dean, Suzanne, School of Psychology, Psychiatry and Psychological Medicine, Monash University, Melbourne, VIC, Australia
+AD- Leung, Cynthia, Department of Applied Social Sciences, Hong Kong Polytechnic University, Hung Hom, Hong Kong, ssleung@inet.polyu.edu.hk
+SO- Research on Social Work Practice
+VI- 21
+IP- 5
+SD- Sep, 2011
+YR- 2011
+PM- Sep, 2011
+PG- 549-561
+PC- 13
+SP- 549
+PU- US : Sage Publications
+PN- 13
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731511404904
+LA- English
+KP- Hands-on Parent Empowerment Program
+KP- program effectiveness
+KP- intervention
+KP- parent education program
+SU- Educational Programs; Intervention; Parent Training; Parenting Skills; Program Evaluation
+AB- This study evaluated the effectiveness of the HOPE program. Participants included 120 Chinese new immigrant parents with preschool children in Hong Kong from 13 preschools which were randomized into intervention group (HOPE) and comparison group (6-session parent education program). Parent participants completed measures on child behavior, parenting stress, social support and self-efficacy before and after intervention. The children were assessed on the WPPSI-R and receptive vocabulary before and after parent intervention. Results indicated significant decrease in post-intervention child behavior problems and parenting stress and increase in social support in the intervention group, compared with the comparison group. Implications for service delivery for parents of preschool children were discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Educational Programs; Intervention; Parent Training; Parenting Skills; Program Evaluation
+MN- Empowerment
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- Hong Kong
+AG- Childhood (birth-12 yrs) (100)
+AG- Adulthood (18 yrs & older) (300)
+TM- Eyberg Child Behaviour Inventory
+TM- Duke-UNC Functional Social Support Questionnaire
+TM- Peabody Picture Vocabulary Test--Revised
+TM- Wechsler Preschool and Primary Scale of Intelligence--Revised
+TM- Parenting Stress Index DOI: 10.1037/t02445-000
+TM- General Self-Efficacy Scale
+GR- Sponsor: Research Grants Council, Public Policy Research Fund, Hong Kong; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20110926
+CD- 20120917
+AN- 2011-17409-004
+FR- 51
+CP- The Author(s). 2011
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2011-17409-004&site=ehost-live&scope=site
+
+TI- Social and cultural factors influence African American men’s medical help seeking.
+PS- Publication Status: Fully Published
+AU- Griffith, Derek M.
+AU- Ober Allen, Julie
+AU- Gunter, Katie
+AF- Griffith, Derek M., derekmg@umich.edu, Center on Men’s Health Disparities, University of Michigan School of Public Health, Ann Arbor, MI, US
+AF- Ober Allen, Julie, Center on Men’s Health Disparities, University of Michigan School of Public Health, Ann Arbor, MI, US
+AF- Gunter, Katie, Center on Men’s Health Disparities, University of Michigan School of Public Health, Ann Arbor, MI, US
+AD- Griffith, Derek M., Department of Health Behavior & Health Education, School of Public Health, University of Michigan, 1415 Washington Heights, Ann Arbor, MI, US, 48109-2029, derekmg@umich.edu
+SO- Research on Social Work Practice
+VI- 21
+IP- 3
+SD- May, 2011
+YR- 2011
+PM- May, 2011
+SI- Challenges, disparities and experiences of African American males
+PG- 337-347
+PC- 11
+SP- 337
+PU- US : Sage Publications
+PN- 11
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731510388669
+LA- English
+KP- social factors
+KP- cultural factors
+KP- African American men
+KP- medical help seeking behavior
+SU- Help Seeking Behavior; Sociocultural Factors
+AB- Objective: To examine the factors that influenced African American men's medical help seeking. Method: Thematic analysis of 14 focus groups with 105 older, urban African American men. Results: African American men described normative expectations that they did not go to the doctor and that they were afraid to go, with little explanation. When they did go, men reported that they were particularly uncomfortable with the tone physicians used when talking to them. Providers often made recommendations but offered the men little useful information on how to make lifestyle and behavior changes. Following receipt of care, spouses, medical test results, and men's desire to fulfill social roles were key motivating and instrumental factors in following medical advice. Conclusions: African American men's medical help seeking seemed to be negatively influenced by social norms and patient-provider interactions but positively influenced by spouses and the desire to fulfill social roles. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Help Seeking Behavior; Sociocultural Factors
+MN- Blacks; Human Males
+CL- Social Perception & Cognition (3040)
+PO- Human (10)
+PO- Male (30)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+AG- Aged (65 yrs & older) (380)
+GR- Sponsor: American Cancer Society, US; Grant: MRSGT-07-167-01-CPPB; Recipients: No recipient indicated
+GR- Sponsor: Michigan Center for Urban African American Aging Research, US; Grant: 5P30AG015281; Recipients: No recipient indicated
+GR- Sponsor: University of Michigan Comprehensive Cancer Center, US; Recipients: No recipient indicated
+GR- Sponsor: University of Michigan, School of Public Health, Center on Men’s Health Disparities, Center for Research on Ethnicity, Culture and Health, US; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20110822
+CD- 20120618
+AN- 2011-07556-009
+FR- 60
+CP- The Author(s). 2011
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2011-07556-009&site=ehost-live&scope=site
+
+TI- Being there in spirit, fire, and mind: Expressive roles among nonresidential African American fathers.
+PS- Publication Status: Fully Published
+AU- Hammond, Wizdom Powell
+AU- Caldwell, Cleopatra Howard
+AU- Brooks, Cassandra
+AU- Bell, Lee
+AF- Hammond, Wizdom Powell, wizdom.powell@unc.edu, Department of Health Behavior and Health Education, University of North Carolina, Gillings School of Global Public Health, Chapel Hill, NC, US
+AF- Caldwell, Cleopatra Howard, Department of Health Behavior and Health Education, University of Michigan School of Public Health, Ann Arbor, MI, US
+AF- Brooks, Cassandra, Department of Psychiatry, University of Michigan, Flint, MI, US
+AF- Bell, Lee, Flint/Genesee County Neighborhood Roundtable, Flint, MI, US
+AD- Hammond, Wizdom Powell, Department of Health Behavior and Health Education, University of North Carolina, Gillings School of Global Public Health, 334B Rosenau Hall, CB #7440, Chapel Hill, NC, US, 27599, wizdom.powell@unc.edu
+SO- Research on Social Work Practice
+VI- 21
+IP- 3
+SD- May, 2011
+YR- 2011
+PM- May, 2011
+SI- Challenges, disparities and experiences of African American males
+PG- 308-318
+PC- 11
+SP- 308
+PU- US : Sage Publications
+PN- 11
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731510383441
+LA- English
+KP- African American
+KP- fathers role
+KP- negotiation
+KP- salience
+KP- commitment
+SU- Commitment; Fathers; Negotiation; Parental Role
+AB- Objective: This exploratory qualitative study examined factors contributing to expressive father role negotiation, salience, and commitment in a sample of nonresidential African American fathers (n = 18). Method: Two focus groups were conducted between 2000 and 2001 in a Midwestern city to understand factors that strengthen and diminish bonds between nonresidential African American fathers and their sons. Results: Results indicate that nonresidential fathers deepened their expressive role commitment by reflecting on socioemotional voids in their paternal relationships and negotiating role strains produced as they weighed giving time versus giving money. Conclusions: Findings support the need to foster expressive role commitment among nonresidential African American fathers as a strategy for enhancing child involvement. Social work research, interventions, and practice implications are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Commitment; Fathers; Negotiation; Parental Role
+MN- Blacks
+CL- Marriage & Family (2950)
+PO- Human (10)
+PO- Male (30)
+LO- US
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+GR- Sponsor: Centers for Disease Control and Prevention; Grant: R06/CCR521580; Recipients: Caldwell, Cleopatra Howard
+GR- Sponsor: Community Foundation of Flint, US; Recipients: No recipient indicated
+GR- Sponsor: University of North Carolina, US; Other Details: Cancer Research Fund; Recipients: Hammond, Wizdom Powell
+GR- Sponsor: National Center on Minority Health and Health Disparities, US; Grant: 1L60MD002605-53401; Recipients: Hammond, Wizdom Powell
+GR- Sponsor: National Cancer Institute, US; Grant: 3U01CA114629-04 S2; Recipients: Hammond, Wizdom Powell
+MD- Empirical Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20110822
+CD- 20120618
+AN- 2011-07556-006
+FR- 69
+CP- The Author(s). 2011
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2011-07556-006&site=ehost-live&scope=site
+
+TI- Research in the real world: Studying Chicago Police Department’s crisis intervention team program.
+PS- Publication Status: Fully Published
+AU- Watson, Amy C.
+AF- Watson, Amy C., acwatson@gmail.com, Jane Addams College of Social Work, University of Illinois at Chicago, Chicago, IL, US
+AD- Watson, Amy C., 1040 W Harrsion St, Chicago, IL, US, 60607, acwatson@gmail.com
+SO- Research on Social Work Practice
+VI- 20
+IP- 5
+SD- Sep, 2010
+YR- 2010
+PM- Sep, 2010
+PG- 536-543
+PC- 8
+SP- 536
+PU- US : Sage Publications
+PN- 8
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731510374201
+LA- English
+KP- Chicago police department
+KP- crisis intervention team program
+KP- mental health crises
+KP- police response
+SU- Crisis Intervention; Crisis Intervention Services; Mental Health; Police Personnel
+AB- Police agencies across the country are struggling to respond to significant number of persons with serious mental illness, who are landing on their doorsteps with sometimes tragic consequences. Arguably, the most widely adopted approach, the Crisis Intervention Team (CIT) model, is a specialized police-based program designed to improve officers’ ability to safely and effectively respond to mental health crises. Conducting research on CIT is challenging; thus, the evidence base is limited. In this article, the author reviews the emerging literature, present a conceptual model of CIT effectiveness, and describe a study of CIT in Chicago. Findings from Chicago suggest that CIT is increasing linkage to services and reducing use of force in encounters with persons with mental illness. Lessons learned are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Crisis Intervention; Crisis Intervention Services; Mental Health; Police Personnel
+CL- Police & Legal Personnel (4290)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+GR- Sponsor: National Institute of Mental Health, US; Grant: R34 MH081558; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Followup Study
+MD- Interview
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20100927
+AN- 2010-16282-011
+FR- 29
+CP- The Author(s). 2010
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2010-16282-011&site=ehost-live&scope=site
+
+TI- Culturally based intervention development: The case of Latino families dealing with schizophrenia.
+PS- Publication Status: Fully Published
+AU- Barrio, Concepción
+AU- Yamada, Ann-Marie
+AF- Barrio, Concepción, cbarrio@usc.edu, University of Southern California, Los Angeles, CA, US
+AF- Yamada, Ann-Marie, University of Southern California, Los Angeles, CA, US
+AD- Barrio, Concepción, University of Southern California, School of Social Work, MRF MC-0411, Los Angeles, CA, US, 90089, cbarrio@usc.edu
+SO- Research on Social Work Practice
+VI- 20
+IP- 5
+SD- Sep, 2010
+YR- 2010
+PM- Sep, 2010
+PG- 483-492
+PC- 10
+SP- 483
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731510361613
+LA- English
+KP- culturally based family intervention development
+KP- Latino families
+KP- schizophrenia
+SU- Family Intervention; Schizophrenia; Sociocultural Factors; Latinos/Latinas
+AB- Objectives: This article describes the process of developing a culturally based family intervention for Spanish-speaking Latino families with a relative diagnosed with schizophrenia. Method: Our iterative intervention development process was guided by a cultural exchange framework and based on findings from an ethnographic study. We piloted this multifamily group 16-session intervention with 59 Latino families in a randomized control trial. Data were collected on family- and client-level outcomes, and poststudy focus groups were conducted with intervention participants. Results: Preliminary evidence indicates that the intervention is effective by increasing illness knowledge and reducing family burden. Conclusions: This work can provide a model for how to integrate cultural factors into psychosocial services and enhance interventions in real-world settings for culturally diverse populations. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Family Intervention; Schizophrenia; Sociocultural Factors; Latinos/Latinas
+CL- Health & Mental Health Treatment & Prevention (3300)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+GR- Sponsor: National Institute of Mental Health, US; Grant: K01 MH-01954; R34 MH-076087; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Longitudinal Study
+MD- Interview
+MD- Focus Group
+MD- Qualitative Study
+MD- Treatment Outcome/Clinical Trial
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20100927
+AN- 2010-16282-005
+PD- 22121328
+FR- 38
+CP- The Author(s). 2010
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2010-16282-005&site=ehost-live&scope=site
+
+TI- North Carolina Family Assessment Scale: Measurement properties for youth mental health services.
+PS- Publication Status: Fully Published
+AU- Lee, Bethany R.
+AU- Lindsey, Michael A.
+AF- Lee, Bethany R., blee@ssw.umaryland.edu, University of Maryland, Baltimore, MD, US
+AF- Lindsey, Michael A.
+AD- Lee, Bethany R., School of Social Work, University of Maryland, 525 W. Redwood St., Baltimore, MD, US, 21201, blee@ssw.umaryland.edu
+SO- Research on Social Work Practice
+VI- 20
+IP- 2
+SD- Mar, 2010
+YR- 2010
+PM- Mar, 2010
+PG- 202-211
+PC- 10
+SP- 202
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731509334180
+LA- English
+KP- North Carolina Family Assessment Scale
+KP- youth mental health services
+KP- psychometrics
+KP- test reliability
+KP- test validity
+SU- Family; Mental Health Services; Psychometrics; Test Reliability; Test Validity
+AB- Objective: The purpose of this study is to assess the reliability and validity of the North Carolina Family Assessment Scale (NCFAS) among families involved with youth mental health services. Methods: Using NCFAS data collected by child mental health intake workers with 158 families, factor analysis was conducted to assess factor structure, and thematic analysis of intake notes was used to test content validity. Results: This study found only three NCFAS subscales. The case notes included themes specific to youth with mental health needs that were not captured by current NCFAS items. Conclusions: This study suggests variation in the fit for the NCFAS in child mental health services compared to the measurement properties established in child welfare samples. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Family; Mental Health Services; Psychometrics; Test Reliability; Test Validity
+CL- Clinical Psychological Testing (2224)
+CL- Health & Mental Health Services (3370)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Childhood (birth-12 yrs) (100)
+AG- School Age (6-12 yrs) (180)
+AG- Adolescence (13-17 yrs) (200)
+TM- North Carolina Family Assessment Scale
+GR- Sponsor: Department of Human Services, Mental Hygiene Administration, US; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20100503
+AN- 2010-05015-006
+FR- 37
+CP- The Author(s). 2010
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2010-05015-006&site=ehost-live&scope=site
+
+TI- Social work abstracts fails again: A replication and extension.
+PS- Publication Status: Fully Published
+AU- Holden, Gary
+AU- Barker, Kathleen
+AU- Covert-Vail, Lucinda
+AU- Rosenberg, Gary
+AU- Cohen, Stephanie A.
+AF- Holden, Gary, New York University, New York, NY, US
+AF- Barker, Kathleen, City University of New York, Medgar Evers College, NY, US
+AF- Covert-Vail, Lucinda, New York University, New York, NY, US
+AF- Rosenberg, Gary, Mount Sinai School of Medicine, NY, US
+AF- Cohen, Stephanie A., Mount Sinai Medical Center, NY, US
+SO- Research on Social Work Practice
+VI- 19
+IP- 6
+SD- Nov, 2009
+YR- 2009
+PM- Nov, 2009
+PG- 715-721
+PC- 7
+SP- 715
+PU- US : Sage Publications
+PN- 7
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731508329392
+LA- English
+KP- social work abstracts database
+KP- journal coverage lapses
+KP- scholarship negative impact
+SU- Abstraction; Databases; Failure; Social Casework; Written Communication
+AB- Objective: According to a prior study, there are substantial lapses in journal coverage in the Social Work Abstracts (SWA) database. The current study provides a replication and extension. Method: The longitudinal pattern of coverage of thirty-three journals categorized in SWA as core journals (published in the 1989-1996 period) is examined. Results: The proportion of issues missing from SWA is significantly greater than 0, increase over time, and is significantly biased in favor of NASW journals. Conclusion: The errors in SWA reported here, combined with those previously reported, will exert a long-term negative impact on scholarship unless their existence becomes known to all SWA users and they take steps to compensate for the situation. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Abstraction; Databases; Failure; Social Casework; Written Communication
+MN- Educational Financial Assistance
+CL- Community & Social Services (3373)
+PO- Human (10)
+MD- Empirical Study
+MD- Experimental Replication
+MD- Longitudinal Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20100215
+AN- 2009-18828-006
+FR- 51
+CP- The Author(s). 2009
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2009-18828-006&site=ehost-live&scope=site
+
+TI- Cultural exchange and the implementation of evidence-based practices: Two case studies.
+PS- Publication Status: Fully Published
+AU- Palinkas, Lawrence A.
+AU- Aarons, Gregory A.
+AU- Chorpita, Bruce F.
+AU- Hoagwood, Kimberly
+AU- Landsverk, John
+AU- Weisz, John R.
+AF- Palinkas, Lawrence A., palinkas@usc.edu, School of Social Work University of Southern California, Los Angeles, CA, US
+AF- Aarons, Gregory A., University of California, San Diego, CA, US
+AF- Chorpita, Bruce F., University of California, Los Angeles, CA, US
+AF- Hoagwood, Kimberly, Columbia University, New York, NY, US
+AF- Landsverk, John, Rady Childrens Hosptial, San Diego, CA, US
+AF- Weisz, John R., Harvard Medical School, Boston, MA, US
+AD- Palinkas, Lawrence A., School of Social Work University of Southern California, 669 W. 34th Street, Los Angeles, CA, US, 90089, palinkas@usc.edu
+SO- Research on Social Work Practice
+VI- 19
+IP- 5
+SD- Sep, 2009
+YR- 2009
+PM- Sep, 2009
+PG- 602-612
+PC- 11
+SP- 602
+PU- US : Sage Publications
+PN- 11
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731509335529
+LA- English
+KP- cultural exchange
+KP- implementation
+KP- evidence based practices
+KP- evidence based intervention
+KP- child neglect
+KP- depression
+KP- anxiety
+KP- conduct problems
+KP- service delivery
+KP- information sharing
+SU- Cross Cultural Communication; Evidence Based Practice; Health Care Delivery; Information Dissemination; Knowledge Transfer
+AB- Objective: The dynamics of interactions between evidence-based intervention (EBI) developers and trainers and organizations and providers that deliver the EBI was examined in two case studies, a statewide randomized effectiveness trial of an EBI to reduce child neglect and a randomized trial of EBIs for depression, anxiety, and conduct problems in children and adolescents. Methods: Data were collected using ethnographic methods of participant observation and semistructured interviews and analyzed using grounded theory analytic methods. Results: Formal and informal interactions between EBI propagators and end users provide access to resources and exchange of global and local knowledge of service delivery. Productive interactions require accessibility, mutual respect, a shared language, and a willingness to engage in negotiation and compromise to resolve differences in demands imposed by organizational culture, the need for EBI fidelity, and client characteristics. Conclusion: A cultural exchange characterized by information sharing and behavioral change through a process of negotiation and compromise is central to evidence-based practice in youth serving systems of care. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Cross Cultural Communication; Evidence Based Practice; Health Care Delivery; Information Dissemination; Knowledge Transfer
+MN- Anxiety; Child Neglect; Conduct Disorder; Major Depression
+CL- Health & Mental Health Services (3370)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+AG- Aged (65 yrs & older) (380)
+GR- Sponsor: John D. and Catherine T. MacArthur Foundation; Other Details: Research Network on Youth Mental Health; Recipients: No recipient indicated
+GR- Sponsor: National Institute of Mental Health, US; Grant: R01MH072961; P50 MH050313-07; R25 MH067377; Recipients: No recipient indicated
+GR- Sponsor: National Institute of Mental Health, US; Grant: R01MH072961; Other Details: Mixed-Method Study of a Statewide EBP Implementation/Organizational Readiness for Innovation study; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090921
+AN- 2009-12903-011
+FR- 42
+CP- The Author(s). 2009
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2009-12903-011&site=ehost-live&scope=site
+
+TI- Strategies for improving fidelity in the National Evidence-Based Practices Project.
+PS- Publication Status: Fully Published
+AU- Bond, Gary R.
+AU- Drake, Robert E.
+AU- McHugo, Gregory J.
+AU- Rapp, Charles A.
+AU- Whitley, Rob
+AF- Bond, Gary R., gbond@iupui.edu, Indiana University, Indianapolis, IN, US
+AF- Drake, Robert E., Dartmouth Medical School, Hanover, NH, US
+AF- McHugo, Gregory J., Dartmouth Medical School, Hanover, NH, US
+AF- Rapp, Charles A., University of Kansas, Lawrence, KS, US
+AF- Whitley, Rob, Dartmouth Medical School, Hanover, NH, US
+AD- Bond, Gary R., Department of Psychology, Indiana University, 402 Blackford Street, Indianapolis, IN, US, 46202, gbond@iupui.edu
+SO- Research on Social Work Practice
+VI- 19
+IP- 5
+SD- Sep, 2009
+YR- 2009
+PM- Sep, 2009
+PG- 569-581
+PC- 13
+SP- 569
+PU- US : Sage Publications
+PN- 13
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731509335531
+LA- English
+KP- fidelity
+KP- National Evidence-Based Practices Project
+KP- psychosocial evidence based practices
+KP- severe mental illness
+KP- quality of care
+SU- Evidence Based Practice; Mental Disorders; Psychosocial Factors; Quality of Care; Best Practices
+AB- Background: The National Evidence-Based Practices (EBPs) Project developed and tested a model for facilitating the implementation of five psychosocial EBPs for adults with severe mental illness in the United States. Methods: The implementation model was tested in 53 sites in 8 states. In each site, one of the five EBPs was adopted for implementation and then studied for a 2-year period using a combination of qualitative and quantitative methods. Findings: At baseline, none of the sites had programs attaining high fidelity. Four factors were identified as influencing fidelity: (a) EBP-specific factors, (b) governmental factors, (c) leadership factors, and (d) fidelity review factors. Conclusion: A multipronged implementation strategy was effective in achieving high fidelity in over half of the sites seeking to implement a new EBP. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Evidence Based Practice; Mental Disorders; Psychosocial Factors; Quality of Care; Best Practices
+MN- Severity (Disorders)
+CL- Health & Mental Health Services (3370)
+PO- Human (10)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+GR- Sponsor: Robert Wood Johnson Foundation; Grant: 036805; Recipients: No recipient indicated
+GR- Sponsor: Center for Mental Health Services; Recipients: No recipient indicated
+GR- Sponsor: Substance Abuse and Mental Health Services Administration; Grant: 280-02-8070; Recipients: No recipient indicated
+GR- Sponsor: West Family Foundation; Recipients: No recipient indicated
+GR- Sponsor: Johnson & Johnson, Dartmouth Community Mental Health Program; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+SL- Web Sites, Internet
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090921
+AN- 2009-12903-008
+FR- 71
+CP- The Author(s). 2009
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2009-12903-008&site=ehost-live&scope=site
+
+TI- Transitional services for youth with developmental disabilities: Living in college dorms.
+PS- Publication Status: Fully Published
+AU- Kirkendall, Abbie
+AU- Doueck, Howard J.
+AU- Saladino, Albert
+AF- Kirkendall, Abbie, University at Buffalo, State University of New York, Buffalo, NY, US
+AF- Doueck, Howard J., sswdouhj@buffalo.edu, University at Buffalo, State University of New York, Buffalo, NY, US
+AF- Saladino, Albert, Niagara County Community College, Sanborn, NY, US
+AD- Doueck, Howard J., Graduate School of Social Work, University at Buffalo, State University of New York, Buffalo, NY, US, 14260, sswdouhj@buffalo.edu
+SO- Research on Social Work Practice
+VI- 19
+IP- 4
+SD- Jul, 2009
+YR- 2009
+PM- Jul, 2009
+PG- 434-445
+PC- 12
+SP- 434
+PU- US : Sage Publications
+PN- 12
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731508318734
+LA- English
+KP- transitional services
+KP- developmental disabilities
+KP- college dormitory
+KP- intellectual disabilities
+KP- program impact
+KP- Mental Retardation
+SU- College Students; Developmental Disabilities; Dormitories; Health Care Services; Intellectual Development Disorder
+AB- This study evaluates the impact of a college-based dormitory program on transitioning youth with intellectual disabilities. A qualitative study, with interviews at pre and post, was conducted to evaluate the program’s impact. Data were collected with semistructured interviews from young adults with intellectual disabilities who participated in a college-based residential program and their parents or guardians. Three general themes emerged from the data: Participants reported experiences that were (a) typical of normative life transitions, (b) typical of growing pains associated with significant life transitions and learning new skills, and (c) one step forward. Results indicate that the experience of living away from home for the first time was in some ways comparable to that of a typical college student. Improvement in life skills, including increased awareness of personal goals, enhanced vocational goals, increased maturity or assertiveness, was reported. Respondents were generally satisfied with the program. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- College Students; Developmental Disabilities; Dormitories; Health Care Services; Intellectual Development Disorder
+MN- Educational Programs
+CL- Health & Mental Health Services (3370)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090907
+AN- 2009-09739-005
+FR- 25
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2009-09739-005&site=ehost-live&scope=site
+
+TI- The Social Welfare Practice and Research center at the Chinese University of Hong Kong.
+PS- Publication Status: Fully Published
+AU- Shek, Daniel T. L.
+AF- Shek, Daniel T. L., Danielshek@cuhk.edu, Chinese University of Hong Kong, Shatin, Hong Kong
+AD- Shek, Daniel T. L., Social Welfare Practice and Research Centre, Department of Social Work, Chinese University of Hong Kong, Shatin, Hong Kong, Danielshek@cuhk.edu
+SO- Research on Social Work Practice
+VI- 19
+IP- 3
+SD- May, 2009
+YR- 2009
+PM- May, 2009
+PG- 359-365
+PC- 7
+SP- 359
+PU- US : Sage Publications
+PN- 7
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731508329423
+LA- English
+KP- Social Welfare Practice & Research Centre
+KP- organization
+KP- research programs
+KP- human behavior
+SU- Community Welfare Services; Organizations; Research and Development; Social Programs
+AB- The organization and research programs of the Social Welfare Practice and Research Centre (SWPRC) at the Chinese University of Hong Kong are outlined. There are five regular research programs (Family and Group Practice Research Centre, Human Behavior and the Social Environment Research Program, Mutual Aid and Social Capital Research Program, Social Welfare Indicators Research Program, and Youth and Childhood Research Program) and several ad hoc research projects in the center. With specific focus on the Human Behavior and the Social Environment Program, different research studies, including their funding sources, degree of university–agency collaboration, and innovativeness of the projects illustrative of the research projects in the SWPRC are outlined. The strengths, weaknesses, opportunities, and threats (SWOT) of the center have been discussed using the SWOT analysis. The future research priorities of the SWPRC are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Community Welfare Services; Organizations; Research and Development; Social Programs
+MN- Behavior
+CL- Community & Social Services (3373)
+PO- Human (10)
+LO- Hong Kong
+GR- Sponsor: Hong Kong Jockey Club Charities Trust, Hong Kong; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090720
+AN- 2009-06018-008
+FR- 33
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2009-06018-008&site=ehost-live&scope=site
+
+TI- A study of engagement in neighborhood-based child welfare services.
+PS- Publication Status: Fully Published
+AU- Altman, Julie Cooper
+AF- Altman, Julie Cooper, altman@adelphi.edu, Adelphi University, Garden City, NY, US
+AD- Altman, Julie Cooper, Adelphi University School of Social Work, One South Avenue, Garden City, NY, US, 11530, altman@adelphi.edu
+SO- Research on Social Work Practice
+VI- 18
+IP- 6
+SD- Nov, 2008
+YR- 2008
+PM- Nov, 2008
+PG- 555-564
+PC- 10
+SP- 555
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731507309825
+LA- English
+KP- engagement
+KP- neighborhood-based child welfare services
+KP- knowledge
+KP- parent-worker
+SU- Child Welfare; Knowledge Level; Parents; Welfare Services (Government)
+AB- This article reports the results of a mixed-method study that examined processes and outcomes of parent-worker engagement in child welfare. Knowledge gained from a qualitative exploration of engagement at one neighborhood-based child welfare agency informed the gathering of quantitative data from 74 different parent-worker dyads in this sequential exploratory design. Seven themes instrumental to engagement emerged: (a) clear, collaborative goal setting; (b) hopefulness; (c) parent acknowledgment of their situations; (d) motivation; (e) respect for cultural differences; (f) honest and straightforward communication; and (g) persistent and timely efforts by all. Quantitative analyses yielded little relationship between engagement and either visitation rate or case disposition by 9 months post placement. Although these data provide support for the clinical benefits of working to improve parent-worker engagement in child welfare services, they fail to provide evidence of a relationship between engagement and improved case outcomes. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Child Welfare; Knowledge Level; Parents; Welfare Services (Government)
+MN- Neighborhoods
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Childhood (birth-12 yrs) (100)
+AG- Adulthood (18 yrs & older) (300)
+TM- Working Alliance Inventory
+GR- Sponsor: New York Community Trust, US; Recipients: No recipient indicated
+CF- International Practice Research Symposium, Jul, 2005, School of Social Welfare,  University at Albany,  State University of New York, Albany, NY, US, Portions of this article were previously presented at the aforementioned conference.
+CN- Portions of this article were previously presented at the aforementioned conference.
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090316
+AN- 2008-15156-003
+FR- 51
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2008-15156-003&site=ehost-live&scope=site
+
+TI- Implementing an evidence-based parenting program with adherence in the real world of community practice.
+PS- Publication Status: Fully Published
+AU- Stern, Susan B.
+AU- Alaggia, Ramona
+AU- Watson, Katina
+AU- Morton, Tanya R.
+AF- Stern, Susan B., s.stern@utoronto.ca, University of Toronto, Toronto, ON, Canada
+AF- Alaggia, Ramona, University of Toronto, Toronto, ON, Canada
+AF- Watson, Katina, Child Development Institute, Toronto, ON, Canada
+AF- Morton, Tanya R., University of Toronto, Toronto, ON, Canada
+AD- Stern, Susan B., University of Toronto, Faculty of Social Work, 246 Bloor Street West, Toronto, ON, Canada, M5S 1A1, s.stern@utoronto.ca
+SO- Research on Social Work Practice
+VI- 18
+IP- 6
+SD- Nov, 2008
+YR- 2008
+PM- Nov, 2008
+PG- 543-554
+PC- 12
+SP- 543
+PU- US : Sage Publications
+PN- 12
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731507308999
+LA- English
+KP- evidence-based parenting program
+KP- adherence
+KP- community practice
+KP- prevention
+KP- training
+SU- Communities; Parent Training; Parenting Style; Prevention
+AB- This study examined group leaders' adherence to The Incredible Years Parenting Program's components and collaborative process during a yearlong dissemination in a large multicultural city and universal prevention context. Mixed methods were used to evaluate adherence and develop an understanding of the barriers and facilitators of therapist fidelity. Results suggest that the protocol and collaborative group processes were implemented with a high degree of adherence with the three exceptions of role plays, videotape modeling dosage, and "buddy calls." A number of interconnected barriers with implications for future implementation were identified. Key contributors to adherence included the training and structure of the program, emphasis on accountability and ongoing session monitoring, and important aspects of supervision and group leader qualities. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Communities; Parent Training; Parenting Style; Prevention
+MN- Simulation; Urban Environments
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+TM- Leader Session Checklists
+TM- Leader Rating Scale
+CF- International Practice Research Symposium, Jun, 2005, School of Social Welfare,  University at Albany,  State University of New York, Albany, NY, US, Portions of this paper were previously presented at the aforementioned conference.
+CN- Portions of this paper were previously presented at the aforementioned conference.
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20090316
+AN- 2008-15156-002
+FR- 52
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2008-15156-002&site=ehost-live&scope=site
+
+TI- Evaluating the use of reflective counseling group supervision for military counselors in Taiwan.
+PS- Publication Status: Fully Published
+AU- Der Pan, Peter Jen
+AU- Deng, Liang-Yu F.
+AU- Tsai, Shiou-Ling
+AF- Der Pan, Peter Jen, jender@cycu.edu.tw, Chung Yuan Christian University, Chung-Li, Taiwan
+AF- Deng, Liang-Yu F., Chung Yuan Christian University, Chung-Li, Taiwan
+AF- Tsai, Shiou-Ling, Chung Yuan Christian University, Chung-Li, Taiwan
+AD- Der Pan, Peter Jen, College of Humanities and Education, Chung Yuan Christian University, Chung-Li, Taiwan, jender@cycu.edu.tw
+SO- Research on Social Work Practice
+VI- 18
+IP- 4
+SD- Jul, 2008
+YR- 2008
+PM- Jul, 2008
+PG- 346-355
+PC- 10
+SP- 346
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731507313981
+LA- English
+KP- reflective counseling group supervision
+KP- military counselors
+KP- Taiwan
+SU- Counselors; Group Counseling; Military Psychology; Professional Supervision
+AB- The purpose of this study is to examine the effects of reflective counseling group supervision (RCGS) for military counselors. A convenience sampling method is adopted. Twenty-two military counselors participate in this study. Both qualitative and quantitative research methods are used for collecting and analyzing data. The results support our hypothesis that participants who received the RCGS would show a significant increase in their counseling competences. Four primary categories related to supervisory style, supervisory alliance, self-assessment, and supervising outcomes emerge as prominent and consistent from participants' learning experiences. RCGS can be an effective supervision model for participants. Implications of the findings for group supervision and further research are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Counselors; Group Counseling; Military Psychology; Professional Supervision
+CL- Health & Mental Health Treatment & Prevention (3300)
+CL- Military Psychology (3800)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- Taiwan
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+TM- Counseling Competence Inventory
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20080922
+AN- 2008-08547-010
+FR- 35
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2008-08547-010&site=ehost-live&scope=site
+
+TI- Implementing evidence-based social work practice.
+PS- Publication Status: Fully Published
+AU- Mullen, Edward J.
+AU- Bledsoe, Sarah E.
+AU- Bellamy, Jennifer L.
+AF- Mullen, Edward J., ejm3@columbia.edu, Columbia University School of Social Work, New York, NY, US
+AF- Bledsoe, Sarah E., University of North Carolina School of Social Work, NC, US
+AF- Bellamy, Jennifer L., Washington University at St. Louis, George Warren Brown School of Social Work, St. Louis, MO, US
+AD- Mullen, Edward J., Columbia University School of Social Work, 1225 Amsterdam Ave., New York, NY, US, 10027, ejm3@columbia.edu
+SO- Research on Social Work Practice
+VI- 18
+IP- 4
+SD- Jul, 2008
+YR- 2008
+PM- Jul, 2008
+PG- 325-338
+PC- 14
+SP- 325
+PU- US : Sage Publications
+PN- 14
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731506297827
+LA- English
+KP- evidence-based practice
+KP- social work
+KP- scientific knowledge
+KP- social work intervention
+KP- research
+SU- Evidence Based Practice; Intervention; Knowledge Level; Social Casework
+AB- Recently, social work has been influenced by new forms of practice that hold promise for bringing practice and research together to strengthen the scientific knowledge base supporting social work intervention. The most recent new practice framework is evidence-based practice. However, although evidence-based practice has many qualities that might attract social workers to adopt it, use in practice is limited. Accordingly, attention is being given to determine effective strategies for the dissemination, adoption, and implementation of evidence-based practice. This article examines the implementation literature, describes alternative strategies for implementation of evidence-based practice in social work, describes an implementation study to illustrate concepts discussed, and specifies needed research. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Evidence Based Practice; Intervention; Knowledge Level; Social Casework
+MN- Experimentation
+CL- Community & Social Services (3373)
+PO- Human (10)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+GR- Sponsor: National Institute of Mental Health, US; Grant: 5T32MH014623; Other Details: Training Grant; Recipients: Mullen, Edward J.; Bledsoe, Sarah E.; Bellamy, Jennifer L.
+GR- Sponsor: Columbia University, Willma and Albert Musher Program, US; Recipients: No recipient indicated
+CF- University of Texas School of Social Work National Symposium titled Improving the Teaching of Evidence-based Practice, Oct, 2006, Austin, TX, US, Portions of this article were presented at the aforementioned conference.
+CN- Portions of this article were presented at the aforementioned conference.
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20080922
+AN- 2008-08547-008
+FR- 80
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2008-08547-008&site=ehost-live&scope=site
+
+TI- Propensity score matching strategies for evaluating the success of child and family service programs.
+PS- Publication Status: Fully Published
+AU- Barth, Richard P.
+AU- Guo, Shenyang
+AU- McCrae, Julie S.
+AF- Barth, Richard P., rbarth@ssw.umaryland.edu, University of Maryland, Baltimore, MD, US
+AF- Guo, Shenyang, University of North Carolina, NC, US
+AF- McCrae, Julie S., University of Pittsburgh, Pittsburgh, PA, US
+AD- Barth, Richard P., School of Social Work, University of Maryland, 525 West Redwood Street, Baltimore, MD, US, 21201-1777, rbarth@ssw.umaryland.edu
+SO- Research on Social Work Practice
+VI- 18
+IP- 3
+SD- May, 2008
+YR- 2008
+PM- May, 2008
+PG- 212-222
+PC- 11
+SP- 212
+PU- US : Sage Publications
+PN- 11
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731507307791
+LA- English
+KP- child welfare
+KP- family service programs
+KP- propensity score matching
+KP- treatment success
+KP- social work
+SU- Child Welfare; Family; Social Casework; Treatment Effectiveness Evaluation
+AB- This article presents propensity score matching as a method to implement randomized conditions to analyze service effects using nonexperimental data. Most social work research is challenged to implement randomized clinical trials, whereas administrative and survey data are often available and can provide valuable information about services received under naturalistic conditions. This article discusses the assumptions of this method and the analytic steps involved; and it presents three examples of the approach, demonstrating that it is possible to approximate the conditions of a randomized controlled trial, and when selection bias is reduced, investigators can have more confidence in their findings. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Child Welfare; Family; Social Casework; Treatment Effectiveness Evaluation
+CL- Health & Mental Health Treatment & Prevention (3300)
+PO- Human (10)
+PO- Female (40)
+LO- US
+AG- Childhood (birth-12 yrs) (100)
+AG- School Age (6-12 yrs) (180)
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+TM- Child Behavior Checklist
+TM- Kaufman Brief Intelligence Test
+TM- Posttraumatic Stress Diagnostic Scale
+TM- Social Skills Rating System
+TM- Vineland Adaptive Behavior Scales
+TM- Woodcock-McGrew-Werder Mini-Battery of Achievement
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20080505
+AN- 2008-05059-004
+FR- 33
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2008-05059-004&site=ehost-live&scope=site
+
+TI- Feasibility study of the social enterprise intervention with homeless youth.
+PS- Publication Status: Fully Published
+AU- Ferguson, Kristin M.
+AU- Xie, Bin
+AF- Ferguson, Kristin M., kmfergus@usc.edu, University of Southern California, Los Angeles, CA, US
+AF- Xie, Bin, University of Southern California, Los Angeles, CA, US
+AD- Ferguson, Kristin M., University of Southern California, School of Social Work, 669 West, 34th Street, Los Angeles, CA, US, 90089-0411, kmfergus@usc.edu
+SO- Research on Social Work Practice
+VI- 18
+IP- 1
+SD- Jan, 2008
+YR- 2008
+PM- Jan, 2008
+PG- 5-19
+PC- 15
+SP- 5
+PU- US : Sage Publications
+PN- 15
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731507303535
+LA- English
+KP- social enterprise intervention
+KP- homeless youth
+KP- mental health symptoms
+KP- social support
+KP- health service utilization
+SU- Health Care Utilization; Homeless; Intervention; Mental Health; Social Support
+AB- Objective: To reduce mental health symptoms and high-risk behaviors and increase social support and service utilization among street-living youth, the authors conducted a pilot study to assess the feasibility of the social enterprise intervention (SEI) at a homeless youth agency. Method: Convenience sampling was used to recruit 16 street-living youth from the agency. SEI participants received 7 months of vocational and small business training and service referrals. A comparison sample of 12 agency youth was used. Results: Findings from independent sample t tests demonstrate that SEI participants displayed significant improvements at 9 months in life satisfaction, family contact, peer support, and depressive symptoms. Conclusions: Preliminary findings suggest that the SEI was feasible within the agency setting and associated with higher mental health and social outcomes. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Health Care Utilization; Homeless; Intervention; Mental Health; Social Support
+MN- Symptoms
+CL- Health & Mental Health Services (3370)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+TM- Adult Self-Report (Achenbach)
+TM- Reynolds Depression Screening Inventory
+TM- Rosenberg Self Esteem Scale DOI: 10.1037/t01038-000
+TM- Satisfaction With Life Scale DOI: 10.1037/t01069-000
+GR- Sponsor: USC School of Social Work, Larson Endowment for Innovative Research; Other Details: Pilot study; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Followup Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20080128
+AN- 2007-19924-001
+FR- 42
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2007-19924-001&site=ehost-live&scope=site
+
+TI- Understanding Causes of and Responses to Intimate Partner Violence in a Jewish Orthodox Community: Survivors' and Leaders' Perspectives.
+PS- Publication Status: Fully Published
+AU- Ringel, Shoshana
+AU- Bina, Rena
+AF- Ringel, Shoshana, sringel@ssw.umaryland.edu, University of Maryland, Baltimore, MD, US
+AF- Bina, Rena, University of Maryland, Baltimore, MD, US
+AD- Ringel, Shoshana, School of Social Work, University of Maryland, 525 West Redwood Street, Baltimore, MD, US, 21201-1777, sringel@ssw.umaryland.edu
+SO- Research on Social Work Practice
+VI- 17
+IP- 2
+SD- Mar, 2007
+YR- 2007
+PM- Mar, 2007
+PG- 277-286
+PC- 10
+SP- 277
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731506293079
+LA- English
+KP- intimate partner violence
+KP- Jewish Orthodox community
+KP- survivors' & leaders' perspectives
+KP- religious beliefs
+KP- social attitudes
+SU- Communities; Jews; Partner Abuse; Religious Beliefs
+AB- There has been little research on intimate partner violence (IPV) in faith-based communities. This qualitative study examines social attitudes and religious values in an Ultra-Orthodox Jewish community that affect the incidence of IPV and prevent women survivors from seeking help. Interviews were conducted with 8 Orthodox women and 11 community leaders, and findings include the following: (a) causes of IPV were early marriage, separation of the sexes, and personality characteristics; (b) religious beliefs and social values were barriers to seeking help; and (c) the role of rabbis in education and marital intervention was viewed in markedly different ways by the two sets of respondents. Implications for practice and further research are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Communities; Jews; Partner Abuse; Religious Beliefs
+MN- Faith Healing; Social Values
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Female (40)
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20070226
+AN- 2007-02363-012
+FR- 38
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2007-02363-012&site=ehost-live&scope=site
+
+TI- Youth at Risk for Truancy Detour Into a Faith-Based Education Program: Their Perceptions of the Program and its Impact.
+PS- Publication Status: Fully Published
+AU- Sinha, Jill Witmer
+AF- Sinha, Jill Witmer, jwsinha@sp2.upenn.edu, University of Pennsylvania, Philadelphia, PA, US
+AD- Sinha, Jill Witmer, Program for Religion and Social Polocy Research, School of Social Policy and Practice, University of Pennsylvania, Philadelphia, PA, US, 19104-6214, jwsinha@sp2.upenn.edu
+SO- Research on Social Work Practice
+VI- 17
+IP- 2
+SD- Mar, 2007
+YR- 2007
+PM- Mar, 2007
+PG- 246-257
+PC- 12
+SP- 246
+PU- US : Sage Publications
+PN- 12
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731506296944
+LA- English
+KP- at risk youth
+KP- truancy detour
+KP- faith-based education program
+KP- youth perceptions
+KP- academic underachievement
+KP- minority adolescents
+SU- Adolescent Attitudes; Educational Programs; Religious Practices; Truancy; Faith
+AB- Many minority adolescents in the United States today are at a high risk for truancy, dropout, and academic underachievement. Truancy is related to a host of preceding and subsequent risks such as delinquency and limited vocational outcomes. Using participatory research methods, this federally funded, 10-month study assessed youths' perceptions of a publicly funded, faith-based, alternative education program with 73 minority youth participants who were at risk for truancy. The study assessed whether change occurred in peer dynamics, youths' use of time, and educational aspirations. The program was found to have a positive impact on peer dynamics and the use of both school hours and free time. The program supported or did not hamper educational aspiration. Implications about the impact of alternative education programs for at-risk youth and the faith-based nature of the program are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Adolescent Attitudes; Educational Programs; Religious Practices; Truancy; Faith
+MN- Academic Underachievement; At Risk Populations; Dropouts; Educational Aspirations; Minority Groups
+CL- Educational/Vocational Counseling & Student Services (3580)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+TM- Multidimensional Measure of Religiousness/Spirituality
+GR- Sponsor: US Department of Health and Human Services, Administration for Children and Family, US; Other Details: Compassion Capital Fund for Field Research initiative; Recipients: No recipient indicated
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20070226
+AN- 2007-02363-009
+FR- 46
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2007-02363-009&site=ehost-live&scope=site
+
+TI- Views of Evidence-Based Practice Among Faculty in Master of Social Work Programs: A National Survey.
+PS- Publication Status: Fully Published
+AU- Rubin, Allen
+AU- Parrish, Danielle
+AF- Rubin, Allen, arubin@mail.utexas.edu, University of Texas at Austin, Austin, TX, US
+AF- Parrish, Danielle, University of Texas at Austin, Austin, TX, US
+AD- Rubin, Allen, Bert Kruger Smith Centennial Professor in Social Work, University of Texas at Austin, School of Social Work, 1925 San Jacinto Blvd., Austin, TX, US, 78712-1203, arubin@mail.utexas.edu
+SO- Research on Social Work Practice
+VI- 17
+IP- 1
+SD- Jan, 2007
+YR- 2007
+PM- Jan, 2007
+PG- 110-122
+PC- 13
+SP- 110
+PU- US : Sage Publications
+PN- 13
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731506293059
+LA- English
+KP- evidence based practice
+KP- master of social work programs
+KP- faculty members
+SU- Educational Personnel; Evidence Based Practice; Social Casework; Social Work Education
+AB- Objective: A national online survey assessed the views of 973 faculty members in master of social work programs regarding their receptivity toward, definition of, and views of disparate sources of evidence pertinent to evidence-based practice (EBP) and the teaching of EBP. Method: Due to Internet-related technical difficulties, the response rate could not be precisely determined; however, it was at least 33% and conceivably much higher. Results: Although the large majority (73%) of respondents expressed a favorable view toward EBP, disparities are identified among respondents in both the definition of EBP and views regarding the EBP research hierarchy. Conclusion: Efforts appear to be needed to increase agreement regarding the definition and conceptualization of EBP among educators, with special attention to divergent views regarding what constitutes sufficient evidence to guide practice decisions or to convey that an intervention is evidence-based. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Educational Personnel; Evidence Based Practice; Social Casework; Social Work Education
+CL- Professional Personnel Attitudes & Characteristics (3430)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20061226
+AN- 2006-22943-009
+FR- 44
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2006-22943-009&site=ehost-live&scope=site
+
+TI- Empowering High-Risk Families of Children With Disabilities.
+PS- Publication Status: Fully Published
+AU- Farber, Michaela L. Z.
+AU- Maharaj, Ravita
+AF- Farber, Michaela L. Z., farber@cua.edu, Catholic University of America, Washington, DC, US
+AF- Maharaj, Ravita, Catholic University of America, Washington, DC, US
+AD- Farber, Michaela L. Z., National Catholic School of Social Service, Catholic University of America, Shahan Hall #125, 620 Michigan Ave., NE, Washington, DC, US, 20064, farber@cua.edu
+SO- Research on Social Work Practice
+VI- 15
+IP- 6
+SD- Nov, 2005
+YR- 2005
+PM- Nov, 2005
+PG- 501-515
+PC- 15
+SP- 501
+PU- US : Sage Publications
+PN- 15
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731505276412
+LA- English
+KP- high risk families
+KP- disabled children
+KP- family empowerment
+KP- group-based parent education curriculum
+KP- parenting needs
+KP- African Americans
+KP- developmental delays
+SU- At Risk Populations; Curriculum; Developmental Disabilities; Empowerment; Parent Training
+AB- Objective: This study evaluated an adapted version of a group-based manualized parent education curriculum applied to meet the parenting needs of high-risk African American families rearing children with developmental delays. Methodology: Three successive cohorts were assessed for statistical equivalence and evaluated using a one group pre- and postdesign followed by a booster session. Dependent variables used self-reports of caregivers' empowerment, emotional outlook, parent-child interaction, and community involvement. The analyses included paired t tests and repeated measures. Results: All outcomes evidenced statistically significant and practically meaningful positive trends subject to design limitations. Conclusions: The adaptations met the program needs of targeted participants. Future recommendations are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- At Risk Populations; Curriculum; Developmental Disabilities; Empowerment; Parent Training
+MN- Blacks; Delayed Development; Family
+CL- Developmental Disorders & Autism (3250)
+CL- Health & Mental Health Treatment & Prevention (3300)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Childhood (birth-12 yrs) (100)
+AG- Adulthood (18 yrs & older) (300)
+TM- Parent Ability Index
+TM- Parent Child Interaction Activity Index
+TM- Support Functions Scale
+TM- Parent Child Interaction Questionnaire
+TM- Family Empowerment Scale DOI: 10.1037/t07132-000
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20051107
+CD- 20120917
+AN- 2005-12558-009
+FR- 53
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2005-12558-009&site=ehost-live&scope=site
+
+TI- Resident Perceptions of Housing, Neighborhood, and Economic Conditions After Relocation From Public Housing Undergoing HOPE VI Redevelopment.
+PS- Publication Status: Fully Published
+AU- Brooks, Fred
+AU- Zugazaga, Carole
+AU- Wolk, James
+AU- Adams, Mary Anne
+AF- Brooks, Fred, Fbrooks2@gsu.edu, Georgia State University, Atlanta, GA, US
+AF- Zugazaga, Carole, Auburn University, AL, US
+AF- Wolk, James, Georgia State University, Atlanta, GA, US
+AF- Adams, Mary Anne, Georgia State University, Atlanta, GA, US
+AD- Brooks, Fred, School of Social Work, Georgia State University, P.O. Box 3995, Atlanta, GA, US, 30302-3995, Fbrooks2@gsu.edu
+SO- Research on Social Work Practice
+VI- 15
+IP- 6
+SD- Nov, 2005
+YR- 2005
+PM- Nov, 2005
+PG- 481-490
+PC- 10
+SP- 481
+PU- US : Sage Publications
+PN- 10
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731505276038
+LA- English
+KP- resident perceptions
+KP- housing
+KP- well being
+KP- public housing complex
+KP- neighborhood
+KP- economic conditions
+KP- relocation
+KP- HOPE VI redevelopment
+SU- Attitudes; Economics; Housing; Neighborhoods; Well Being
+AB- Objective: This study evaluates participant perception of neighborhood, economic, and housing well-being of residents 4 and 5 years after forced relocation from a public housing complex in Atlanta, Georgia. Method: The study used a mixed-method, posttest-only design with two data points. Focus groups with 93 participants combined qualitative, open-ended questions with quantitative measures. Results: Four years after relocation, residents living in homes/apartments found with Section 8 housing vouchers were faring better than residents who moved to other public housing projects. A majority of voucher users believed their house, neighborhood, and overall global living situation had improved since relocation. In the year between the first and second wave of focus groups, 40% of voucher users had moved to a new house/apartment. Moving was associated with residents perceiving their situations improving in many categories. Implications: Our findings suggest HOPE VI developments are more likely to accomplish their objectives if the current administration continues full funding of the voucher program rather than implements the cutbacks it is currently proposing. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Attitudes; Economics; Housing; Neighborhoods; Well Being
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20051107
+AN- 2005-12558-007
+FR- 18
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2005-12558-007&site=ehost-live&scope=site
+
+TI- Reducing the Digital Divide for Children in Foster Care: First-Year Evaluation of the Building Skills-Building Futures Program.
+PS- Publication Status: Fully Published
+AU- Finn, Jerry
+AU- Kerman, Ben
+AU- LeCornec, Juliette
+AF- Finn, Jerry, finnj@u.washington.edu, University of Washington, Tacoma, WA, US
+AF- Kerman, Ben, Casey Family Services, US
+AF- LeCornec, Juliette, Casey Family Services, US
+AD- Finn, Jerry, University of Washington, Social Work Department, Tacoma, WA, US, 98402-3100, finnj@u.washington.edu
+SO- Research on Social Work Practice
+VI- 15
+IP- 6
+SD- Nov, 2005
+YR- 2005
+PM- Nov, 2005
+PG- 470-480
+PC- 11
+SP- 470
+PU- US : Sage Publications
+PN- 11
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731505278026
+LA- English
+KP- digital divide
+KP- foster care children
+KP- building skills building futures program
+KP- program evaluation
+KP- information technology
+KP- foster care environment
+SU- Digital Divide; Foster Care; Foster Children; Program Evaluation; Technology
+AB- Objective: This article describes the first-year evaluation outcomes of a program developed to increase information technology access and skills among foster children and families within the context of a long-term foster care environment. Method: A sample of 34 foster families who received computers, Internet connection, and supportive services was compared with 30 foster families not in the program using survey methods and a posttest only design. Results: The results indicated after a year in the program, foster families increased their frequency of computer use, confidence in using computers and the Internet, and frequency of e-mail with social workers. Parents and foster children perceived the program to be useful in improving children's technology skills, homework, grades, and interest in technology-related careers. Conclusion: The program appears to be successful in spite of lack of full implementation of the program model. Implications for future digital divide programs are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Digital Divide; Foster Care; Foster Children; Program Evaluation; Technology
+MN- Information Technology
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+TM- Computer Confidence Scale
+TM- Internet Confidence Scale
+TM- Information Technology Questionnaire
+TM- Overall Program Improvement Scale
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20051107
+AN- 2005-12558-006
+FR- 24
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2005-12558-006&site=ehost-live&scope=site
+
+TI- The African American Adolescent Respect Scale: A Measure of a Prosocial Attitude.
+PS- Publication Status: Fully Published
+AU- Leary, Joy D.
+AU- Brennan, Eileen M.
+AU- Briggs, Harold E.
+AF- Leary, Joy D., learyj@pdx.edu, Portland State University, Portland, OR, US
+AF- Brennan, Eileen M., Portland State University, Portland, OR, US
+AF- Briggs, Harold E., Portland State University, Portland, OR, US
+AD- Leary, Joy D., Graduate School of Social Work, Portland State University, Portland, OR, US, 97207-0751, learyj@pdx.edu
+SO- Research on Social Work Practice
+VI- 15
+IP- 6
+SD- Nov, 2005
+YR- 2005
+PM- Nov, 2005
+PG- 462-469
+PC- 8
+SP- 462
+PU- US : Sage Publications
+PN- 8
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731505277717
+LA- English
+KP- African American Adolescent Respect Scale
+KP- prosocial attitude
+KP- validity
+KP- psychological wellness
+KP- social identity
+KP- scale development
+KP- psychometrics
+SU- Prosocial Behavior; Psychometrics; Rating Scales; Test Validity
+AB- Objectives: The respect that African American youth feel promotes psychological wellness and social identity; conversely, a lack of respect compromises their identities and is viewed as a threat to safety. This article describes the development, psychometric analysis, and validation of the African American Respect Scale, a 20-item instrument measuring prosocial attitudes held by male adolescents. Method: The scale was administered to 200 African American male youth age 14 to 18 years; 100 were incarcerated in juvenile corrections facilities, 100 resided in the community. Results: After acceptable reliability was established, factor analysis revealed three principal components labeled societal, family, and peer subscales. The subscales correlated with racial socialization and predicted the use of violence. Nonincarcerated youth scored significantly higher on all three subscales than incarcerated youth. Conclusions: Suggestions for social work practice with African American youth include assessing their attitudes toward respect, and assisting them to handle disrespect without resorting to violence. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Prosocial Behavior; Psychometrics; Rating Scales; Test Validity
+MN- Adolescent Development; Social Identity; Well Being
+CL- Developmental Scales & Schedules (2222)
+CL- Psychosocial & Personality Development (2840)
+PO- Human (10)
+PO- Male (30)
+LO- US
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+TM- African American Adolescent Respect Scale
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20051107
+AN- 2005-12558-005
+FR- 25
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2005-12558-005&site=ehost-live&scope=site
+
+TI- Reintegrating Children into the System of Substitute Care: Evaluation of the Exceptional Care Pilot Project.
+PS- Publication Status: Fully Published
+AU- Armour, Marilyn P.
+AU- Schwab, James
+AF- Armour, Marilyn P., University of Texas at Austin, Austin, TX, US
+AF- Schwab, James, University of Texas at Austin, Austin, TX, US
+SO- Research on Social Work Practice
+VI- 15
+IP- 5
+SD- Sep, 2005
+YR- 2005
+PM- Sep, 2005
+PG- 404-417
+PC- 14
+SP- 404
+PU- US : Sage Publications
+PN- 14
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731505276650
+LA- English
+KP- substitute care
+KP- child welfare
+KP- residential treatment
+SU- Child Welfare; Residential Care Institutions
+AB- This pilot study presents findings from a project to evaluate a program initiated by a state child welfare agency for its most hard-to-serve youth (N = 46). This emerging population is so dangerous and unmanageable that they are difficult, if not impossible, to place or treat. One state responded to this challenge by providing exceptional care through two residential treatment facilities who followed a no-eject, no-reject policy. Outcome data show that 85% of children had reductions in state-designated level of care and movement to less restrictive treatment placements. Differences in Children's Global Assessment Scale scores for Cohort 1 were statistically significant (t = -4.947, df = 24, p &lt; .001). Staff assessment interviews delineated target behaviors, putative causes, mechanisms for change, and outcomes for children who successfully completed the program. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Child Welfare; Residential Care Institutions
+CL- Community & Social Services (3373)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+PO- Inpatient (50)
+LO- US
+AG- Childhood (birth-12 yrs) (100)
+AG- School Age (6-12 yrs) (180)
+AG- Adolescence (13-17 yrs) (200)
+AG- Adulthood (18 yrs & older) (300)
+TM- Children's Global Assessment Scale
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20050822
+AN- 2005-08684-008
+FR- 41
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2005-08684-008&site=ehost-live&scope=site
+
+TI- Child Welfare and the Courts: A Statewide Study With Implications for Professional Development, Practice, and Change.
+PS- Publication Status: Fully Published
+AU- Ellett, Alberta J.
+AU- Steib, Sue D.
+AF- Ellett, Alberta J., aellett@uga.edu, University of Georgia, Athens, GA, US
+AF- Steib, Sue D., Child Welfare League of America, US
+AD- Ellett, Alberta J., School of Social Work, University of Georgia, Athens, GA, US, 30602, aellett@uga.edu
+SO- Research on Social Work Practice
+VI- 15
+IP- 5
+SD- Sep, 2005
+YR- 2005
+PM- Sep, 2005
+PG- 339-352
+PC- 14
+SP- 339
+PU- US : Sage Publications
+PN- 14
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731505276680
+LA- English
+KP- child welfare
+KP- courts
+KP- professional development
+KP- court effectiveness
+SU- Adjudication; Child Welfare; Professional Development
+AB- Much anecdotal information exists about problems in courts adjudicating child welfare (CW) cases. However, little empirical research across courts, court divisions, and CW cases exists. Method: This study reports the results of a two-stage study of courts and the CW system. Stage 1 used direct, systematic court observations to identify critical features of effective and problematic courts. The second stage used interviews with judges, CW agency attorneys, and staff to identify factors that facilitate or impede timely safety and permanency decisions for children. Results: The results well document the need for making changes in the functioning of courts in CW cases. Implications for the continuing professional development of CW staff, improving the effectiveness of courts, CW practice, and future research are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Adjudication; Child Welfare; Professional Development
+CL- Community & Social Services (3373)
+CL- Civil Rights & Civil Law (4210)
+PO- Human (10)
+AG- Childhood (birth-12 yrs) (100)
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Electronic
+RD- 20050822
+AN- 2005-08684-003
+FR- 20
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2005-08684-003&site=ehost-live&scope=site
+
+TI- Using a Collaboratory Model to Translate Social Work Research Into Practice and Policy.
+PS- Publication Status: Fully Published
+AU- Allen-Meares, Paula
+AU- Hudgins, Cynthia A.
+AU- Engberg, Mark E.
+AU- Lessnau, Barbara
+AF- Allen-Meares, Paula, University of Michigan, Ann Arbor, MI, US
+AF- Hudgins, Cynthia A., hudgins@umich.edu, University of Michigan, Ann Arbor, MI, US
+AF- Engberg, Mark E., University of Michigan, Ann Arbor, MI, US
+AF- Lessnau, Barbara, University of Michigan, Ann Arbor, MI, US
+AD- Hudgins, Cynthia A., Global Program on Youth, University of Michigan, School of Social Work, 1080 South University, SSWB 3743, Ann Arbor, MI, US, 48109-1106, hudgins@umich.edu
+SO- Research on Social Work Practice
+VI- 15
+IP- 1
+SD- Jan, 2005
+YR- 2005
+PM- Jan, 2005
+PG- 29-40
+PC- 12
+SP- 29
+PU- US : Sage Publications
+PN- 12
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731504272345
+LA- English
+KP- social work research
+KP- participatory research
+KP- collaborative method
+KP- technological solutions
+SU- Methodology; Qualitative Research; Social Casework; Technology
+AB- Objective: The purpose of this article was to examine how an initiative of 10 collaborative projects focused on children and youth have applied principles of participatory research, collaboratories, and technological solutions. Method: The study analyzed multiple forms of qualitative data, including semiannual formative evaluations and semistructured interviews of participating partners. Results: Both the collaborative method and the infusion of technology were central to the functioning of collaboratory projects and, ultimately, the translation from research to practice and policy. The community-based participatory nature of the research projects resulted in applicable findings that were credible with people affected by the issues studied. Conclusions: The present study suggests that when there is steadfast commitment on the pan of a diverse group of partners, even simple applications of technology can make a difference. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Methodology; Qualitative Research; Social Casework; Technology
+CL- Research Methods & Experimental Design (2260)
+CL- Health & Mental Health Services (3370)
+PO- Human (10)
+AG- Childhood (birth-12 yrs) (100)
+AG- Adolescence (13-17 yrs) (200)
+CF- Annual Meeting of the Society for Social Work and Research, Jan, 2003, Washington, DC, US, An earlier version of this article was presented at the aformentioned conference.
+CN- An earlier version of this article was presented at the aformentioned conference.
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20050118
+AN- 2004-21929-004
+FR- 21
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2004-21929-004&site=ehost-live&scope=site
+
+TI- Sexual Abuse Survivors' Perceptions of the Effectiveness of EMDR and Eclectic Therapy.
+PS- Publication Status: Fully Published
+AU- Edmond, Tonya
+AU- Sloan, Lacey
+AU- McCarty, Dawn
+AF- Edmond, Tonya, Washington University in St. Louis, St. Louis, MO, US
+AF- Sloan, Lacey, University of Southern Maine, ME, US
+AF- McCarty, Dawn, Lamar University, Beaumont, TX, US
+SO- Research on Social Work Practice
+VI- 14
+IP- 4
+SD- Jul, 2004
+YR- 2004
+PM- Jul, 2004
+PG- 259-272
+PC- 14
+SP- 259
+PU- US : Sage Publications
+PN- 14
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731504265830
+LA- English
+KP- childhood sexual abuse
+KP- adult female survivors
+KP- treatment effectiveness perceptions
+KP- trauma symptoms
+KP- eye movement desensitization & reprocessing
+KP- eclectic therapy
+SU- Client Attitudes; Eclectic Psychotherapy; Eye Movement Desensitization Therapy; Psychotherapeutic Outcomes; Sexual Abuse
+AB- This article examines survivor perspectives of the effectiveness of two different treatments for trauma symptoms among adult female survivors of childhood sexual abuse--Eye movement Desensitization and Reprocessing (EMDR) and eclectic therapy. Method: Qualitative interviews obtained in the context of a mixed-methods study were conducted with 38 adult female survivors of childhood sexual abuse. Results: Two major differences in outcomes between the two treatment approaches were observed. There were considerable distinctions between the two treatment groups in terms of the importance and effect of the client-therapist relationship, and in terms of the depth of change reportedly caused by the different therapies. Conclusions: Survivors' narratives indicate that EMDR produces greater trauma resolution, while within eclectic therapy, survivors more highly value their relationship with their therapist, through whom they learn effective coping strategies. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Client Attitudes; Eclectic Psychotherapy; Eye Movement Desensitization Therapy; Psychotherapeutic Outcomes; Sexual Abuse
+MN- Child Abuse; Emotional Trauma; Psychotherapeutic Processes; Survivors; Symptoms
+CL- Psychotherapy & Psychotherapeutic Counseling (3310)
+PO- Human (10)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+TM- Impact of Events Scale
+TM- Belief Inventory
+TM- Subjective Units of Disturbance
+TM- Validity of Cognition
+TM- State Trait Anxiety Inventory
+TM- Beck Depression Inventory DOI: 10.1037/t00741-000
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040927
+AN- 2004-15226-004
+FR- 40
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2004-15226-004&site=ehost-live&scope=site
+
+TI- Reliability and Validity of the Transracial Adoption Parenting Scale.
+PS- Publication Status: Fully Published
+AU- Massatti, Richard R.
+AU- Vonk, M. Elizabeth
+AU- Gregoire, Thomas K.
+AF- Massatti, Richard R., Ohio State University, OH, US
+AF- Vonk, M. Elizabeth, bvonk@uga.edu, School of Social Work, University of Georgia, Athens, GA, US
+AF- Gregoire, Thomas K., Ohio State University, OH, US
+AD- Vonk, M. Elizabeth, School of Social Work, University of Georgia, Athens, GA, US, 30602, bvonk@uga.edu
+SO- Research on Social Work Practice
+VI- 14
+IP- 1
+SD- Jan, 2004
+YR- 2004
+PM- Jan, 2004
+PG- 43-50
+PC- 8
+SP- 43
+PU- US : Sage Publications
+PN- 8
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731503257807
+LA- English
+KP- Transracial Adoption Parenting Scale
+KP- scale validity
+KP- transracial adoptive parents
+KP- scale reliability
+SU- Adoptive Parents; Interracial Adoption; Parental Characteristics; Racial and Ethnic Attitudes; Test Reliability
+AB- The present study provides information on the reliability and validity of the Transracial Adoption Parenting Scale (TAPS), a multidimensional 36-item Likert-type scale that measures cultural competence among transracial adoptive (TRA) parents. The TAPS was theoretically developed and refined through feedback from experts in TRA adoption. A cross-sectional survey design was used with a national nonprobability sample of 1,411 TRA parents. Each parent completed the 53-item TAPS and three other instruments with which to examine criterion and construct validity. After a preliminary factor analysis of the 53-item TAPS, the authors found that 36 items were retained in six factors. The 36-item TAPS had excellent reliability (Cronbach's alpha = 0.91), concurrent and discriminant validity were supported. Conclusion: Findings suggest that the TAPS holds promise of being a psychometrically sound instrument with which to measure cultural competence among TRA parents. Further investigation is warranted. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Adoptive Parents; Interracial Adoption; Parental Characteristics; Racial and Ethnic Attitudes; Test Reliability
+MN- Test Validity
+CL- Tests & Testing (2220)
+CL- Marriage & Family (2950)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+AG- Aged (65 yrs & older) (380)
+CF- Society for Social Work Research conference, Feb, 2002, San Diego, CA, US, An earlier version of this article was presented at the aforementioned conference.
+CN- An earlier version of this article was presented at the aforementioned conference.
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040705
+AN- 2004-10067-005
+FR- 10
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2004-10067-005&site=ehost-live&scope=site
+
+TI- Development and Validation of the Secondary Traumatic Stress Scale.
+PS- Publication Status: Fully Published
+AU- Bride, Brian E.
+AU- Robinson, Margaret M.
+AU- Yegidis, Bonnie
+AU- Figley, Charles R.
+AF- Bride, Brian E., University of Tennessee, TN, US
+AF- Robinson, Margaret M., University of Georgia, Athens, GA, US
+AF- Yegidis, Bonnie, University of Georgia, Athens, GA, US
+AF- Figley, Charles R., Florida State University, Tallahassee, FL, US
+SO- Research on Social Work Practice
+VI- 14
+IP- 1
+SD- Jan, 2004
+YR- 2004
+PM- Jan, 2004
+PG- 27-35
+PC- 9
+SP- 27
+PU- US : Sage Publications
+PN- 9
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731503254106
+LA- English
+KP- secondary traumatic stress
+KP- secondary traumatic stress scale
+KP- validation
+KP- scale development
+SU- Emotional Trauma; Stress; Test Validity
+AB- Objective: To describe the development and validation of the Secondary Traumatic Stress Scale (STSS), a 17-item instrument designed to measure intrusion, avoidance, and arousal symptoms associated with indirect exposure to traumatic events via one's professional relationships with traumatized clients. Method: A sample of 287 licensed social workers completed a mailed survey containing the STSS and other relevant survey items. Results: Evidence was found for reliability, convergent and discriminant validity, and factorial validity. Conclusions: The STSS fills a need for reliable and valid instruments specifically designed to measure the negative effects of social work practice with traumatized populations. The instrument may be used to undertake empirical investigation into the prevention and amelioration of secondary traumatic stress among social work practitioners. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Emotional Trauma; Stress; Test Validity
+CL- Personality Scales & Inventories (2223)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Qualitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040705
+AN- 2004-10067-003
+FR- 51
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2004-10067-003&site=ehost-live&scope=site
+
+TI- Development of the Alcohol and Other Drug Self-Efficacy Scale.
+PS- Publication Status: Fully Published
+AU- Kranz, Katherine M.
+AF- Kranz, Katherine M., KSNAP@aol.com, School of Social Work, Boston College, Chestnut Hill, MA, US
+AD- Kranz, Katherine M., 3657 Post Road, Warwick, RI, US, 02886, KSNAP@aol.com
+SO- Research on Social Work Practice
+VI- 13
+IP- 6
+SD- Nov, 2003
+YR- 2003
+PM- Nov, 2003
+PG- 724-741
+PC- 18
+SP- 724
+PU- US : Sage Publications
+PN- 18
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731503254105
+LA- English
+KP- Alcohol and Other Drug Self-Efficacy Scale
+KP- substance abuse
+KP- drug abuse
+SU- Alcohol Abuse; Drug Abuse; Self Efficacy
+AB- Objective: This article reports the initial development of the Alcohol and Other Drug Self-Efficacy Scale (AODSES). Method: The scale instrument is designed to measure social workers 'perceived self-efficacy of their substance abuse knowledge and skills with MSW practitioners (N = 399). Results: Factor analysis revealed six subscale factors in the initial scale development composed of 43 items, accounting for 76% of the variance with excellent internal reliabilities. The six subgroup factors were moderately correlated. Conclusions: Given the reliability and validity of the scale, it may be useful in agency settings to evaluate and measure social workers' confidence in treating clients who have alcohol and other drug problems. Replication of the study is a necessary next step with another group of social workers for further external and internal validation. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Alcohol Abuse; Drug Abuse; Self Efficacy
+CL- Personality Scales & Inventories (2223)
+CL- Substance Abuse & Addiction (3233)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+AG- Aged (65 yrs & older) (380)
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040120
+AN- 2003-08874-003
+FR- 44
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2003-08874-003&site=ehost-live&scope=site
+
+TI- Investigating the Differential Effectiveness of a Batterer Treatment Program on Outcomes for African American and Caucasian Batterers.
+PS- Publication Status: Fully Published
+AU- Buttell, Frederick P.
+AU- Pike, Cathy K.
+AF- Buttell, Frederick P., buttell@tulane.edu, School of Social Work, Tulane University, New Orleans, LA, US
+AF- Pike, Cathy K., Indiana University, Indianapolis, IN, US
+AD- Buttell, Frederick P., School of Social Work, Tulane University, 6823 St. Charles Avenue, New Orleans, LA, US, 70118-5672, buttell@tulane.edu
+SO- Research on Social Work Practice
+VI- 13
+IP- 6
+SD- Nov, 2003
+YR- 2003
+PM- Nov, 2003
+PG- 675-692
+PC- 18
+SP- 675
+PU- US : Sage Publications
+PN- 18
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731503254055
+LA- English
+KP- African American batterer
+KP- Caucasian batterers
+KP- batterer intervention program
+KP- psychological variables
+SU- Blacks; Physical Abuse; Psychodynamics; Whites
+AB- Objective: This study (a) evaluated a batterer intervention program (BIP) by investigating changes in psychological variables (i.e., truthfulness, violence, lethality, control, alcohol use, drug use, and stress-coping abilities) between pretreatment and posttreatment assessments in a sample of court-mandated batterers and (b) investigated the differential effectiveness of this same BIP for African American and Caucasian batterers. Method: The study employed a one-group pretest/posttest design, with 12-monthfollow-up data, to investigate changes in Domestic Violence Inventory (DVI) scores among 91 men, 57% African American, court ordered into a BIP. Results: Analysis indicated that (a) court-ordered batterers demonstrate significant changes, in the desired direction, on psychological variables related to domestic violence, as a result of participation in a court-mandated BIP and (b) there was no significant difference in changes on these psychological variables between African American and Caucasian batterers. Conclusion: Implications of the findings for enhancing intervention efforts with court-ordered batterers were discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Blacks; Physical Abuse; Psychodynamics; Whites
+CL- Tests & Testing (2220)
+CL- Behavior Disorders & Antisocial Behavior (3230)
+PO- Human (10)
+PO- Male (30)
+LO- US
+AG- Adulthood (18 yrs & older) (300)
+AG- Young Adulthood (18-29 yrs) (320)
+AG- Thirties (30-39 yrs) (340)
+AG- Middle Age (40-64 yrs) (360)
+TM- Domestic Violence Inventory
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040120
+AN- 2003-08874-001
+FR- 23
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2003-08874-001&site=ehost-live&scope=site
+
+TI- Chinese people's explanations of poverty: The Perceived Causes of Poverty Scale.
+PS- Publication Status: Fully Published
+AU- Shek, Daniel T. L.
+AF- Shek, Daniel T. L., DANIELSHEK@CUHK.EDU.HK, Department of Social Work, Chinese University of Hong Kong, Shatin, Hong Kong
+AD- Shek, Daniel T. L., Department of Social Work, Chinese University of Hong Kong, Shatin, Hong Kong, DANIELSHEK@CUHK.EDU.HK
+SO- Research on Social Work Practice
+VI- 13
+IP- 5
+SD- Sep, 2003
+YR- 2003
+PM- Sep, 2003
+PG- 622-640
+PC- 19
+SP- 622
+PU- US : Sage Publications
+PN- 19
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731503253376
+LA- English
+KP- poverty
+KP- poverty scale
+KP- Chinese Perceived Causes of Poverty Scale
+SU- Adult Attitudes; Attitude Measures; Epidemiology; Poverty
+AB- Objective: Existing studies of lay explanations of poverty in the social work literature are plagued with methodological problems. The psychometric properties of the 13-item Chinese Perceived Causes of Poverty Scale (CPCPS), which assessed four categories of explanations of poverty, were examined. Method: Chinese parents and their adolescent children from 229 families experiencing economic hardship were asked to respond to the CPCPS. Results: Results consistently showed that four factors were abstracted from the scale: Personal Problems, Exploitation, Lack of Opportunity, and Fate. The four related subscales were also found to be internally consistent, and there was some support for their construct validity. Conclusions: The present study suggests that the CPCPS possesses sound psychometric properties. The findings also point out the importance of empirically demonstrating the existence of measures assessing different constructs when social work practitioners and researchers examine lay explanations of poverty. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Adult Attitudes; Attitude Measures; Epidemiology; Poverty
+MN- Rating Scales
+CL- Tests & Testing (2220)
+CL- Social Structure & Organization (2910)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+LO- China
+AG- Adulthood (18 yrs & older) (300)
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040705
+AN- 2003-99890-005
+FR- 45
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2003-99890-005&site=ehost-live&scope=site
+
+TI- The efficacy of an integrated group treatment program for depressed assisted living residents.
+PS- Publication Status: Fully Published
+AU- Cummings, Sherry M.
+AF- Cummings, Sherry M., scumming@utk.edu, University of Tennessee, College of Social Work, Nashville, TN, US
+AD- Cummings, Sherry M., University of Tennessee, College of Social Work, 193-E Polk Avenue, Nashville, TN, US, 37210, scumming@utk.edu
+SO- Research on Social Work Practice
+VI- 13
+IP- 5
+SD- Sep, 2003
+YR- 2003
+PM- Sep, 2003
+PG- 608-621
+PC- 14
+SP- 608
+PU- US : Sage Publications
+PN- 14
+SN- 1049-7315, Print
+SN- 1552-7581, Electronic
+DO- 10.1177/1049731503253645
+LA- English
+KP- group treatment program
+KP- psychological well-being
+KP- depression
+KP- assisted living residents
+SU- Assisted Living; Major Depression; Treatment; Well Being
+AB- In response to the rapid increase of the elderly population, assisted living facilities have quickly developed as a housing alternative for elders who are no longer able to live alone in the community but do not yet need nursing home care. Research suggests that whereas many assisted living residents experience depression, few receive needed mental health services. Objective: Examine the effectiveness of a group treatment program in promoting the psychological well-being of depressed assisted living elders. Method: Seventeen elders participated in 10 group therapy sessions that combined remotivation and supportive therapy techniques. Pre- and posttest measures and a program satisfaction survey were administered by research assistants. Results: Following the conclusion of the twice weekly sessions, participants experienced a significant decrease in depressive symptoms and a significant increase in life satisfaction and perceived social support. Conclusion: The utility and efficacy of the integrated group treatment model is suggested by study findings. Further research is warranted. (PsycINFO Database Record (c) 2012 APA, all rights reserved) (journal abstract)
+MJ- Assisted Living; Major Depression; Treatment; Well Being
+CL- Group & Family Therapy (3313)
+PO- Human (10)
+PO- Male (30)
+PO- Female (40)
+AG- Adulthood (18 yrs & older) (300)
+AG- Aged (65 yrs & older) (380)
+AG- Very Old (85 yrs & older) (390)
+TM- Geriatric Depression Scale DOI: 10.1037/t00930-000
+MD- Empirical Study
+MD- Qualitative Study
+MD- Quantitative Study
+PT- Journal
+PT- Peer Reviewed Journal
+AT- Journal Article
+MT- Print
+RD- 20040705
+AN- 2003-99890-004
+FR- 43
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2003-99890-004&site=ehost-live&scope=site

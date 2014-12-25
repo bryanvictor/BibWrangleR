@@ -1,14 +1,21 @@
+
+#_______________WORKED EXAMPLE OVERVIEW____________________
+
 rm(list=ls())
 
-#Load the user-defined functions
-source("/Users/beperron/Git/BibWrangleR/functions/psychInfoWrangleR.R")
+Load the user-defined functions
+source("/Users/beperron/Git/BibWrangleR/functions/piWrangleR.R")
 source("/Users/beperron/Git/BibWrangleR/functions/packages.R")
 source("/Users/beperron/Git/BibWrangleR/functions/wosWrangleR.R")
+source("/Users/beperron/Git/BibWrangleR/functions/pi.wos.WrangleR.R")
 
+#setwd("~/Git/BibWrangleR/Files2Process")
+
+#___________________
 my.path <- "/Users/beperron/Git/BibWrangleR/Files2Process"
 
 #Parse the ebsco data
-ebsco.data <- psychInfoBWR.f(csv=TRUE, path=my.path)
+ebsco.data <- piBWR.f(csv=TRUE, path=my.path)
 
 #Parse the wos data
 wos.data <- wosBWR.f(csv=TRUE, path=my.path)
