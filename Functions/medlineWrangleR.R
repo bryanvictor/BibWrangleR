@@ -1,16 +1,16 @@
-psychInfoBWR.f <- function(csv = FALSE, path){
+piBWR.f <- function(csv = FALSE, path){
 
 #______________Install and Load Packages
 
     packages.f()
 
 #______________Read EBSCO txt file _________________
-
+path <- "/Users/beperron/Desktop/ml"
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
     dat <- lapply(temp, readLines)
 
-    attributes <- unlist(lapply(dat, function(x) stri_sub(x, 1,2)))
+    attributes <- unlist(lapply(dat, function(x) stri_sub(x, 1,4)))
 
     # Add blank row to end of the file
     attributes[length(attributes)+1] <- ""
@@ -77,10 +77,10 @@ psychInfoBWR.f <- function(csv = FALSE, path){
             mutate(articleID = c(1:nrow(ebsco.titles))) %>%
             select(articleID, short.title)
 
-    ebsco.titles <<- ebsco.titles
+    pi.titles <<- ebsco.titles
 
-    ebsco.df <<- DF
-if(csv == TRUE){write.csv(ebsco.df, "ebsco.csv")}
+    pi.df <<- DF
+if(csv == TRUE){write.csv(pi.df, "pi.csv")}
 cat("Wrangling is complete.")
 if(csv == TRUE){cat("  The *.csv file can be found in your working directory.")}
 

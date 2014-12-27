@@ -2,7 +2,7 @@ packages.f <- function(){
 
 
 #_________Install and Load Required Packages _____________
-pkgs <- c("stringi", "stringr", "dplyr", "gdata", "plyr")
+pkgs <- c("stringi", "stringr", "dplyr", "gdata")
 pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
 if (length(pkgs_miss) > 0) {
     install.packages(pkgs_miss)

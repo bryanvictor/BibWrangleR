@@ -17,7 +17,7 @@ piBWR.f <- function(csv = FALSE, path){
 
     # Set up indexing proceduring with a START and END
     #Blank line represents the end of the record
-    attributes <- ifelse(attributes == "", "END", attributes)
+    attributes <- ifelse(attributes == "UR", "END", attributes)
 
     # Title represents start of the Index
     attributes <- ifelse(attributes == "TI", "START", attributes)
@@ -40,7 +40,8 @@ piBWR.f <- function(csv = FALSE, path){
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
     DF$attributes <- ifelse(DF$attributes == "START", "TI", DF$attributes)
-    DF <- filter(DF, attributes != "END")
+
+#DF <- filter(DF, attributes != "END")
 
     # Extract tags of interest
     DF$record <- sub("^\\s+|\\s+$", "", DF$record)
