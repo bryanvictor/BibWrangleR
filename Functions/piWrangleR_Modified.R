@@ -15,8 +15,6 @@ piBWR.f <- function(csv = FALSE, path){
 
     record.df <- data.frame(record)
     DF <- cbind(attributes.df, record.df)
-
-   # for(i in 1:length(START)){DF$articleID[START[i]:END[i]] <- i}
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
 
@@ -25,17 +23,13 @@ piBWR.f <- function(csv = FALSE, path){
 #                       REMOVE DUPLICATE TI ENTRIES
 #_______________________________________________________________________________
 
-# Identify boundaries of each record -- starting with TI and ending with UI
-DF <- mutate(DF, attributes = ifelse(attributes == "TI", "START", attributes),
-                 attributes = ifelse(attributes == "UR", "END", attributes)
-             )
+# Identify boundaries of each record -- starting with TI
 
 DF$index <- 1:nrow(DF)
+DF.temp <- filter(DF, attributes == "TI")
 
-DF.temp <- filter(DF, attributes == "START")
 
 
-# Assign a simple index to every row
 
 
 # Create another vector to hold values for identifying duplicates
@@ -64,26 +58,16 @@ DF <- filter(DF, duplicate == FALSE) %>%
 
 
 #Initialize an empty vector
-
-DF$articleID <- rep(NA, length(DF$attributes))
-START <- which(DF$attributes== "START")
-
-
-
-DF$ID <- cumsum(DF$attributes == "START")
-
-
-DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "", DF$record[DF$attributes == "SO"])
-DF$record[DF$attributes == "START"] <- gsub(":.*", "", DF$record[DF$attributes == "START"])
+DF$articleID <- cumsum(DF$attributes == "TI")
 
 #_________________________________________________________________________
 #
 #       REMOVE DUPLICATE RECORDS
 #_________________________________________________________________________
 
-DF.temp <- filter(DF, attributes == "START")
+DF.temp <- filter(DF, attributes == "TI")
 DF.temp <- arrange(DF.temp, record)
-DF.temp <- mutate(DF.temp, tolower(record))
+#DF.temp <- mutate(DF.temp, tolower(record))
 
 unique.titles <- unique(DF.temp$record)
 
@@ -101,15 +85,16 @@ while(i < n.records)
 }
 
 non.duplicate.ID <- filter(DF.temp, duplicate == FALSE) %>%
-                    mutate(ID = as.character(ID))
-non.duplicate.ID <- non.duplicate.ID$ID
+                    mutate(articleID = as.character(articleID))
+non.duplicate.ID <- non.duplicate.ID$articleID
 
-retain <- DF$ID %in% non.duplicate.ID
+retain <- DF$articleID %in% non.duplicate.ID
 
 DF <- DF[retain, ]
 
-DF <- mutate(DF, attributes = ifelse(attributes == "START", "TI", attributes))
 
+DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "", DF$record[DF$attributes == "SO"])
+DF$record[DF$attributes == "SO"] <- gsub(":.*", "", DF$record[DF$attributes == "SO"])
 
 #___________________________________________________________________________
 
