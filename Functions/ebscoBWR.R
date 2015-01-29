@@ -3,14 +3,14 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #______________Read EBSCO txt file _________________
 
     library(dplyr)
-    library(stringi)
+
+
 
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
     dat <- lapply(temp, readLines)
 
-    attributes <- unlist(lapply(dat, function(x) stri_sub(x, 1,2)))
-
+    attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
 
     attributes.df <- data.frame(attributes)
 
@@ -53,7 +53,7 @@ DF$index <- as.character(DF$index)
 duplicate <- DF$index %in% duplicate.index
 DF <- cbind(DF, duplicate)
 
-detach(package:stringi)
+
 DF <- filter(DF, duplicate == FALSE) %>%
         select(-index, -duplicate)
 
@@ -117,7 +117,7 @@ DF.temp$record <- ifelse(nchar(DF.temp$record) >= 6 & DF.temp$attributes == "PD"
 
 # Extract the first portion of the dates, up to the point with a 2 or 4 digit
 # year value. This also captures some letters and characters.
-DF.temp$record <- str_extract(DF.temp$record, "[$/A-Za-z0-9]+\\d{2,4}")
+DF.temp$record <- stringr::str_extract(DF.temp$record, "[$/A-Za-z0-9]+\\d{2,4}")
 
 #Exclude the characters
 DF.temp$record <- gsub("[/A-Za-z]", "", DF.temp$record)
