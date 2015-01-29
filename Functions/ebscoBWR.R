@@ -1,4 +1,4 @@
-piBWR.f <- function(csv = FALSE, path){
+ebscoBWR.f <- function(csv = FALSE, path){
 
 #______________Read EBSCO txt file _________________
     library(dplyr)
@@ -147,7 +147,4 @@ if(csv == TRUE){cat("  The *.csv file can be found in your working directory.\n"
 cat("\nWarning: All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.\n")
 print(DF.flag)
 }
-
-
-
 
