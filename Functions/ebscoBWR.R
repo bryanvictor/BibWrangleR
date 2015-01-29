@@ -1,13 +1,16 @@
 ebscoBWR.f <- function(csv = FALSE, path){
 
 #______________Read EBSCO txt file _________________
+
     library(dplyr)
+    library(stringi)
 
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
     dat <- lapply(temp, readLines)
 
-    attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
+    attributes <- unlist(lapply(dat, function(x) stri_sub(x, 1,2)))
+
 
     attributes.df <- data.frame(attributes)
 
@@ -30,9 +33,6 @@ DF$index <- 1:nrow(DF)
 DF.temp <- filter(DF, attributes == "TI")
 
 
-
-
-
 # Create another vector to hold values for identifying duplicates
 DF.temp$duplicate <- rep(NA, length(DF.temp$index))
 
@@ -53,6 +53,7 @@ DF$index <- as.character(DF$index)
 duplicate <- DF$index %in% duplicate.index
 DF <- cbind(DF, duplicate)
 
+detach(package:stringi)
 DF <- filter(DF, duplicate == FALSE) %>%
         select(-index, -duplicate)
 
@@ -144,7 +145,7 @@ bwr.df <<- DF
 if(csv == TRUE){write.csv(pi.df, "pi.csv")}
 cat("Wrangling is complete.\n")
 if(csv == TRUE){cat("  The *.csv file can be found in your working directory.\n")}
-cat("\nWarning: All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.\n")
+cat("\nWarning: All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  And, make good choices.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.\n")
 print(DF.flag)
 }
 
