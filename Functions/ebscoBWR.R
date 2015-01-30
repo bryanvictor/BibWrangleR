@@ -128,8 +128,9 @@ DF.temp <- DF.temp[!is.na(DF.temp$record), ]
 DF.flag <- mutate(DF.temp, flag = ifelse(nchar(DF.temp$record) == 2, "1", "0" )) %>%
            filter(flag == "1") %>%
            group_by(record) %>%
-           rename(Year = record) %>%
            summarize(N = n())
+
+colnames(DF.flag)<-c("Year", "N")
 
 
 DF.temp$record <- ifelse(as.numeric(DF.temp$record) < 100, paste("19", DF.temp$record, sep=""), DF.temp$record)
