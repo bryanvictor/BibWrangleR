@@ -1,75 +1,95 @@
 ebscoBWR.f <- function(csv = FALSE, path){
 
-#______________Read EBSCO txt file _________________
+#_______________________________________________________________________________
+#
+#                            READ EBSCO txt files
+#
+#All files to be wrangled should be saved in a single folder and have a *.txt
+#extension.  The files must be processed from EbscoHost in the generic
+#bibliographic format -- no other file structure will work.
+#
+#_______________________________________________________________________________
 
-    library(dplyr)
+library(dplyr)
+temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
+dat <- lapply(temp, readLines)
 
+attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
 
-    temp <- list.files(path, pattern = ".txt", full.names=TRUE)
+attributes.df <- data.frame(attributes)
 
-    dat <- lapply(temp, readLines)
+#Take first five characters from each row. These are the names of the record
+#values.
+record <- substring(unlist(dat), 5)
 
-    attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
-
-    attributes.df <- data.frame(attributes)
-
-    #Take first five characters from each row
-    record <- substring(unlist(dat), 5)
-
-    record.df <- data.frame(record)
-    DF <- cbind(attributes.df, record.df)
-    DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
-
-
-
-
+record.df <- data.frame(record)
+DF <- cbind(attributes.df, record.df)
+DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
 #_______________________________________________________________________________
 #
-#                       REMOVE DUPLICATE TI ENTRIES
+#                       REMOVE MULTIPLE TI FIELD
+#
+#Some records contain multiple TI fields when there is a translated title. To
+#get an accurate count of the number of unique titles, the extra TI fields must
+#be eliminated.  It is assumed that English titles are recorded first, and the
+#second title is a foreing language.  The following code eliminates the foreign
+#language.  This issue needs to be checked in occassions when searches are
+#performed on the title itself.
 #_______________________________________________________________________________
 
-# Identify boundaries of each record -- starting with TI
-
+#Create and indexing variable to flag and remove items
 DF$index <- 1:nrow(DF)
+
+#Filter out all rows with the TI (Title field)
 DF.temp <- filter(DF, attributes == "TI")
 
+#Identify duplicate entries by subtracting each sequential index value, which
+#is saved in as duplicate.
+duplicate <- diff(DF.temp$index)
 
-# Create another vector to hold values for identifying duplicates
-DF.temp$duplicate <- rep(NA, length(DF.temp$index))
+#The first entry does not have a value because it cannot be subtracted from
+#anything. Thus, the length of the duplicate variable is the length of the
+#index variable - 1.  Add a zero to the duplicate variable to make them the same
+#length.
+duplicate <- c(0, duplicate)
 
-# Create a function to identify duplicates
-n.records <- length(DF.temp$index)
-i <- 2 #start with the second record
+#Set all duplicate records to 1, and all non-duplicates to 0.
+duplicate <- ifelse(duplicate == 1, 1, 0)
 
-while(i < n.records)
-    {
-    DF.temp$duplicate[i] <- DF.temp$index[i] - DF.temp$index[i-1]
-    i <- i + 1
-    }
+#Bind the variable duplicate to the temporary file
+DF.temp.duplicate <- cbind(DF.temp, duplicate)
 
-DF.temp.reduced <- filter(DF.temp, duplicate == 1)
-duplicate.index <- as.character(DF.temp.reduced$index)
-DF$index <- as.character(DF$index)
+#Filter out all the duplicate records
+DF.temp.reduced <- filter(DF.temp.duplicate, duplicate == 1)
 
+#Select out the index variable, which will be used to identify duplicate records
+#in the datafile being processed.
+duplicate.index <- DF.temp.reduced$index
+
+#Identify all duplicates in the main datafile (DF) by comparing the DF$index
+#values with those in the duplicate.index variable. This creates creates a
+#new variable (duplicate) with the values of TRUE (duplicate) and FALSE
+#(non-duplicate)
 duplicate <- DF$index %in% duplicate.index
+
+#Bind the new duplicate variable to the main datafile.
 DF <- cbind(DF, duplicate)
 
-
+#Now, filter out all the records that are non duplicates (FALSE)
 DF <- filter(DF, duplicate == FALSE) %>%
-        select(-index, -duplicate)
-
-
-
-#Initialize an empty vector
-DF$articleID <- cumsum(DF$attributes == "TI")
+      #Remove the temporary variables used to identify and remove duplicates.
+      select(-index, -duplicate)
 
 
 #_________________________________________________________________________
 #
 #       REMOVE DUPLICATE RECORDS - TI
 #_________________________________________________________________________
+
+#Initialize an empty vector
+DF$articleID <- cumsum(DF$attributes == "TI")
 
 DF.temp <- filter(DF, attributes == "TI")
 DF.temp <- arrange(DF.temp, record)
