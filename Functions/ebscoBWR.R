@@ -25,6 +25,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #
 #_______________________________________________________________________________
 
+start.time <- Sys.time()
+
     library(dplyr)
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
@@ -44,7 +46,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
-
+end.time <- Sys.time()
+section.1 <- end.time-start.time
 
 
 #_______________________________________________________________________________
@@ -58,7 +61,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #performed on the title itself.
 #
 #_______________________________________________________________________________
-
+start.time <- Sys.time()
     #Create and indexing variable to flag and remove items
     DF$index <- 1:nrow(DF)
 
@@ -101,6 +104,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
     #Remove the temporary variables used to identify and remove duplicates.
     DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
 
+end.time <- Sys.time()
+section.2 <- end.time-start.time
 #_______________________________________________________________________________
 #                    3.  REMOVE DUPLICATE RECORDS
 #-------------------------------------------------------------------------------
@@ -110,6 +115,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 # doing a global match for duplicate article records based on the title.
 # Duplicates occur because multiple databases have overlapping indexing.
 #_______________________________________________________________________________
+
+start.time <- Sys.time()
 
     #Create an article identifier to group all records for a unique article.
     DF$articleID <- cumsum(DF$attributes == "TI")
@@ -125,8 +132,12 @@ ebscoBWR.f <- function(csv = FALSE, path){
     DF.duplicated.ID <- DF.temp$articleID
     DF <- DF[!(DF$articleID %in% DF.duplicated.ID), ]
 
+end.time <- Sys.time()
+section.3 <- end.time-start.time
 
-#____________________Fix Journal Titles________________________________________________________
+#____________________4. Fix Journal Titles________________________________________________________
+
+start.time <- Sys.time()
 #Identify which journals have the JN code but not the SO code.
 DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "", DF$record[DF$attributes == "SO"])
 DF$record[DF$attributes == "SO"] <- gsub(":.*", "", DF$record[DF$attributes == "SO"])
@@ -150,8 +161,11 @@ DF <- filter(DF, attributes != "JN")
 
 DF <- rbind(DF, journal.unique.JN)
 
+end.time <- Sys.time()
+section.4 <- end.time-start.time
+#____________________________5. COMBINE Year FIELDS________________________________
 
-#____________________________COMBINE Year FIELDS________________________________
+start.time <- Sys.time()
 
 DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
 
@@ -189,6 +203,8 @@ DF.temp <- mutate(DF.temp, attributes = "YR")
 DF <- rbind(DF, DF.temp)
 DF <- arrange(DF, articleID)
 
+end.time <- Sys.time()
+section.5 <- end.time-start.time
 #____________________________________________________________________________________________
 
 
@@ -198,5 +214,11 @@ cat("Wrangling is complete.\n")
 if(csv == TRUE){cat("  The *.csv file can be found in your working directory.\n")}
 cat("\nWarning: All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  And, make good choices.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.\n")
 print(DF.flag)
+
+print(section.1)
+print(section.2)
+print(section.3)
+print(section.4)
+print(section.5)
 }
 
