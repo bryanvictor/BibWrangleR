@@ -63,6 +63,10 @@ section.1 <- end.time-start.time
 #_______________________________________________________________________________
 start.time <- Sys.time()
     #Create and indexing variable to flag and remove items
+
+    blank <- c("", "")
+    DF <- rbind(blank, DF)
+
     DF$index <- 1:nrow(DF)
 
     #Filter out all rows with the TI (Title field)
@@ -119,7 +123,7 @@ section.2 <- end.time-start.time
 start.time <- Sys.time()
 
     #Create an article identifier to group all records for a unique article.
-    DF$articleID <- cumsum(DF$attributes == "TI")
+    DF$articleID <- cumsum(DF$attributes == "")
 
     #Select out all titles
     DF.temp <- filter(DF, attributes == "TI")
