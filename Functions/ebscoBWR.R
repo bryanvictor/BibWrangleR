@@ -1,16 +1,17 @@
 ebscoBWR.f <- function(csv = FALSE, path){
 
-
 #_______________________________________________________________________________
 #                           MAIN TO-DO LIST
 #-------------------------------------------------------------------------------
 #
 #  1. Write code to ensure user has required packages dplyr, stringi, stringr
+#     and there are no conflicts with the code
 #
 #  2. Remove unnecessary objects at the end of each section.
 #
 #  3. Remove loop from section 3
 #
+#  4. Include note on importance of naming files to give priority
 #_______________________________________________________________________________
 
 
@@ -43,8 +44,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
-    # Clean up temporary objects
-    rm(temp, attributes, record, attributes.df, record.df)
+
+
 
 #_______________________________________________________________________________
 #                     2. REMOVE MULTIPLE TI FIELDS
@@ -100,42 +101,29 @@ ebscoBWR.f <- function(csv = FALSE, path){
     #Remove the temporary variables used to identify and remove duplicates.
     DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
 
-
-
 #_______________________________________________________________________________
 #                    3.  REMOVE DUPLICATE RECORDS
 #-------------------------------------------------------------------------------
+# In the prior section, duplicate title (TI) fields were identified and excluded.
+# These were non-matching titles because, for a given article, one title is in
+# English and the other is in a foreing language.  In this section, the code is
+# doing a global match for duplicate article records based on the title.
+# Duplicates occur because multiple databases have overlapping indexing.
 #_______________________________________________________________________________
 
-#Initialize an empty vector
-DF$articleID <- cumsum(DF$attributes == "TI")
+    #Create an article identifier to group all records for a unique article.
+    DF$articleID <- cumsum(DF$attributes == "TI")
 
-DF.temp <- filter(DF, attributes == "TI")
-DF.temp <- arrange(DF.temp, record)
-#DF.temp <- mutate(DF.temp, tolower(record))
+    #Select out all titles
+    DF.temp <- filter(DF, attributes == "TI")
 
-unique.titles <- unique(DF.temp$record)
+    #Find duplicated records - duplicates are marked as true
+    DF.temp <- DF.temp[duplicated(DF.temp$record), ]
 
-# Create another vector to hold values for identifying duplicates
-DF.temp$duplicate <- rep(NA, length(DF.temp$articleID))
-
-# Create a function to identify duplicates
-n.records <- length(DF.temp$duplicate)
-i <- 2 #start with the second record
-
-while(i < n.records)
-{
-    DF.temp$duplicate[i] <- ifelse(DF.temp$record[i] == DF.temp$record[i-1], DF.temp$duplicate[i] <- TRUE, DF.temp$duplicate[i] <- FALSE)
-    i <- i + 1
-}
-
-non.duplicate.ID <- filter(DF.temp, duplicate == FALSE) %>%
-                    mutate(articleID = as.character(articleID))
-non.duplicate.ID <- non.duplicate.ID$articleID
-
-retain <- DF$articleID %in% non.duplicate.ID
-
-DF <- DF[retain, ]
+    #Screen out duplicated records by articleID. The articleID must be used
+    #because the duplicate title contains other article attributes
+    DF.duplicated.ID <- DF.temp$articleID
+    DF <- DF[!(DF$articleID %in% DF.duplicated.ID), ]
 
 
 #____________________Fix Journal Titles________________________________________________________
