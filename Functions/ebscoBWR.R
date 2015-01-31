@@ -22,6 +22,9 @@ ebscoBWR.f <- function(csv = FALSE, path){
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
 
+
+
+
 #_______________________________________________________________________________
 #
 #                       REMOVE DUPLICATE TI ENTRIES
@@ -62,9 +65,10 @@ DF <- filter(DF, duplicate == FALSE) %>%
 #Initialize an empty vector
 DF$articleID <- cumsum(DF$attributes == "TI")
 
+
 #_________________________________________________________________________
 #
-#       REMOVE DUPLICATE RECORDS
+#       REMOVE DUPLICATE RECORDS - TI
 #_________________________________________________________________________
 
 DF.temp <- filter(DF, attributes == "TI")
@@ -95,12 +99,33 @@ retain <- DF$articleID %in% non.duplicate.ID
 DF <- DF[retain, ]
 
 
+#____________________Fix Journal Titles________________________________________________________
+#Identify which journals have the JN code but not the SO code.
 DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "", DF$record[DF$attributes == "SO"])
 DF$record[DF$attributes == "SO"] <- gsub(":.*", "", DF$record[DF$attributes == "SO"])
 
+DF$record[DF$attributes == "JN"] <- gsub(" Special Issue", "", DF$record[DF$attributes == "JN"])
+DF$record[DF$attributes == "JN"] <- gsub(":.*", "", DF$record[DF$attributes == "JN"])
 
 
-#____________________________COMBINE FIELDS________________________________
+articleID.unique <- unique(DF$articleID)
+journal.unique.SO <- filter(DF, attributes == "SO")
+journal.unique.JN <- filter(DF, attributes == "JN")
+
+#Which ID's overlap from JN to SO?
+JN.in.SO <- journal.unique.JN$articleID %in% journal.unique.SO$articleID
+
+#Filter out the ID from the JN that overlap with SO
+journal.unique.JN <- journal.unique.JN[!(JN.in.SO), ]
+journal.unique.JN <- mutate(journal.unique.JN, attributes = "SO")
+
+DF <- filter(DF, attributes != "JN")
+
+DF <- rbind(DF, journal.unique.JN)
+
+
+
+#____________________________COMBINE Year FIELDS________________________________
 
 DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
 
@@ -140,7 +165,12 @@ DF <- rbind(DF, DF.temp)
 DF <- arrange(DF, articleID)
 
 
-#___________________________________________________________________________
+
+
+
+
+#____________________________________________________________________________________________
+
 
 bwr.df <<- DF
 if(csv == TRUE){write.csv(pi.df, "pi.csv")}
