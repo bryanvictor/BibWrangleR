@@ -1,8 +1,22 @@
 ebscoBWR.f <- function(csv = FALSE, path){
 
+
 #_______________________________________________________________________________
+#                           MAIN TO-DO LIST
+#-------------------------------------------------------------------------------
 #
-#                            READ EBSCO txt files
+#  1. Write code to ensure user has required packages dplyr, stringi, stringr
+#
+#  2. Remove unnecessary objects at the end of each section.
+#
+#  3. Remove loop from section 3
+#
+#_______________________________________________________________________________
+
+
+#_______________________________________________________________________________
+#                           1. READ EBSCO txt files
+#-------------------------------------------------------------------------------
 #
 #All files to be wrangled should be saved in a single folder and have a *.txt
 #extension.  The files must be processed from EbscoHost in the generic
@@ -10,83 +24,88 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #
 #_______________________________________________________________________________
 
-library(dplyr)
-temp <- list.files(path, pattern = ".txt", full.names=TRUE)
+    library(dplyr)
+    temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
-dat <- lapply(temp, readLines)
+    dat <- lapply(temp, readLines)
 
-attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
+    attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
 
-attributes.df <- data.frame(attributes)
+    attributes.df <- data.frame(attributes)
 
-#Take first five characters from each row. These are the names of the record
-#values.
-record <- substring(unlist(dat), 5)
+    #Take first five characters from each row. These are the names of the record
+    #values.
+    record <- substring(unlist(dat), 5)
 
-record.df <- data.frame(record)
-DF <- cbind(attributes.df, record.df)
-DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
+    record.df <- data.frame(record)
+
+    DF <- cbind(attributes.df, record.df)
+
+    DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
+
+    # Clean up temporary objects
+    rm(temp, attributes, record, attributes.df, record.df)
 
 #_______________________________________________________________________________
-#
-#                       REMOVE MULTIPLE TI FIELD
-#
+#                     2. REMOVE MULTIPLE TI FIELDS
+#-------------------------------------------------------------------------------
 #Some records contain multiple TI fields when there is a translated title. To
 #get an accurate count of the number of unique titles, the extra TI fields must
 #be eliminated.  It is assumed that English titles are recorded first, and the
 #second title is a foreing language.  The following code eliminates the foreign
 #language.  This issue needs to be checked in occassions when searches are
 #performed on the title itself.
+#
 #_______________________________________________________________________________
 
-#Create and indexing variable to flag and remove items
-DF$index <- 1:nrow(DF)
+    #Create and indexing variable to flag and remove items
+    DF$index <- 1:nrow(DF)
 
-#Filter out all rows with the TI (Title field)
-DF.temp <- filter(DF, attributes == "TI")
+    #Filter out all rows with the TI (Title field)
+    DF.temp <- filter(DF, attributes == "TI")
 
-#Identify duplicate entries by subtracting each sequential index value, which
-#is saved in as duplicate.
-duplicate <- diff(DF.temp$index)
+    #Identify duplicate entries by subtracting each sequential index value,
+    #which is saved in as duplicate.
+    duplicate <- diff(DF.temp$index)
 
-#The first entry does not have a value because it cannot be subtracted from
-#anything. Thus, the length of the duplicate variable is the length of the
-#index variable - 1.  Add a zero to the duplicate variable to make them the same
-#length.
-duplicate <- c(0, duplicate)
+    #The first entry does not have a value because it cannot be subtracted from
+    #anything. The length of the duplicate variable is the length of the
+    #index variable - 1.  Add a zero to the duplicate variable to make them the
+    #same length.
+    duplicate <- c(0, duplicate)
 
-#Set all duplicate records to 1, and all non-duplicates to 0.
-duplicate <- ifelse(duplicate == 1, 1, 0)
+    #Set all duplicate records to 1, and all non-duplicates to 0.
+    duplicate <- ifelse(duplicate == 1, 1, 0)
 
-#Bind the variable duplicate to the temporary file
-DF.temp.duplicate <- cbind(DF.temp, duplicate)
+    #Bind the variable duplicate to the temporary file
+    DF.temp.duplicate <- cbind(DF.temp, duplicate)
 
-#Filter out all the duplicate records
-DF.temp.reduced <- filter(DF.temp.duplicate, duplicate == 1)
+    #Filter out all the duplicate records
+    DF.temp.reduced <- filter(DF.temp.duplicate, duplicate == 1)
 
-#Select out the index variable, which will be used to identify duplicate records
-#in the datafile being processed.
-duplicate.index <- DF.temp.reduced$index
+    #Select out the index variable, which will be used to identify duplicate
+    #records in the datafile being processed.
+    duplicate.index <- DF.temp.reduced$index
 
-#Identify all duplicates in the main datafile (DF) by comparing the DF$index
-#values with those in the duplicate.index variable. This creates creates a
-#new variable (duplicate) with the values of TRUE (duplicate) and FALSE
-#(non-duplicate)
-duplicate <- DF$index %in% duplicate.index
+    #Identify all duplicates in the main datafile (DF) by comparing the DF$index
+    #values with those in the duplicate.index variable. This creates creates a
+    #new variable (duplicate) with the values of TRUE (duplicate) and FALSE
+    #(non-duplicate).
+    duplicate <- DF$index %in% duplicate.index
 
-#Bind the new duplicate variable to the main datafile.
-DF <- cbind(DF, duplicate)
+    #Bind the new duplicate variable to the main datafile.
+    DF <- cbind(DF, duplicate)
 
-#Now, filter out all the records that are non duplicates (FALSE)
-DF <- filter(DF, duplicate == FALSE) %>%
-      #Remove the temporary variables used to identify and remove duplicates.
-      select(-index, -duplicate)
+    #Filter out all the records that are non duplicates (FALSE)
+    #Remove the temporary variables used to identify and remove duplicates.
+    DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
 
 
-#_________________________________________________________________________
-#
-#       REMOVE DUPLICATE RECORDS - TI
-#_________________________________________________________________________
+
+#_______________________________________________________________________________
+#                    3.  REMOVE DUPLICATE RECORDS
+#-------------------------------------------------------------------------------
+#_______________________________________________________________________________
 
 #Initialize an empty vector
 DF$articleID <- cumsum(DF$attributes == "TI")
@@ -144,7 +163,6 @@ DF <- filter(DF, attributes != "JN")
 DF <- rbind(DF, journal.unique.JN)
 
 
-
 #____________________________COMBINE Year FIELDS________________________________
 
 DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
@@ -153,7 +171,6 @@ DF.temp <- DF
 
 DF.temp <- filter(DF.temp, attributes == "PD")
 
-#____________________________FIX AND MERGE YEAR FIELDS_______________________
 
 # APA appears to use a 6 to 8 digit identifier that needs to be excluded
 DF.temp$record <- ifelse(nchar(DF.temp$record) >= 6 & DF.temp$attributes == "PD" &
@@ -183,11 +200,6 @@ DF.temp <- mutate(DF.temp, attributes = "YR")
 
 DF <- rbind(DF, DF.temp)
 DF <- arrange(DF, articleID)
-
-
-
-
-
 
 #____________________________________________________________________________________________
 
