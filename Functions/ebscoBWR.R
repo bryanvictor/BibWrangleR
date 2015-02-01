@@ -23,7 +23,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #  7. In Section 5, perform a test to ensure all APA codes are digits before
 #     removing.
 #
-#  8.
+#  8.  Include a quality check at end of later sections to ensure TI and SO
+#      match and are not reduced in subsequent parsing.
 #_______________________________________________________________________________
 
 
@@ -259,7 +260,89 @@ end.time <- Sys.time()
 section.5 <- end.time-start.time
 
 #_______________________________________________________________________________
-#                        5. OUTPUT
+#                            6. AUTHOR FIELD FIX
+#-------------------------------------------------------------------------------
+#
+# For articles pulled in from SSA, superscripts used to footnote affiliation get
+# added to author's first name in the AU field
+#_______________________________________________________________________________
+
+DF.temp <- filter(DF, attributes == "AU")
+DF.temp$record <- gsub("[:digit:]", "", DF.temp$record)
+DF <- filter(DF, attributes != "AU")
+
+DF <- rbind(DF, DF.temp)
+DF <- arrange(DF, articleID)
+rm(DF.temp)
+
+#quality.check <- filter(DF, attributes == "TI"); dim(quality.check)
+#dim(quality.check)
+
+# quality.check <- filter(DF, attributes == "SO"); dim(quality.check)
+# dim(quality.check)
+#_______________________________________________________________________________
+#                            7. AUTHOR FIELD FIX
+#-------------------------------------------------------------------------------
+#
+#
+#_______________________________________________________________________________
+
+
+
+#Create a new temporary data frame
+DF.temp <- filter(DF, attributes == "AU")
+
+#Identify records with semi-colons in author names
+semi.colons <- grepl(";", DF.temp$record)
+
+#Select out those records with semi-colons in author names from temporary data
+#frame
+DF.temp <- DF.temp[semi.colons, ]
+
+#Run split the strings and convert to long format
+
+#Add a semi colon to the end of every string
+DF.temp$record <- paste(DF.temp$record, ";", sep="")
+
+semi.colon.split <- strsplit(DF.temp$record, ";")
+split.df <- data.frame(
+    attributes = rep(DF.temp$attributes, lapply(semi.colon.split, length)),
+    record = unlist(semi.colon.split),
+    articleID = rep(DF.temp$articleID, lapply(semi.colon.split, length)))
+
+
+
+#Trim whitespace on both sides
+split.df$record <- stringr::str_trim(split.df$record, side = "both")
+
+
+#The author field is problematic because it contains some email address.
+#Some fields have been improperly split because they were split on a semi-colon
+#that was in the middle of the filed.
+
+#Create a pattern that eliminates possible emails
+split.df$record <- ifelse(grepl("@", split.df$record) == TRUE, "", split.df$record)
+split.df$record <- ifelse(nchar(split.df$record) <= 3, "", split.df$record)
+split.df$record <- ifelse(grepl("\\.", split.df$record) == FALSE, "", split.df$record)
+split.df$record <- ifelse(grepl("&", split.df$record) == TRUE, "", split.df$record)
+split.df <- filter(split.df, record != "")
+
+# Create a vector of all articleID's that were fixed
+
+fixed.ID <- unique(split.df$articleID)
+
+
+#Filter out all processed records from the fixed list
+DF.authors <- filter(DF, attributes == "AU")
+DF.authors.good <- DF.authors[!(DF.authors$articleID %in% fixed.ID),]
+DF.authors.fixed <- split.df
+#Bind the reduced DF with the fixed df
+DF <- rbind(DF, DF.authors.good, DF.authors.fixed)
+
+
+
+#_______________________________________________________________________________
+#                        8. OUTPUT
 #-------------------------------------------------------------------------------
 #
 #
