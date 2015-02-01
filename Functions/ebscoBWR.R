@@ -12,6 +12,14 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #  3. Remove loop from section 3
 #
 #  4. Include note on importance of naming files to give priority
+#
+#  5. Integrate into Section 1 a function that checks each file for a blank line
+#     at the end each text file.  Right now, a full carriage return must be
+#     included, and no further quality checks are made.
+#
+#  6. Include in the ebscoBWR function call an argument that would allow for
+#     an additional reduced subset of data to be processed for manual
+#     inspection.
 #_______________________________________________________________________________
 
 
@@ -46,6 +54,8 @@ start.time <- Sys.time()
 
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
+    rm(temp, dat, attributes, attributes.df, record, record.df)
+
 end.time <- Sys.time()
 section.1 <- end.time-start.time
 
@@ -53,6 +63,7 @@ section.1 <- end.time-start.time
 #_______________________________________________________________________________
 #                     2. REMOVE MULTIPLE TI FIELDS
 #-------------------------------------------------------------------------------
+#
 #Some records contain multiple TI fields when there is a translated title. To
 #get an accurate count of the number of unique titles, the extra TI fields must
 #be eliminated.  It is assumed that English titles are recorded first, and the
@@ -108,6 +119,8 @@ start.time <- Sys.time()
     #Remove the temporary variables used to identify and remove duplicates.
     DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
 
+    rm(DF.temp, duplicate, DF.temp.duplicate, DF.temp.reduced, duplicate.index)
+
 end.time <- Sys.time()
 section.2 <- end.time-start.time
 #_______________________________________________________________________________
@@ -136,13 +149,21 @@ start.time <- Sys.time()
     DF.duplicated.ID <- DF.temp$articleID
     DF <- DF[!(DF$articleID %in% DF.duplicated.ID), ]
 
+    rm(DF.temp, DF.duplicated.ID)
+
 end.time <- Sys.time()
 section.3 <- end.time-start.time
 
-#____________________4. Fix Journal Titles________________________________________________________
+#_______________________________________________________________________________
+#     4.  CLEAN JOURNAL NAMES AND MERGE JOURNAL NAME FIELDS (SO AND JN)
+#-------------------------------------------------------------------------------
+#
+#Journals that have a Special Issue are not grouped together as the same
+#title. These subtitles need to be removed.
+#_______________________________________________________________________________
 
 start.time <- Sys.time()
-#Identify which journals have the JN code but not the SO code.
+
 DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "", DF$record[DF$attributes == "SO"])
 DF$record[DF$attributes == "SO"] <- gsub(":.*", "", DF$record[DF$attributes == "SO"])
 
@@ -150,6 +171,14 @@ DF$record[DF$attributes == "JN"] <- gsub(" Special Issue", "", DF$record[DF$attr
 DF$record[DF$attributes == "JN"] <- gsub(":.*", "", DF$record[DF$attributes == "JN"])
 
 
+#DF$record <- if(DF$record == "JN"){"SO")
+
+
+
+
+
+
+#Identify which journals have the JN code but not the SO code.
 articleID.unique <- unique(DF$articleID)
 journal.unique.SO <- filter(DF, attributes == "SO")
 journal.unique.JN <- filter(DF, attributes == "JN")
@@ -164,6 +193,7 @@ journal.unique.JN <- mutate(journal.unique.JN, attributes = "SO")
 DF <- filter(DF, attributes != "JN")
 
 DF <- rbind(DF, journal.unique.JN)
+
 
 end.time <- Sys.time()
 section.4 <- end.time-start.time
