@@ -379,10 +379,18 @@ if(csv == TRUE){cat("  The *.csv file can be found in your working directory.\n"
 cat("\nWarning: All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  And, make good choices.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.\n")
 print(DF.flag)
 
-print(section.1)
-print(section.2)
-print(section.3)
-print(section.4)
-print(section.5)
+bwr.ti <- filter(DF, attributes == "TI")
+bwr.ti <- length(bwr.ti$record)
+
+bwr.so <- filter(DF, attributes == "SO")
+bwr.so <- length(bwr.so$record)
+
+a <- sprintf("Number of unique articles: %d", bwr.ti)
+
+b <- sprintf("Number of sources (should be same as articles): %s", bwr.so)
+
+print(a)
+print(b)
+
 }
 
