@@ -355,7 +355,12 @@ sub.1 <- sub("^([^,]*,[^,]*),.*", "\\1", DF.temp$record)
 sub.2 <- sub("[,\\.][a-zA-Z]{1,}@", "", sub.1)
 sub.3 <- sub("@[a-zA-Z0-9.\\]{1,}", "", sub.2)
 sub.4 <- sub("(\\s[a-z]{1,})$", "", sub.3)
-DF.temp$recod <- sub.4
+sub.5 <- sub("(/&;#]+)", "", sub.4)
+DF.temp$record <- sub.5
+DF <- filter(DF, attributes != "AU")
+DF <- rbind(DF, DF.temp)
+DF <- arrange(DF, articleID)
+rm(DF.temp)
 
 
 #_______________________________________________________________________________
