@@ -146,6 +146,8 @@ start.time <- Sys.time()
     #Select out all titles
     DF.temp <- filter(DF, attributes == "TI")
 
+    DF.temp$record <- tolower(DF.temp$record)
+
     #Find duplicated records - duplicates are marked as true
     DF.temp <- DF.temp[duplicated(DF.temp$record), ]
 
