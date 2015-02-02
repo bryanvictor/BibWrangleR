@@ -260,7 +260,7 @@ end.time <- Sys.time()
 section.5 <- end.time-start.time
 
 #_______________________________________________________________________________
-#                            6. AUTHOR FIELD FIX
+#                            6a. AUTHOR FIELD FIX - DIGITS
 #-------------------------------------------------------------------------------
 #
 # For articles pulled in from SSA, superscripts used to footnote affiliation get
@@ -281,7 +281,7 @@ rm(DF.temp)
 # quality.check <- filter(DF, attributes == "SO"); dim(quality.check)
 # dim(quality.check)
 #_______________________________________________________________________________
-#                            7. AUTHOR FIELD FIX
+#            6b. AUTHOR FIELD FIX - AUTHORS IN SINGLE FIELD
 #-------------------------------------------------------------------------------
 #
 #
@@ -342,6 +342,20 @@ DF.no.authors <- filter(DF, attributes != "AU")
 #Bind the reduced DF with the fixed df
 DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
 DF <- arrange(DF, articleID)
+
+#_______________________________________________________________________________
+#                       6c. E-mails
+#-------------------------------------------------------------------------------
+#
+#
+#_______________________________________________________________________________
+
+DF.temp <- filter(DF, attributes == "AU")
+sub.1 <- sub("^([^,]*,[^,]*),.*", "\\1", DF.temp$record)
+sub.2 <- sub("[,\\.][a-zA-Z]{1,}@", "", sub.1)
+sub.3 <- sub("@[a-zA-Z0-9.\\]{1,}", "", sub.2)
+sub.4 <- sub("(\\s[a-z]{1,})$", "", sub.3)
+DF.temp$recod <- sub.4
 
 
 #_______________________________________________________________________________
