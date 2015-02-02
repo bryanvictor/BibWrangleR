@@ -268,7 +268,7 @@ section.5 <- end.time-start.time
 #_______________________________________________________________________________
 
 DF.temp <- filter(DF, attributes == "AU")
-DF.temp$record <- gsub("[:digit:]", "", DF.temp$record)
+DF.temp$record <- gsub("[[:digit:]]", "", DF.temp$record)
 DF <- filter(DF, attributes != "AU")
 
 DF <- rbind(DF, DF.temp)
@@ -293,11 +293,12 @@ rm(DF.temp)
 DF.temp <- filter(DF, attributes == "AU")
 
 #Identify records with semi-colons in author names
-semi.colons <- grepl(";", DF.temp$record)
+semi.colons <- grepl("(;)", DF.temp$record)
 
 #Select out those records with semi-colons in author names from temporary data
 #frame
 DF.temp <- DF.temp[semi.colons, ]
+
 
 #Run split the strings and convert to long format
 
@@ -336,9 +337,11 @@ fixed.ID <- unique(split.df$articleID)
 DF.authors <- filter(DF, attributes == "AU")
 DF.authors.good <- DF.authors[!(DF.authors$articleID %in% fixed.ID),]
 DF.authors.fixed <- split.df
-#Bind the reduced DF with the fixed df
-DF <- rbind(DF, DF.authors.good, DF.authors.fixed)
+DF.no.authors <- filter(DF, attributes != "AU")
 
+#Bind the reduced DF with the fixed df
+DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
+DF <- arrange(DF, articleID)
 
 
 #_______________________________________________________________________________
