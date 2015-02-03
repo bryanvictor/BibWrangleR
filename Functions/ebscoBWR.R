@@ -38,8 +38,6 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #
 #_______________________________________________________________________________
 
-start.time <- Sys.time()
-
     library(dplyr)
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
@@ -61,25 +59,20 @@ start.time <- Sys.time()
 
     rm(temp, dat, attributes, attributes.df, record, record.df)
 
-end.time <- Sys.time()
-section.1 <- end.time-start.time
-
-
 #_______________________________________________________________________________
 #                     2. REMOVE MULTIPLE TI FIELDS
 #-------------------------------------------------------------------------------
 #
-#Some records contain multiple TI fields when there is a translated title. To
-#get an accurate count of the number of unique titles, the extra TI fields must
-#be eliminated.  It is assumed that English titles are recorded first, and the
-#second title is a foreing language.  The following code eliminates the foreign
-#language.  This issue needs to be checked in occassions when searches are
-#performed on the title itself.
+# Some records contain multiple TI fields when there is a translated title. To
+# get an accurate count of the number of unique titles, the extra TI fields must
+# be eliminated.  It is assumed that English titles are recorded first, and the
+# second title is a foreing language.  The following code eliminates the foreign
+# language.  This issue needs to be checked in occassions when searches are
+# performed on the title itself.
 #
 #_______________________________________________________________________________
-start.time <- Sys.time()
-    #Create and indexing variable to flag and remove items
 
+    #Create and indexing variable to flag and remove items
     blank <- c("", "")
     DF <- rbind(blank, DF)
 
@@ -126,8 +119,6 @@ start.time <- Sys.time()
 
     rm(DF.temp, duplicate, DF.temp.duplicate, DF.temp.reduced, duplicate.index)
 
-end.time <- Sys.time()
-section.2 <- end.time-start.time
 #_______________________________________________________________________________
 #                    3.  REMOVE DUPLICATE RECORDS
 #-------------------------------------------------------------------------------
@@ -138,14 +129,15 @@ section.2 <- end.time-start.time
 # Duplicates occur because multiple databases have overlapping indexing.
 #_______________________________________________________________________________
 
-start.time <- Sys.time()
-
     #Create an article identifier to group all records for a unique article.
     DF$articleID <- cumsum(DF$attributes == "")
 
     #Select out all titles
     DF.temp <- filter(DF, attributes == "TI")
 
+    #Journal titles show discrepancies in capitalization rules.  Force all to
+    #lower to address this problem.  Further testing should consider stripping
+    #white space.
     DF.temp$record <- tolower(DF.temp$record)
 
     #Find duplicated records - duplicates are marked as true
@@ -158,9 +150,6 @@ start.time <- Sys.time()
 
     rm(DF.temp, DF.duplicated.ID)
 
-end.time <- Sys.time()
-section.3 <- end.time-start.time
-
 #_______________________________________________________________________________
 #     4.  CLEAN JOURNAL NAMES AND MERGE JOURNAL NAME FIELDS (SO AND JN)
 #-------------------------------------------------------------------------------
@@ -172,7 +161,6 @@ section.3 <- end.time-start.time
 #unique number of journal title entries
 #_______________________________________________________________________________
 
-start.time <- Sys.time()
 
     DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "",
         DF$record[DF$attributes == "SO"])
@@ -203,23 +191,21 @@ start.time <- Sys.time()
 
     rm(journal.unique.SO, journal.unique.JN, articleID.unique, JN.in.SO)
 
-end.time <- Sys.time()
-section.4 <- end.time-start.time
-
-
 #_______________________________________________________________________________
 #                        5. COMBINE YEAR FIELDS
 #-------------------------------------------------------------------------------
 #
-#
+# Year fields must be combined because each database uses a separate code.
+# psychInfo uses the YR field; SSA, PD; and SWA, PD.  It is not possible to
+# Simply rename PD to YR, because psycInfo also uses a PD field as another
+# variable.  Thus, the PD values that are specific to psycInfo need to be
+# eliminated before it can be replaced by the year (PD) field from SSA.
 #_______________________________________________________________________________
 
-start.time <- Sys.time()
 
     DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
 
     DF.temp <- DF
-
     DF.temp <- filter(DF.temp, attributes == "PD")
 
 
@@ -241,13 +227,13 @@ start.time <- Sys.time()
 
     #Add 19 to all the records with just two digits
     DF.temp <- DF.temp[!is.na(DF.temp$record), ]
-    DF.flag <- mutate(DF.temp, flag = ifelse(nchar(DF.temp$record) == 2, "1", "0" )) %>%
+    DF.flag <- mutate(DF.temp,
+           flag = ifelse(nchar(DF.temp$record) == 2, "1", "0" )) %>%
            filter(flag == "1") %>%
            group_by(record) %>%
            summarize(N = n())
 
     colnames(DF.flag)<-c("Year", "N")
-
 
     DF.temp$record <- ifelse(as.numeric(DF.temp$record) < 100,
                       paste("19", DF.temp$record, sep=""), DF.temp$record)
@@ -258,9 +244,6 @@ start.time <- Sys.time()
 
     rm(DF.temp)
 
-end.time <- Sys.time()
-section.5 <- end.time-start.time
-
 #_______________________________________________________________________________
 #                            6a. AUTHOR FIELD FIX - DIGITS
 #-------------------------------------------------------------------------------
@@ -269,140 +252,147 @@ section.5 <- end.time-start.time
 # added to author's first name in the AU field
 #_______________________________________________________________________________
 
-DF.temp <- filter(DF, attributes == "AU")
-DF.temp$record <- gsub("[[:digit:]]", "", DF.temp$record)
-DF <- filter(DF, attributes != "AU")
+    DF.temp <- filter(DF, attributes == "AU")
+    DF.temp$record <- gsub("[[:digit:]]", "", DF.temp$record)
+    DF <- filter(DF, attributes != "AU")
 
-DF <- rbind(DF, DF.temp)
-DF <- arrange(DF, articleID)
-rm(DF.temp)
+    DF <- rbind(DF, DF.temp)
+    DF <- arrange(DF, articleID)
+    rm(DF.temp)
 
-#quality.check <- filter(DF, attributes == "TI"); dim(quality.check)
-#dim(quality.check)
-
-# quality.check <- filter(DF, attributes == "SO"); dim(quality.check)
-# dim(quality.check)
 #_______________________________________________________________________________
 #            6b. AUTHOR FIELD FIX - AUTHORS IN SINGLE FIELD
 #-------------------------------------------------------------------------------
 #
-#
+# Social Work abstracts lists authors in a single cell, separated by a semi-
+# colon, and then includes digits and email addresses in some occassions.
+# The following text locates each author in the cell and places it into a new
+# row to be consistent with PsychInfo and SSA.
 #_______________________________________________________________________________
 
+    #Create a new temporary data frame
+    DF.temp <- filter(DF, attributes == "AU")
 
+    #Identify records with semi-colons in author names
+    semi.colons <- grepl("(;)", DF.temp$record)
 
-#Create a new temporary data frame
-DF.temp <- filter(DF, attributes == "AU")
+    #Select out those records with semi-colons in author names from temporary
+    #data frame
+    DF.temp <- DF.temp[semi.colons, ]
 
-#Identify records with semi-colons in author names
-semi.colons <- grepl("(;)", DF.temp$record)
+    #Add a semi colon to the end of every string
+    DF.temp$record <- paste(DF.temp$record, ";", sep="")
+    semi.colon.split <- strsplit(DF.temp$record, ";")
 
-#Select out those records with semi-colons in author names from temporary data
-#frame
-DF.temp <- DF.temp[semi.colons, ]
-
-
-#Run split the strings and convert to long format
-
-#Add a semi colon to the end of every string
-DF.temp$record <- paste(DF.temp$record, ";", sep="")
-
-semi.colon.split <- strsplit(DF.temp$record, ";")
-split.df <- data.frame(
+    split.df <- data.frame(
     attributes = rep(DF.temp$attributes, lapply(semi.colon.split, length)),
     record = unlist(semi.colon.split),
     articleID = rep(DF.temp$articleID, lapply(semi.colon.split, length)))
 
+    #Trim whitespace on both sides
+    split.df$record <- stringr::str_trim(split.df$record, side = "both")
 
 
-#Trim whitespace on both sides
-split.df$record <- stringr::str_trim(split.df$record, side = "both")
+    #The author field is problematic because it contains some email address.
+    #Some fields have been improperly split because they were split on a semi-colon
+    #that was in the middle of the filed.
 
+    #Create a pattern that eliminates possible emails
+    split.df$record <- ifelse(grepl("@", split.df$record) == TRUE, "",
+                              split.df$record)
+    split.df$record <- ifelse(nchar(split.df$record) <= 3, "",
+                              split.df$record)
+    split.df$record <- ifelse(grepl("\\.", split.df$record) == FALSE, "",
+                              split.df$record)
+    split.df$record <- ifelse(grepl("&", split.df$record) == TRUE, "",
+                              split.df$record)
+    split.df <- filter(split.df, record != "")
 
-#The author field is problematic because it contains some email address.
-#Some fields have been improperly split because they were split on a semi-colon
-#that was in the middle of the filed.
+    # Create a vector of all articleID's that were fixed
+    fixed.ID <- unique(split.df$articleID)
 
-#Create a pattern that eliminates possible emails
-split.df$record <- ifelse(grepl("@", split.df$record) == TRUE, "", split.df$record)
-split.df$record <- ifelse(nchar(split.df$record) <= 3, "", split.df$record)
-split.df$record <- ifelse(grepl("\\.", split.df$record) == FALSE, "", split.df$record)
-split.df$record <- ifelse(grepl("&", split.df$record) == TRUE, "", split.df$record)
-split.df <- filter(split.df, record != "")
+    #Filter out all processed records from the fixed list
+    DF.authors <- filter(DF, attributes == "AU")
+    DF.authors.good <- DF.authors[!(DF.authors$articleID %in% fixed.ID),]
+    DF.authors.fixed <- split.df
+    DF.no.authors <- filter(DF, attributes != "AU")
 
-# Create a vector of all articleID's that were fixed
-
-fixed.ID <- unique(split.df$articleID)
-
-
-#Filter out all processed records from the fixed list
-DF.authors <- filter(DF, attributes == "AU")
-DF.authors.good <- DF.authors[!(DF.authors$articleID %in% fixed.ID),]
-DF.authors.fixed <- split.df
-DF.no.authors <- filter(DF, attributes != "AU")
-
-#Bind the reduced DF with the fixed df
-DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
-DF <- arrange(DF, articleID)
+    #Bind the reduced DF with the fixed df
+    DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
+    DF <- arrange(DF, articleID)
 
 #_______________________________________________________________________________
 #                       6c. E-mails
 #-------------------------------------------------------------------------------
 #
-#
+# After fixing the author fields in 6b, subsequent testing revealed a large
+# number of email addresses that were still in the datafile and note excluded.
+# This section is a patch for this issue.  This code should be re-written
+# and integrated with the prior section.
 #_______________________________________________________________________________
 
-DF.temp <- filter(DF, attributes == "AU")
-sub.1 <- sub("^([^,]*,[^,]*),.*", "\\1", DF.temp$record)
-sub.2 <- sub("[,\\.][a-zA-Z]{1,}@", "", sub.1)
-sub.3 <- sub("@[a-zA-Z0-9.\\]{1,}", "", sub.2)
-sub.4 <- sub("(\\s[a-z]{1,})$", "", sub.3)
-sub.5 <- sub("(/&;#]+)", "", sub.4)
-DF.temp$record <- sub.5
-DF <- filter(DF, attributes != "AU")
-DF <- rbind(DF, DF.temp)
-DF <- arrange(DF, articleID)
-rm(DF.temp)
+    DF.temp <- filter(DF, attributes == "AU")
+    sub.1 <- sub("^([^,]*,[^,]*),.*", "\\1", DF.temp$record)
+    sub.2 <- sub("[,\\.][a-zA-Z]{1,}@", "", sub.1)
+    sub.3 <- sub("@[a-zA-Z0-9.\\]{1,}", "", sub.2)
+    sub.4 <- sub("(\\s[a-z]{1,})$", "", sub.3)
+    sub.5 <- sub("(/&;#]+)", "", sub.4)
+    DF.temp$record <- sub.5
 
+    DF <- filter(DF, attributes != "AU")
+    DF <- rbind(DF, DF.temp)
+    DF <- arrange(DF, articleID)
+    rm(DF.temp)
 
 #_______________________________________________________________________________
 #                       7. Minor Cleaning
 #-------------------------------------------------------------------------------
 #
-#
-#
+# In this section, meaningful variable names are assigned to variables that have
+# been cleaned and are appropriate for analysis.  All other variables are
+# excluded to prevent inappropriate analyses.
 #_______________________________________________________________________________
 
+# Exclude UR record from the data file
 DF <- filter(DF, attributes != "UR")
 DF$attributes <- ifelse(DF$attributes == "KW", "KP", DF$attributes)
 
+DF$attributes <- ifelse(DF$attributes == "TI", "title", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "AU", "author", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "SO", "journal", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "YR", "pubYear", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "AB", "abstract", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "KW", "keyWord", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "LO", "location", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "S2", "journalSecondary", DF$attributes)
+
+variables.to.keep <- c("title", "author", "journal", "pubYear", "abstract",
+                       "keyWord", "location", "journalSecondary")
+
+DF <- DF[DF$attributes %in% variables.to.keep, ]
 
 #_______________________________________________________________________________
 #                        8. OUTPUT
 #-------------------------------------------------------------------------------
 #
-#
+# This final section places a datafile in the global environment, which is
+# called bwr.df.  If csv is specified as TRUE in the ebscoBWR function call,
+# a csv file is written to the user's current working directory.  A few messages
+# are written to the user's screen, providing a warning message and a few
+# quality checks to ensure the number of articles matches the number of sources.
 #_______________________________________________________________________________
 
-bwr.df <<- DF
-if(csv == TRUE){write.csv(pi.df, "pi.csv")}
-cat("Wrangling is complete.\n")
-if(csv == TRUE){cat("  The *.csv file can be found in your working directory.\n")}
-cat("\nWarning: All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  And, make good choices.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.\n")
-print(DF.flag)
+    bwr.df <<- DF
+    if(csv == TRUE){write.csv(bwr.df, "bwrDF.csv")}
 
-bwr.ti <- filter(DF, attributes == "TI")
-bwr.ti <- length(bwr.ti$record)
+    cat(
+"***************************************************
+              Wrangling is complete
+****************************************************")
 
-bwr.so <- filter(DF, attributes == "SO")
-bwr.so <- length(bwr.so$record)
+    if(csv == TRUE){cat(
+    "\nThe `bwrDF.csv` file can be found in your working directory.\n")}
 
-a <- sprintf("Number of unique articles: %d", bwr.ti)
-
-b <- sprintf("Number of sources (should be same as articles): %s", bwr.so)
-
-print(a)
-print(b)
 
 }
 

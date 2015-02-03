@@ -29,9 +29,14 @@ This section provides an overview of the major variables that are contained in t
 
 `author` Names of authors for each article.  Note that author names are in different formats due to formatting differences across database services.  Author names need further processing for subsequent analyses.  Unique author counts should not be conducted until formatting of names is standardized.  (s+)
 
-`journal`  Title of journal. Every article has only one corresponding title.  Titles were derived from the _SO_ fields of _PI_, and `JN` from SSA and SWA.  (s)
+`journal`  Title of journal. Every article has only one corresponding title.  Titles were derived from the _SO_ fields of _PI_, and `JN` from SSA and SWA.  Some journals have a foreign language title and had a second field.  In the wrangling process, only the first title was retained.  The (s)
 
-`pubYear` Year of publication.  Publication year is derived from the _YR_ field of PI; _PD_ from SSA; and _PY_ from SWA. Years use standard 4-digit format (e.g., 2015).  (s)
+`journalSecondary` Secondary journal title.  Some journals operated under a different title, and these are included in this field.  These values are derived from the _S2_ field in PsychInfo.  The reliability of this information is not known.  (s+)
+
+`pubYear` Year of publication.  Publication year is derived from the _YR_ field of PI; _PD_ from SSA; and _PY_ from SWA. Years use standard 4-digit format (e.g., 2015).  Some years were initially specified as having only two digits and the century was absent.  In preliminary testing, all these years were originally noted as 88 - 99.  These values were pre-pended with 19.  Future research should review the year variables before finalizing the process to ensure that they should not be prepended with 18 (historical articles) or 20 (current articles).  (s)
+
+
+All years with two digits were prepended with 19 (century) automatically in the bwr function call. The function itself is not smart enough to determine if the values should be prepended with 20.  Be sure you check your data carefully.  And, make good choices.  \n\nThe following output shows the values of the years that were prepended and the respective number of data points.(s)
 
 `abstract` Abstract of corresponding journal article.  (s)
 

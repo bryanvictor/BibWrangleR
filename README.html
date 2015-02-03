@@ -53,7 +53,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 <div id="bibwrangler" class="section level1">
-<h1>&gt;BibWrangleR&lt;</h1>
+<h1>BibWrangleR</h1>
 <p>Brian E. Perron</p>
 <p>Bryan G. Victor</p>
 <p>BibWrangleR is a suite of functions that are designed to convert search results from major bibliographic indexing services into structured data files that can be easily analyzed. This allows a wide range of analysis of scholarship within a particular field or topic area.</p>
@@ -70,17 +70,11 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
  (s+) One or more values for each record</code></pre>
 <p><code>articleID</code> Unique identifier of each article. (s)</p>
 <p><code>title</code> Title of the article. Based on the <em>TI</em> fields from all three databases. (s)</p>
-<p><code>author</code> Names of authors for each article. Note that author names are in different formats due to formatting differences across database services. (s+)</p>
-<ul>
-<li>Known Issues: Author names need further processing for subsequent analyses. Unique author counts should not be conducted until formatting of names is standardized.</li>
-</ul>
+<p><code>author</code> Names of authors for each article. Note that author names are in different formats due to formatting differences across database services. Author names need further processing for subsequent analyses. Unique author counts should not be conducted until formatting of names is standardized. (s+)</p>
 <p><code>journal</code> Title of journal. Every article has only one corresponding title. Titles were derived from the <em>SO</em> fields of <em>PI</em>, and <code>JN</code> from SSA and SWA. (s)</p>
 <p><code>pubYear</code> Year of publication. Publication year is derived from the <em>YR</em> field of PI; <em>PD</em> from SSA; and <em>PY</em> from SWA. Years use standard 4-digit format (e.g., 2015). (s)</p>
 <p><code>abstract</code> Abstract of corresponding journal article. (s)</p>
-<p><code>keyWord</code> Author assigned keywords. Keywords are derived from the <em>KP</em> field from psycInfo and <em>KY</em> field from SSA. (s+)</p>
-<ul>
-<li>Known issues: Social Work Abstracts does not provide keywords on export. <em>KP</em> field from psychInfo was originally a phrase and later changed to individual words. Prior to 1995 (or approximately), psycInfo used key phrases instead of keywords. Analysis must consider this change in data type and adjust analyses accordingly.</li>
-</ul>
+<p><code>keyWord</code> Author assigned keywords. Keywords are derived from the <em>KP</em> field from psycInfo and <em>KY</em> field from SSA. Social Work Abstracts does not provide keywords on export. <em>KP</em> field from psychInfo was originally a phrase and later changed to individual words. Prior to 1995 (or approximately), psycInfo used key phrases instead of keywords. Analysis must consider this change in data type and adjust analyses accordingly. (s+)</p>
 <p><code>location</code> <strong>BRYAN description needed here</strong> [s]</p>
 </div>
 <div id="other-known-limitations" class="section level2">
