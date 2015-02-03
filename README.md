@@ -20,7 +20,7 @@ Provide description ...
 
 This section provides an overview of the major variables that are contained in the post-processed data file.  For purposes of brevity, the following abbreviations are used:  psycInfo (PI), Social Science Abstracts (SSA), and Social Work Abstracts (SWA).  Every record (i.e., `article`) has the following variables.  All data are structured in a long format, and some records have multiple values for a single variable.  The following codes are used to indicate single and multiple variables:
 
-     (s)  Single for each recrod 
+     (s)  Single for each record 
      (s+) One or more values for each record
 
 `articleID` Unique identifier of each article.  (s)
