@@ -429,7 +429,7 @@ DF$attributes <- ifelse(DF$attributes == "AU", "author", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "SO", "journal", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "YR", "pubYear", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "AB", "abstract", DF$attributes)
-DF$attributes <- ifelse(DF$attributes == "KW", "keyWord", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "KP", "keyWord", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "LO", "location", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "S2", "journalSecondary",
                                                            DF$attributes)
