@@ -1,4 +1,6 @@
-ebscoBWR.f <- function(csv = FALSE, path){
+
+
+ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
 
 #_______________________________________________________________________________
 #                           MAIN TO-DO LIST
@@ -58,6 +60,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
     DF <- data.frame(lapply(DF, as.character), stringsAsFactors = FALSE)
 
     rm(temp, dat, attributes, attributes.df, record, record.df)
+
 
 #_______________________________________________________________________________
 #                     2a. REMOVE MULTIPLE TI FIELDS
@@ -260,6 +263,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #_______________________________________________________________________________
 
 
+    if(psycInfoOnly == TRUE){
+
     DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
 
     DF.temp <- DF
@@ -300,6 +305,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
     DF <- arrange(DF, articleID)
 
     rm(DF.temp)
+    }
 
 #_______________________________________________________________________________
 #                            6a. AUTHOR FIELD FIX - DIGITS
@@ -326,6 +332,8 @@ ebscoBWR.f <- function(csv = FALSE, path){
 # The following text locates each author in the cell and places it into a new
 # row to be consistent with PsychInfo and SSA.
 #_______________________________________________________________________________
+
+if(psycInfoOnly == FALSE){
 
     #Create a new temporary data frame
     DF.temp <- filter(DF, attributes == "AU")
@@ -378,6 +386,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
     DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
     DF <- arrange(DF, articleID)
 
+}
 #_______________________________________________________________________________
 #                       6c. E-mails
 #-------------------------------------------------------------------------------
@@ -456,6 +465,6 @@ DF <- select(DF, articleID, attributes, record)
     if(csv == TRUE){cat(
     "\nThe `bwrDF.csv` file can be found in your working directory.\n")}
 
-
 }
+
 
