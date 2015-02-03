@@ -357,7 +357,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
 DF <- filter(DF, attributes != "UR")
 DF$attributes <- ifelse(DF$attributes == "KW", "KP", DF$attributes)
 
-DF$attributes <- ifelse(DF$attributes == "TI", "title", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "TI", "article", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "AU", "author", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "SO", "journal", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "YR", "pubYear", DF$attributes)
@@ -366,7 +366,7 @@ DF$attributes <- ifelse(DF$attributes == "KW", "keyWord", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "LO", "location", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "S2", "journalSecondary", DF$attributes)
 
-variables.to.keep <- c("title", "author", "journal", "pubYear", "abstract",
+variables.to.keep <- c("article", "author", "journal", "pubYear", "abstract",
                        "keyWord", "location", "journalSecondary")
 
 DF <- DF[DF$attributes %in% variables.to.keep, ]

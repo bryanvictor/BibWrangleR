@@ -25,7 +25,7 @@ This section provides an overview of the major variables that are contained in t
 
 `articleID` Unique identifier of each article.  (s)
 
-`title`  Title of the article.  Based on the _TI_ fields from all three databases.  (s)
+`article`  Title of the article.  Based on the _TI_ fields from all three databases.  (s)
 
 `author` Names of authors for each article.  Note that author names are in different formats due to formatting differences across database services.  Author names need further processing for subsequent analyses.  Unique author counts should not be conducted until formatting of names is standardized.  (s+)
 
