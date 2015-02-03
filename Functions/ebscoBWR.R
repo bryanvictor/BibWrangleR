@@ -263,7 +263,7 @@ ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
 #_______________________________________________________________________________
 
 
-    if(psycInfoOnly == TRUE){
+    if(psycInfoOnly == FALSE){
 
     DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
 
