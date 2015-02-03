@@ -60,7 +60,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
     rm(temp, dat, attributes, attributes.df, record, record.df)
 
 #_______________________________________________________________________________
-#                     2. REMOVE MULTIPLE TI FIELDS
+#                     2a. REMOVE MULTIPLE TI FIELDS
 #-------------------------------------------------------------------------------
 #
 # Some records contain multiple TI fields when there is a translated title. To
@@ -80,6 +80,63 @@ ebscoBWR.f <- function(csv = FALSE, path){
 
     #Filter out all rows with the TI (Title field)
     DF.temp <- filter(DF, attributes == "TI")
+
+    #Identify duplicate entries by subtracting each sequential index value,
+    #which is saved in as duplicate.
+    duplicate <- diff(DF.temp$index)
+
+    #The first entry does not have a value because it cannot be subtracted from
+    #anything. The length of the duplicate variable is the length of the
+    #index variable - 1.  Add a zero to the duplicate variable to make them the
+    #same length.
+    duplicate <- c(0, duplicate)
+
+    #Set all duplicate records to 1, and all non-duplicates to 0.
+    duplicate <- ifelse(duplicate == 1, 1, 0)
+
+    #Bind the variable duplicate to the temporary file
+    DF.temp.duplicate <- cbind(DF.temp, duplicate)
+
+    #Filter out all the duplicate records
+    DF.temp.reduced <- filter(DF.temp.duplicate, duplicate == 1)
+
+    #Select out the index variable, which will be used to identify duplicate
+    #records in the datafile being processed.
+    duplicate.index <- DF.temp.reduced$index
+
+    #Identify all duplicates in the main datafile (DF) by comparing the DF$index
+    #values with those in the duplicate.index variable. This creates creates a
+    #new variable (duplicate) with the values of TRUE (duplicate) and FALSE
+    #(non-duplicate).
+    duplicate <- DF$index %in% duplicate.index
+
+    #Bind the new duplicate variable to the main datafile.
+    DF <- cbind(DF, duplicate)
+
+    #Filter out all the records that are non duplicates (FALSE)
+    #Remove the temporary variables used to identify and remove duplicates.
+    DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
+
+    rm(DF.temp, duplicate, DF.temp.duplicate, DF.temp.reduced, duplicate.index)
+
+
+#_______________________________________________________________________________
+#                     2b. REMOVE MULTIPLE AB FIELDS
+#-------------------------------------------------------------------------------
+#
+# SSA records contain two AB fields.  These AB records are always serially
+# serially ordered, so the extraction method in 2a is reapplied here.
+#_______________________________________________________________________________
+
+
+    #Create and indexing variable to flag and remove items
+    blank <- c("", "")
+    DF <- rbind(blank, DF)
+
+    DF$index <- 1:nrow(DF)
+
+    #Filter out all rows with the TI (Title field)
+    DF.temp <- filter(DF, attributes == "AB")
 
     #Identify duplicate entries by subtracting each sequential index value,
     #which is saved in as duplicate.
@@ -356,6 +413,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
 # Exclude UR record from the data file
 DF <- filter(DF, attributes != "UR")
 DF$attributes <- ifelse(DF$attributes == "KW", "KP", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "AD", "AF", DF$attributes)
 
 DF$attributes <- ifelse(DF$attributes == "TI", "article", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "AU", "author", DF$attributes)
@@ -364,12 +422,17 @@ DF$attributes <- ifelse(DF$attributes == "YR", "pubYear", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "AB", "abstract", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "KW", "keyWord", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "LO", "location", DF$attributes)
-DF$attributes <- ifelse(DF$attributes == "S2", "journalSecondary", DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "S2", "journalSecondary",
+                                                           DF$attributes)
+DF$attributes <- ifelse(DF$attributes == "AF", "authorAff", DF$attributes)
+
 
 variables.to.keep <- c("article", "author", "journal", "pubYear", "abstract",
-                       "keyWord", "location", "journalSecondary")
+                       "keyWord", "location", "journalSecondary", "authorAff")
 
 DF <- DF[DF$attributes %in% variables.to.keep, ]
+rownames(DF) <- NULL
+DF <- select(DF, articleID, attributes, record)
 
 #_______________________________________________________________________________
 #                        8. OUTPUT
@@ -386,7 +449,7 @@ DF <- DF[DF$attributes %in% variables.to.keep, ]
     if(csv == TRUE){write.csv(bwr.df, "bwrDF.csv")}
 
     cat(
-"***************************************************
+"****************************************************
               Wrangling is complete
 ****************************************************")
 
