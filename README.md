@@ -27,9 +27,7 @@ This section provides an overview of the major variables that are contained in t
 
 `title`  Title of the article.  Based on the _TI_ fields from all three databases.  (s)
 
-`author` Names of authors for each article.  Note that author names are in different formats due to formatting differences across database services.  (s+)
-
-* Known Issues:  Author names need further processing for subsequent analyses.  Unique author counts should not be conducted until formatting of names is standardized.  
+`author` Names of authors for each article.  Note that author names are in different formats due to formatting differences across database services.  Author names need further processing for subsequent analyses.  Unique author counts should not be conducted until formatting of names is standardized.  (s+)
 
 `journal`  Title of journal. Every article has only one corresponding title.  Titles were derived from the _SO_ fields of _PI_, and `JN` from SSA and SWA.  (s)
 
@@ -37,9 +35,7 @@ This section provides an overview of the major variables that are contained in t
 
 `abstract` Abstract of corresponding journal article.  (s)
 
-`keyWord` Author assigned keywords.  Keywords are derived from the _KP_ field from psycInfo and _KY_ field from SSA. (s+)
-
-* Known issues:  Social Work Abstracts does not provide keywords on export.  _KP_ field from psychInfo was originally a phrase and later changed to individual words.  Prior to 1995 (or approximately), psycInfo used key phrases instead of keywords. Analysis must consider this change in data type and adjust analyses accordingly.  
+`keyWord` Author assigned keywords.  Keywords are derived from the _KP_ field from psycInfo and _KY_ field from SSA.  Social Work Abstracts does not provide keywords on export.  _KP_ field from psychInfo was originally a phrase and later changed to individual words.  Prior to 1995 (or approximately), psycInfo used key phrases instead of keywords. Analysis must consider this change in data type and adjust analyses accordingly.  (s+)
 
 `location` **BRYAN description needed here**  [s]  
 
