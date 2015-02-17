@@ -1,4 +1,4 @@
-proQuestBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
+proQuestBWR.f <- function(csv = FALSE, path){
 
     #___________________________________________________________________________
     #                           1. READ ProQuest txt files
@@ -7,22 +7,10 @@ proQuestBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
     # Check last line of txt file.  Clean up might be necessary
     #___________________________________________________________________________
 
-    rm(list=ls())
-
-    path <- "/Users/beperron/Git/PQTest"
-
-
     library(dplyr)
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
     record <- unlist(lapply(temp, readLines))
 
-    # Add `author` tag which appears two lines after the dashed line
-    # that separates the records
-    #for(i in 3:length(record)){
-    #    record[i] <- ifelse(grepl("\\_{10,}", record[i-2]) == TRUE,
-    #                 paste("Article: ", record[i], sep=""), record[i])
-    #                 record
-    #                 }
     indx <- which(grepl('\\_{10}', record))
     record[indx+2] <- paste0('Article: ', record[indx+2])
 
