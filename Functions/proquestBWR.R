@@ -77,6 +77,11 @@ proQuestBWR.f <- function(csv = FALSE, path){
         DF.authors.fixed <- split.df
         DF.no.authors <- filter(full.df, attributes != "Author")
 
+        #Strip biographies from author fields in DF.author.good data frame
+        library(qdap)
+        DF.authors.good[,"record"]<-beg2char(DF.authors.good$record, "1", 1)
+        detach(qdap)
+    
         #Bind the reduced DF with the fixed df
         DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
         DF <- arrange(DF, articleID)
