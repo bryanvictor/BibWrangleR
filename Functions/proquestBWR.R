@@ -64,7 +64,7 @@ proQuestBWR.f <- function(csv = FALSE, path){
 
         #Eliminate author affiliation from author record
         split.df$record <- gsub("1\\s.+", "", split.df$record)
-
+        
         #Eliminate remaining number from author record
         split.df$record <- gsub("1", "", split.df$record)
 
@@ -76,12 +76,10 @@ proQuestBWR.f <- function(csv = FALSE, path){
         DF.authors.good <- DF.authors[!(DF.authors$articleID %in% fixed.ID),]
         DF.authors.fixed <- split.df
         DF.no.authors <- filter(full.df, attributes != "Author")
-
-        #Strip biographies from author fields in DF.author.good data frame
-        library(qdap)
-        DF.authors.good[,"record"]<-beg2char(DF.authors.good$record, "1", 1)
-        
     
+        #Strip author biographies
+        DF.authors.good$record <- gsub("11\\s.+", "", DF.authors.good$record)
+
         #Bind the reduced DF with the fixed df
         DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
         DF <- arrange(DF, articleID)
