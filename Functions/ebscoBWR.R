@@ -9,10 +9,6 @@ ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
 #  1. Write code to ensure user has required packages dplyr, stringi, stringr
 #     and there are no conflicts with the code
 #
-#  2. Remove unnecessary objects at the end of each section.
-#
-#  3. Remove loop from section 3
-#
 #  4. Include note on importance of naming files to give priority
 #
 #  5. Integrate into Section 1 a function that checks each file for a blank line
@@ -440,9 +436,17 @@ variables.to.keep <- c("article", "author", "journal", "pubYear", "abstract",
                        "keyWord", "location", "journalSecondary", "authorAff")
 
 DF <- DF[DF$attributes %in% variables.to.keep, ]
+
+# Strip white-space
+DF$record <- stringr::str_trim(DF$record, side="both")
+
+# Remove rownames
 rownames(DF) <- NULL
+
+# Reorder variables
 DF <- select(DF, articleID, attributes, record)
 
+rm(blank, path, sub.1, sub.2, sub.3, sub.4, sub.5, variables.to.keep)
 #_______________________________________________________________________________
 #                        8. OUTPUT
 #-------------------------------------------------------------------------------
@@ -454,8 +458,11 @@ DF <- select(DF, articleID, attributes, record)
 # quality checks to ensure the number of articles matches the number of sources.
 #_______________________________________________________________________________
 
-    bwr.df <<- DF
-    if(csv == TRUE){write.csv(bwr.df, "bwrDF.csv")}
+    ebscoBWR.df <<- DF
+
+rm(DF)
+
+    if(csv == TRUE){write.csv(bwr.df, "ebscoBWR.csv")}
 
     cat(
 "****************************************************
@@ -463,7 +470,7 @@ DF <- select(DF, articleID, attributes, record)
 ****************************************************")
 
     if(csv == TRUE){cat(
-    "\nThe `bwrDF.csv` file can be found in your working directory.\n")}
+    "\nThe `ebscoBWR.csv` file can be found in your working directory.\n")}
 
 }
 
