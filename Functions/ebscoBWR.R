@@ -27,6 +27,28 @@ ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
 
 
 #_______________________________________________________________________________
+#                       0. Install Missing Packages
+#-------------------------------------------------------------------------------
+#
+#All files to be wrangled should be saved in a single folder and have a *.txt
+#extension.  The files must be processed from EbscoHost in the generic
+#bibliographic format -- no other file structure will work.
+#
+#_______________________________________________________________________________
+
+pkgs <- c("dplyr", "stringi", "stringr")
+pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
+if (length(pkgs_miss) > 0) {
+    message("\n ...Installing missing packages!\n")
+    install.packages(pkgs_miss)
+}
+
+if (length(pkgs_miss) == 0) {
+    message("\n ...Packages were already installed!\n")
+}
+
+
+#_______________________________________________________________________________
 #                           1. READ EBSCO txt files
 #-------------------------------------------------------------------------------
 #
