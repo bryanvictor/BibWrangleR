@@ -440,6 +440,9 @@ DF <- DF[DF$attributes %in% variables.to.keep, ]
 # Strip white-space
 DF$record <- stringr::str_trim(DF$record, side="both")
 
+DF$record <- ifelse(DF$attributes == "keyWord", tolower(DF$record), DF$record)
+
+
 # Remove rownames
 rownames(DF) <- NULL
 
