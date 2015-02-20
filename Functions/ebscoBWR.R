@@ -290,12 +290,10 @@ if (length(pkgs_miss) == 0) {
 
 
     # APA appears to use a 6 to 8 digit identifier that needs to be excluded
-    DF.temp$record <- ifelse(nchar(DF.temp$record) >= 6 &
-                             DF.temp$attributes == "PD" &
-                             nchar(DF.temp$record) <= 8 &
-                             DF.temp$attributes == "PD",
-                             "",
-                             DF.temp$record)
+    DF.temp$record<-sub("[0-9]{6,8}", "", DF.temp$record)
+    
+    #Eliminates "Bibiliography", "Graph" and "Table" from PD field
+    DF.temp$record<-sub("[BGT]?[a-z]{4,11}", "", DF.temp$record)
 
     # Extract the first portion of the dates, up to the point with a 2 or 4
     # digit year value. This also captures some letters and characters.
