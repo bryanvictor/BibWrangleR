@@ -1,4 +1,25 @@
 proQuestBWR.f <- function(csv = FALSE, path){
+  
+  #_______________________________________________________________________________
+  #                       0. Install Missing Packages
+  #-------------------------------------------------------------------------------
+  #
+  #All files to be wrangled should be saved in a single folder and have a *.txt
+  #extension.  The files must be processed from EbscoHost in the generic
+  #bibliographic format -- no other file structure will work.
+  #
+  #_______________________________________________________________________________
+  
+  pkgs <- c("dplyr", "stringi", "stringr")
+  pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
+  if (length(pkgs_miss) > 0) {
+    message("\n ...Installing missing packages!\n")
+    install.packages(pkgs_miss)
+  }
+  
+  if (length(pkgs_miss) == 0) {
+    message("\n ...Packages were already installed!\n")
+  }
 
     #___________________________________________________________________________
     #                           1. READ ProQuest txt files
@@ -13,7 +34,6 @@ proQuestBWR.f <- function(csv = FALSE, path){
 
     indx <- which(grepl('\\_{10}', record))
     record[indx+2] <- paste0('Article: ', record[indx+2])
-
 
 
     # extract attributes as a separate variable
@@ -106,7 +126,12 @@ proQuestBWR.f <- function(csv = FALSE, path){
 
     DF$attributes <- ifelse(DF$attributes == "publicationtitle", "journal", DF$attributes)
     DF$attributes <- ifelse(DF$attributes == "publicationyear", "pubYear", DF$attributes)
-    DF$attributes <- ifelse(DF$attributes == "Identifier/keyword", "keyWord", DF$attributes)
+    DF$attributes <- ifelse(DF$attributes == "identifier/keyword", "keyWord", DF$attributes)
+  
+    # Strip white-space
+    DF$record <- stringr::str_trim(DF$record, side="both")
+  
+    DF$record <- ifelse(DF$attributes == "keyWord", tolower(DF$record), DF$record)
 
     rownames(DF) <- NULL
     DF <- select(DF, articleID, attributes, record)
