@@ -1,5 +1,3 @@
-
-
 ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
 
 #_______________________________________________________________________________
@@ -208,7 +206,14 @@ if (length(pkgs_miss) == 0) {
 #_______________________________________________________________________________
 
     #Create an article identifier to group all records for a unique article.
-    DF$articleID <- cumsum(DF$attributes == "")
+
+
+    indx <- which(DF$attributes=="TI")
+    DF$attributes[indx-1] <- ""
+    DF$articleID <- cumsum(DF$attributes == "")-1
+
+
+
 
     #Select out all titles
     DF.temp <- filter(DF, attributes == "TI")
@@ -226,7 +231,7 @@ if (length(pkgs_miss) == 0) {
     DF.duplicated.ID <- DF.temp$articleID
     DF <- DF[!(DF$articleID %in% DF.duplicated.ID), ]
 
-    rm(DF.temp, DF.duplicated.ID)
+    rm(DF.temp, DF.duplicated.ID, indx)
 
 #_______________________________________________________________________________
 #     4.  CLEAN JOURNAL NAMES AND MERGE JOURNAL NAME FIELDS (SO AND JN)
@@ -291,7 +296,7 @@ if (length(pkgs_miss) == 0) {
 
     # APA appears to use a 6 to 8 digit identifier that needs to be excluded
     DF.temp$record<-sub("[0-9]{6,8}", "", DF.temp$record)
-    
+
     #Eliminates "Bibiliography", "Graph" and "Table" from PD field
     DF.temp$record<-sub("[BGT]?[a-z]{4,11}", "", DF.temp$record)
 

@@ -1,5 +1,5 @@
 proQuestBWR.f <- function(csv = FALSE, path){
-  
+
   #_______________________________________________________________________________
   #                       0. Install Missing Packages
   #-------------------------------------------------------------------------------
@@ -9,14 +9,14 @@ proQuestBWR.f <- function(csv = FALSE, path){
   #bibliographic format -- no other file structure will work.
   #
   #_______________________________________________________________________________
-  
+
   pkgs <- c("dplyr", "stringi", "stringr")
   pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
   if (length(pkgs_miss) > 0) {
     message("\n ...Installing missing packages!\n")
     install.packages(pkgs_miss)
   }
-  
+
   if (length(pkgs_miss) == 0) {
     message("\n ...Packages were already installed!\n")
   }
@@ -84,7 +84,7 @@ proQuestBWR.f <- function(csv = FALSE, path){
 
         #Eliminate author affiliation from author record
         split.df$record <- gsub("1\\s.+", "", split.df$record)
-        
+
         #Eliminate remaining number from author record
         split.df$record <- gsub("1", "", split.df$record)
 
@@ -96,7 +96,7 @@ proQuestBWR.f <- function(csv = FALSE, path){
         DF.authors.good <- DF.authors[!(DF.authors$articleID %in% fixed.ID),]
         DF.authors.fixed <- split.df
         DF.no.authors <- filter(full.df, attributes != "Author")
-    
+
         #Strip author biographies
         DF.authors.good$record <- gsub("11\\s.+", "", DF.authors.good$record)
 
@@ -104,7 +104,50 @@ proQuestBWR.f <- function(csv = FALSE, path){
         DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
         DF <- arrange(DF, articleID)
 
+  #_______________________________________________________________________________
+  #            KEYWORD FIELD FIX - KEYWORDS IN SINGLE FIELD
+  #-------------------------------------------------------------------------------
+  #
+  # Social Work abstracts lists authors in a single cell, separated by a semi-
+  # colon, and then includes digits and email addresses in some occassions.
+  # The following text locates each author in the cell and places it into a new
+  # row to be consistent with PsychInfo and SSA.
+  #_______________________________________________________________________________
 
+
+  #Create a new temporary data frame
+  full.df$attributes <- ifelse(full.df$attributes == "Subject",
+        "keyWord", full.df$attributes)
+
+  DF.temp <- filter(full.df, attributes == "keyWord")
+
+  #Add a comma to the end of every string
+  DF.temp$record <- paste(DF.temp$record, ";", sep="")
+  comma.split <- strsplit(DF.temp$record, ";")
+
+  split.df <- data.frame(
+      attributes = rep(DF.temp$attributes, lapply(comma.split, length)),
+      record = unlist(comma.split),
+      articleID = rep(DF.temp$articleID, lapply(comma.split, length)))
+
+  #Trim whitespace on both sides
+  split.df$record <- gsub("\\*", "", split.df$record)
+  split.df$record <- stringr::str_trim(split.df$record, side = "both")
+  split.df$record <- tolower(split.df$record)
+
+
+
+
+  #Filter out all processed records from the fixed list
+  DF.no.subject <- filter(full.df, attributes != "keyWord")
+  DF.subject.fixed <- split.df
+
+
+  #Strip author biographies
+
+  #Bind the reduced DF with the fixed df
+  DF <- rbind(DF.no.subject, DF.subject.fixed)
+  DF <- arrange(DF, articleID)
     #_______________________________________________________________________________
     #                       7. Minor Cleaning
     #-------------------------------------------------------------------------------
@@ -117,7 +160,7 @@ proQuestBWR.f <- function(csv = FALSE, path){
     # Exclude UR record from the data file
 
     attributeKeep <- c("Article", "Author", "Publicationtitle",
-        "Publicationyear", "Abstract", "Identifier/keyword", "Location")
+        "Publicationyear", "Abstract", "keyWord", "Location")
 
     attributeKeepIndex <- DF$attributes %in% attributeKeep
     DF <- DF[attributeKeepIndex,]
@@ -126,12 +169,10 @@ proQuestBWR.f <- function(csv = FALSE, path){
 
     DF$attributes <- ifelse(DF$attributes == "publicationtitle", "journal", DF$attributes)
     DF$attributes <- ifelse(DF$attributes == "publicationyear", "pubYear", DF$attributes)
-    DF$attributes <- ifelse(DF$attributes == "identifier/keyword", "keyWord", DF$attributes)
-  
+
     # Strip white-space
     DF$record <- stringr::str_trim(DF$record, side="both")
-  
-    DF$record <- ifelse(DF$attributes == "keyWord", tolower(DF$record), DF$record)
+
 
     rownames(DF) <- NULL
     DF <- select(DF, articleID, attributes, record)
