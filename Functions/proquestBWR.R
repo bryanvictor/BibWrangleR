@@ -10,8 +10,6 @@ proQuestBWR.f <- function(csv = FALSE, path){
   #
   #_______________________________________________________________________________
 
-  rm(list=ls())
-  path <- "/Users/beperron/Git/SocialWorkResearch/Data/proQuest"
 
   pkgs <- c("dplyr", "stringi", "stringr")
   pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
