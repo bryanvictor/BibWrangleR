@@ -33,7 +33,7 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #bibliographic format -- no other file structure will work.
 #
 #_______________________________________________________________________________
-rm(list=ls())
+
 
 # leave this path for testing...
 #path <- "/Users/beperron/Git/SocialWorkResearch/Data/ebscoFULL"
