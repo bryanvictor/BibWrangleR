@@ -287,7 +287,7 @@ DF.temp <- filter(DF, attributes == "TI")
     DF <- arrange(DF, articleID)
 
     rm(DF.temp)
-    }
+
 
 #_______________________________________________________________________________
 #                            6a. AUTHOR FIELD FIX - DIGITS
@@ -445,10 +445,9 @@ rm(blank, path, sub.1, sub.2, sub.3, sub.4, sub.5, variables.to.keep)
 # quality checks to ensure the number of articles matches the number of sources.
 #_______________________________________________________________________________
 
-    ebscoBWR.df <<- DF
+ebscoBWR.df <<- DF
 
 rm(DF)
-
     if(csv == TRUE){write.csv(bwr.df, "ebscoBWR.csv")}
 
     cat(
@@ -458,7 +457,7 @@ rm(DF)
 
     if(csv == TRUE){cat(
     "\nThe `ebscoBWR.csv` file can be found in your working directory.\n")}
-
 }
+
 
 
