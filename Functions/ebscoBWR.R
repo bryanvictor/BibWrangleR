@@ -1,4 +1,4 @@
-ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
+ebscoBWR.f <- function(csv = FALSE, path){
 
 #_______________________________________________________________________________
 #                           MAIN TO-DO LIST
@@ -33,6 +33,8 @@ ebscoBWR.f <- function(csv = FALSE, path, psycInfoOnly = FALSE){
 #bibliographic format -- no other file structure will work.
 #
 #_______________________________________________________________________________
+rm(list=ls())
+path <- "/Users/beperron/Git/SocialWorkResearch/Data/ebscoFULL"
 
 pkgs <- c("dplyr", "stringi", "stringr")
 pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
@@ -77,6 +79,16 @@ if (length(pkgs_miss) == 0) {
 
     rm(temp, dat, attributes, attributes.df, record, record.df)
 
+# Create articleIDs
+blank <- c("", "", "")
+DF <- rbind(blank, DF)
+
+
+variables.to.keep <- c("KW", "KP", "AD", "AF", "TI", "AU", "SO", "YR", "AB", "LO", "S2", "AF")
+
+DF <- DF[DF$attributes %in% variables.to.keep, ]
+
+
 
 #_______________________________________________________________________________
 #                     2a. REMOVE MULTIPLE TI FIELDS
@@ -90,54 +102,16 @@ if (length(pkgs_miss) == 0) {
 # performed on the title itself.
 #
 #_______________________________________________________________________________
+#Create an article identifier to group all records for a unique article.
 
-    #Create and indexing variable to flag and remove items
-    blank <- c("", "")
-    DF <- rbind(blank, DF)
 
-    DF$index <- 1:nrow(DF)
+x1 <- which(DF$attributes == "TI")
+x2 <- x1+1
+DF.x2 <- DF[x2, ]
+duplicate <- which(DF.x2$attributes == "TI")
+duplicate.ind <- as.numeric(row.names(DF.x2[duplicate, ]))
 
-    #Filter out all rows with the TI (Title field)
-    DF.temp <- filter(DF, attributes == "TI")
-
-    #Identify duplicate entries by subtracting each sequential index value,
-    #which is saved in as duplicate.
-    duplicate <- diff(DF.temp$index)
-
-    #The first entry does not have a value because it cannot be subtracted from
-    #anything. The length of the duplicate variable is the length of the
-    #index variable - 1.  Add a zero to the duplicate variable to make them the
-    #same length.
-    duplicate <- c(0, duplicate)
-
-    #Set all duplicate records to 1, and all non-duplicates to 0.
-    duplicate <- ifelse(duplicate == 1, 1, 0)
-
-    #Bind the variable duplicate to the temporary file
-    DF.temp.duplicate <- cbind(DF.temp, duplicate)
-
-    #Filter out all the duplicate records
-    DF.temp.reduced <- filter(DF.temp.duplicate, duplicate == 1)
-
-    #Select out the index variable, which will be used to identify duplicate
-    #records in the datafile being processed.
-    duplicate.index <- DF.temp.reduced$index
-
-    #Identify all duplicates in the main datafile (DF) by comparing the DF$index
-    #values with those in the duplicate.index variable. This creates creates a
-    #new variable (duplicate) with the values of TRUE (duplicate) and FALSE
-    #(non-duplicate).
-    duplicate <- DF$index %in% duplicate.index
-
-    #Bind the new duplicate variable to the main datafile.
-    DF <- cbind(DF, duplicate)
-
-    #Filter out all the records that are non duplicates (FALSE)
-    #Remove the temporary variables used to identify and remove duplicates.
-    DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
-
-    rm(DF.temp, duplicate, DF.temp.duplicate, DF.temp.reduced, duplicate.index)
-
+DF <- DF[-(duplicate.ind),]
 
 #_______________________________________________________________________________
 #                     2b. REMOVE MULTIPLE AB FIELDS
@@ -147,53 +121,16 @@ if (length(pkgs_miss) == 0) {
 # serially ordered, so the extraction method in 2a is reapplied here.
 #_______________________________________________________________________________
 
+x1 <- which(DF$attributes == "AB")
+x2 <- x1+1
+DF.x2 <- DF[x2, ]
 
-    #Create and indexing variable to flag and remove items
-    blank <- c("", "")
-    DF <- rbind(blank, DF)
+table(DF.x2$attributes)
+duplicate <- which(DF.x2$attributes == "AB")
+duplicate.ind <- as.numeric(row.names(DF.x2[duplicate, ]))
 
-    DF$index <- 1:nrow(DF)
+DF <- DF[-(duplicate.ind),]
 
-    #Filter out all rows with the TI (Title field)
-    DF.temp <- filter(DF, attributes == "AB")
-
-    #Identify duplicate entries by subtracting each sequential index value,
-    #which is saved in as duplicate.
-    duplicate <- diff(DF.temp$index)
-
-    #The first entry does not have a value because it cannot be subtracted from
-    #anything. The length of the duplicate variable is the length of the
-    #index variable - 1.  Add a zero to the duplicate variable to make them the
-    #same length.
-    duplicate <- c(0, duplicate)
-
-    #Set all duplicate records to 1, and all non-duplicates to 0.
-    duplicate <- ifelse(duplicate == 1, 1, 0)
-
-    #Bind the variable duplicate to the temporary file
-    DF.temp.duplicate <- cbind(DF.temp, duplicate)
-
-    #Filter out all the duplicate records
-    DF.temp.reduced <- filter(DF.temp.duplicate, duplicate == 1)
-
-    #Select out the index variable, which will be used to identify duplicate
-    #records in the datafile being processed.
-    duplicate.index <- DF.temp.reduced$index
-
-    #Identify all duplicates in the main datafile (DF) by comparing the DF$index
-    #values with those in the duplicate.index variable. This creates creates a
-    #new variable (duplicate) with the values of TRUE (duplicate) and FALSE
-    #(non-duplicate).
-    duplicate <- DF$index %in% duplicate.index
-
-    #Bind the new duplicate variable to the main datafile.
-    DF <- cbind(DF, duplicate)
-
-    #Filter out all the records that are non duplicates (FALSE)
-    #Remove the temporary variables used to identify and remove duplicates.
-    DF <- filter(DF, duplicate == FALSE) %>% select(-index, -duplicate)
-
-    rm(DF.temp, duplicate, DF.temp.duplicate, DF.temp.reduced, duplicate.index)
 
 #_______________________________________________________________________________
 #                    3.  REMOVE DUPLICATE RECORDS
@@ -205,18 +142,39 @@ if (length(pkgs_miss) == 0) {
 # Duplicates occur because multiple databases have overlapping indexing.
 #_______________________________________________________________________________
 
-    #Create an article identifier to group all records for a unique article.
-
-
-    indx <- which(DF$attributes=="TI")
-    DF$attributes[indx-1] <- ""
-    DF$articleID <- cumsum(DF$attributes == "")-1
+#indx <- which(DF$attributes=="TI")
 
 
 
+#What attributes precede TI (QUALITY CHECK)
+#DF.temp <- DF[indx-1, ]
+#table(DF.temp$attributes, useNA = "always")
 
-    #Select out all titles
-    DF.temp <- filter(DF, attributes == "TI")
+
+#SU precedes TI without a blank space for a large number of records;
+#Use following code to insert a blank row immediately preceding all TI records
+#just to be safe. It creates additional article records that are blanks that
+#can be easily removed
+
+#newrow <- c("", "")
+#insertRow <- function(DF, newrow, indx) {
+#    DF[seq(indx-1,] <- [seq(indx,nrow(DF)),]
+#    DF[indx,] <- newrow
+#    DF
+#}
+
+
+
+#DF.temp.2 <- filter(DF.temp, attributes == "SU")
+
+#DF$attributes[indx-1] <- ""
+DF$articleID <- cumsum(DF$attributes == "TI")
+
+
+
+
+#Select out all titles
+DF.temp <- filter(DF, attributes == "TI")
 
     #Journal titles show discrepancies in capitalization rules.  Force all to
     #lower to address this problem.  Further testing should consider stripping
@@ -231,7 +189,8 @@ if (length(pkgs_miss) == 0) {
     DF.duplicated.ID <- DF.temp$articleID
     DF <- DF[!(DF$articleID %in% DF.duplicated.ID), ]
 
-    rm(DF.temp, DF.duplicated.ID, indx)
+    rm(DF.temp, DF.duplicated.ID)
+
 
 #_______________________________________________________________________________
 #     4.  CLEAN JOURNAL NAMES AND MERGE JOURNAL NAME FIELDS (SO AND JN)
@@ -286,7 +245,7 @@ if (length(pkgs_miss) == 0) {
 #_______________________________________________________________________________
 
 
-    if(psycInfoOnly == FALSE){
+
 
     DF$attributes <- ifelse(DF$attributes == "PY", "YR", DF$attributes)
 
@@ -354,7 +313,6 @@ if (length(pkgs_miss) == 0) {
 # row to be consistent with PsychInfo and SSA.
 #_______________________________________________________________________________
 
-if(psycInfoOnly == FALSE){
 
     #Create a new temporary data frame
     DF.temp <- filter(DF, attributes == "AU")
@@ -407,7 +365,7 @@ if(psycInfoOnly == FALSE){
     DF <- rbind(DF.no.authors, DF.authors.good, DF.authors.fixed)
     DF <- arrange(DF, articleID)
 
-}
+
 #_______________________________________________________________________________
 #                       6c. E-mails
 #-------------------------------------------------------------------------------
@@ -441,7 +399,6 @@ if(psycInfoOnly == FALSE){
 #_______________________________________________________________________________
 
 # Exclude UR record from the data file
-DF <- filter(DF, attributes != "UR")
 DF$attributes <- ifelse(DF$attributes == "KW", "KP", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "AD", "AF", DF$attributes)
 
