@@ -34,7 +34,9 @@ ebscoBWR.f <- function(csv = FALSE, path){
 #
 #_______________________________________________________________________________
 rm(list=ls())
-path <- "/Users/beperron/Git/SocialWorkResearch/Data/ebscoFULL"
+
+# leave this path for testing...
+#path <- "/Users/beperron/Git/SocialWorkResearch/Data/ebscoFULL"
 
 pkgs <- c("dplyr", "stringi", "stringr")
 pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
