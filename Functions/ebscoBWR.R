@@ -86,7 +86,7 @@ blank <- c("", "", "")
 DF <- rbind(blank, DF)
 
 
-variables.to.keep <- c("KW", "KP", "AD", "AF", "TI", "AU", "SO", "YR", "AB", "LO", "S2", "AF")
+variables.to.keep <- c("KW", "KP", "AD", "AF", "TI", "AU", "SO", "YR", "AB", "LO", "S2", "AF", "PY", "JN", "PD")
 
 DF <- DF[DF$attributes %in% variables.to.keep, ]
 
