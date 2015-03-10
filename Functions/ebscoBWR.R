@@ -86,7 +86,7 @@ blank <- c("", "", "")
 DF <- rbind(blank, DF)
 
 
-variables.to.keep <- c("KW", "KP", "AD", "AF", "TI", "AU", "SO", "YR", "AB", "LO", "S2", "AF", "PY", "JN", "PD")
+variables.to.keep <- c("KW", "KP", "AD", "AF", "TI", "AU", "SO", "YR", "AB", "LO", "S2", "AF", "PY", "JN", "PD", "PG")
 
 DF <- DF[DF$attributes %in% variables.to.keep, ]
 
@@ -414,10 +414,10 @@ DF$attributes <- ifelse(DF$attributes == "LO", "location", DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "S2", "journalSecondary",
                                                            DF$attributes)
 DF$attributes <- ifelse(DF$attributes == "AF", "authorAff", DF$attributes)
-
+DF$attributes <- ifelse(DF$attributes == "PG", "pages", DF$attributes)
 
 variables.to.keep <- c("article", "author", "journal", "pubYear", "abstract",
-                       "keyWord", "location", "journalSecondary", "authorAff")
+                       "keyWord", "location", "journalSecondary", "authorAff", "pages")
 
 DF <- DF[DF$attributes %in% variables.to.keep, ]
 

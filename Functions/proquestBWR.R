@@ -10,7 +10,7 @@ proQuestBWR.f <- function(csv = FALSE, path){
   #
   #_______________________________________________________________________________
 
-
+  path <- "/Users/beperron/Git/SocialWorkResearch/Data/proQuest"
   pkgs <- c("dplyr", "stringi", "stringr")
   pkgs_miss <- pkgs[which(!pkgs %in% installed.packages()[, 1])]
   if (length(pkgs_miss) > 0) {
@@ -161,7 +161,7 @@ proQuestBWR.f <- function(csv = FALSE, path){
     # Exclude UR record from the data file
 
     attributeKeep <- c("Article", "Author", "Publicationtitle",
-        "Publicationyear", "Abstract", "keyWord", "Location")
+        "Publicationyear", "Abstract", "keyWord", "Location", "Pages")
 
     attributeKeepIndex <- DF$attributes %in% attributeKeep
     DF <- DF[attributeKeepIndex,]
