@@ -63,7 +63,11 @@ if (length(pkgs_miss) == 0) {
     library(dplyr)
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
 
-    dat <- lapply(temp, readLines)
+    readUTF <- function(x){
+        x <- readLines(x, encoding = "utf-8")
+    }
+
+    dat <- lapply(temp, readUTF)
 
     attributes <- unlist(lapply(dat, function(x) stringi::stri_sub(x, 1,2)))
 
