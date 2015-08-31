@@ -1,0 +1,9 @@
+Package: BibWrangleR
+Title: Converts Bibliographic Text Files into Analyzable Data Frame
+Version: 0.0.0.9000
+Authors: Bryan G. Victor & Brian E. Perron
+Maintainer: Bryan Victor <bryanvictor@gmail.com>
+Description: This package takes text files that have been exported from database aggregrators such as EbscoHost and ProQuest and converts or "wrangles" the bibliometric data into an analyzable data frame format within R environment.  Functions are designed to work with text files from specific aggregators.  For example, text file extract(s) from EbscoHost should be wrangled using the ebscoBWR function.
+Depends: R (>= 3.2.0)
+License: GPL-3
+LazyData: true
