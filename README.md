@@ -55,11 +55,26 @@ Once you've exported the text file(s) from a database aggregator, you need to in
 
 install.packages("devtools")
 
+
 Then run the following code to install and load the BibWrangleR package:
 
 devtools::install_github("bryanvictor/BibWrangleR")
 
-load(BibWrangleR)
+library(BibWrangleR)
+
+Once the package has been loaded you can use the wrangle functions to transform your stored text files into an analyzable data frame.
+
+For EBSCOhost:  ebscoBWR.f(path=_insert path to the folder where the files are store_)
+Example:        ebscoBWR.f(path="C:/Users/JaneDoe/Desktop/EBSCOhost_Files")
+
+##Cautions
+
+The duplicate eliminator will retain the first article and delete subsequent matches.  Therefore if you want to privilege one dataset over another, be sure to number your text files so that articles from your preferred database are read into R first. Say for example you prefer PsycINFO over Social Work Abstracts.  Search and export results from each database seperately and then name your text files along the following lines:
+
+   1_PsycINFO.txt
+   2_SWA.txt
+
+This will ensure that articles from PsycINFO are read in first and then retained.  This can be beneficial if you're interested in a certain article attribute such as location which is contained in PsycINFO article records but not those from Social Work Abstracts.
    
 ##License
 
