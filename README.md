@@ -57,8 +57,8 @@ install.packages("devtools")
 
 Then run the following code to install and load the BibWrangleR package:
 
-devtools::install_github("bryanvictor/BibWrangleR")
-load(BibWrangleR)
+**devtools::install_github("bryanvictor/BibWrangleR")**\n
+**load(BibWrangleR)**
    
 ##License
 
