@@ -1,8 +1,8 @@
 ##About the package
 
 The BibWrangleR package was designed with bibliometric research in mind.  BibWrangleR is in beta form and is currently only compatible for use with the EbscoHost and ProQuest database aggregators.  Within EbscoHost, BibWrangler has only been tested with the following three databases:
-
-+ PsycINFO
+  
+  + PsycINFO
 + Social Science Abstracts
 + Social Work Abstracts
 
@@ -10,8 +10,8 @@ Given variations in attribute coding by database, it is not recommended that tho
 
 ##How to use BibWrangleR
 
-BibWrangleR is designed to take raw text files of bibliometric data and transform them into an analyzable data frame.  These text files must first be exported from either EbscoHost or ProQuest and then stored in a location where R can access and read them.  Here are brief instructions for exporting your search results. *Note:* All files must exported in a generic bibliographic format in order to be compatible with the BibWrangleR functions.
-
+BibWrangle
+BibWrangleR is designed to take raw text files of bibliometric data and transform them into an analyzable data frame.  These text files must first be exported from either EbscoHost or ProQuest and then stored in a location where R can access and read them.  Here are brief instructions for exporting your search results.  
 
 ##License
 
