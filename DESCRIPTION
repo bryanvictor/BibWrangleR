@@ -1,5 +1,5 @@
 Package: BibWrangleR
-Title: Converts Bibliographic Text Files into Analyzable Data Frame
+Title: Software Tool for Converting Bibliographic Text Files into an Analyzable Data Frame
 Version: 0.0.0.9000
 Authors: Bryan G. Victor & Brian E. Perron
 Maintainer: Bryan Victor <bryanvictor@gmail.com>

@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1441476294948.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "50BC39DF",
+    "lastKnownWriteTime" : 27866499440705583,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "proQuestBWR.df",
+        "contentUrl" : "content?title=proQuestBWR.df&file=135aa36038c54cb08e953fa92f43d32f.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 3,
+        "totalObservations" : "95604",
+        "variables" : "3"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
