@@ -77,7 +77,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
   
   
   #_______________________________________________________________________________
-  #                    3.  REMOVE DUPLICATE RECORDS
+  #                    2.  REMOVE DUPLICATE RECORDS
   #-------------------------------------------------------------------------------
   # In this section, the code is doing a global match for duplicate article records 
   # based on the title. Duplicates occur because multiple databases have overlapping indexing.
@@ -104,7 +104,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
    rm(DF.temp, DF.duplicated.ID)
   }
     #_______________________________________________________________________________
-    #            AUTHOR FIELD FIX - AUTHORS IN SINGLE FIELD
+    #            3. AUTHOR FIELD FIX - AUTHORS IN SINGLE FIELD
     #-------------------------------------------------------------------------------
     #
     # Social Work abstracts lists authors in a single cell, separated by a semi-
@@ -159,7 +159,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
         full.df <- arrange(full.df, articleID)
 
   #_______________________________________________________________________________
-  #            KEYWORD FIELD FIX - KEYWORDS IN SINGLE FIELD
+  #           4. KEYWORD FIELD FIX - KEYWORDS IN SINGLE FIELD
   #-------------------------------------------------------------------------------
   #
   # Social Work abstracts lists authors in a single cell, separated by a semi-
@@ -199,7 +199,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
   DF <- rbind(DF.no.subject, DF.subject.fixed)
   DF <- arrange(DF, articleID)
     #_______________________________________________________________________________
-    #                       7. Minor Cleaning
+    #                       5. Minor Cleaning
     #-------------------------------------------------------------------------------
     #
     # In this section, meaningful variable names are assigned to variables that have
@@ -220,7 +220,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
     DF <- select(DF, articleID, attributes, record)
 
     #_______________________________________________________________________________
-    #                        8. OUTPUT
+    #                        6. OUTPUT
     #-------------------------------------------------------------------------------
     #
     # This final section places a datafile in the global environment, which is
@@ -231,7 +231,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
     #_______________________________________________________________________________
 
     proQuestBWR.df <<- DF
-    if(csv == TRUE){write.csv(bwr.df, "bwrDF.csv")}
+    if(csv == TRUE){write.csv(proQuestBWR.df, file="proQuestBWR.csv")}
 
     cat(
         "****************************************************
@@ -239,7 +239,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
 ****************************************************")
 
     if(csv == TRUE){cat(
-        "\nThe `bwrDF.csv` file can be found in your working directory.\n")}
+        "\nThe `proQuestBWR.csv` file can be found in your working directory:\n", getwd())}
 
 }
 

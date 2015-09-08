@@ -8,8 +8,36 @@ BibWrangleR is in beta form and is currently only compatible for use with the EB
 + Social Science Abstracts
 + Social Work Abstracts
 
-Given variations in attribute coding by database, it is not recommended that BibWrangleR be used with EBSCOhost for results obtained from databases other than the three listed here.
+Given variations in attribute coding by database, it is not recommended that BibWrangleR be used with EBSCOhost for results obtained from databases other than the three listed here.  ProQuest uses a more uniform format for text exports and should work across hosted databases so long as search as limited to journal articles.
 
+In the current version the following data fields may be obtained for each article record depending on attribute coding within the database aggregator:
+
++ ProQuest
+  + Abstract
+  + Article title
+  + Author(s)
+  + Journal title
+  + Keyword(s)
+  + Location of research (limited availability)
+  + Number of pages
+  + Year of publication
+
++ EBSCOhost
+  + Abstract
+  + Article title
+  + Author(s)
+  + Author affiliation(s)
+  + Journal title
+  + Keyword(s)
+  + Location of research (limited availability)
+  + Number of pages
+  + PubMed ID (limited availability)
+  + Second and/or non-English title
+  + Secondary journal title
+  + Year of publication
+  
+
+  
 ##How to use BibWrangleR
 
 The first step in using BibWrangleR is to obtain the raw text files from a database aggregator following a search with your desired specifications.  Since BibWrangleR has only been tested on search queries limited to journal articles, searches should be limited to scholarly journals.  These files then need to be exported from either EBSCOhost or ProQuest and stored in a location where R can access and read them.  Here are brief instructions for exporting your search results.
