@@ -32,7 +32,7 @@ The first step in using BibWrangleR is to obtain the raw text files from a datab
       using the BibWrangler function.  _Note:_ Only other ProQuest text file exports can be 
       wrangled at the same time.  Exports from EbscoHost must be processed separately.  
 
-###EbscoHost
+###EBSCOhost
 
    1. Following your search, click the "Share" button.  This can be located on the right hand side 
       of the screen, above the first article result and next to the "Page Options" button.
@@ -77,7 +77,7 @@ For ProQuest:
 
 ###Additional function features
 
-Both ebscoBWR.f and proQuest.f have additional options that can be specified when calling the function.
+Both ebscoBWR.f and proQuestBWR.f have additional options that can be specified when calling the function.
 
    + csv: This will write and save a .csv file to your working directory once the "wrangle" is 
           complete.  To turn this feature on include csv=TRUE in the function call.
