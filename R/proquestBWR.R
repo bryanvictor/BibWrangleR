@@ -39,8 +39,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
 
     library(dplyr)
     temp <- list.files(path, pattern = ".txt", full.names=TRUE)
-    record <- unlist(lapply(temp, readLines))
-
+    record <- unlist(lapply(temp, readLines, warn=FALSE))
 
     # extract attributes as a separate variable
     attributes <- stringr::str_extract(record, "(.*?):")
