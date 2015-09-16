@@ -2,4 +2,5 @@
 #'
 #' @docType package
 #' @name BibWrangleR
+#' @import dplyr
 NULL
