@@ -137,7 +137,7 @@ This will ensure that articles from PsycINFO are read in first and then retained
 
 Suggested citation:
 
-Victor, B.G. & Perron, B.E. (2015).  BibWrangleR: Software tool for converting bibliographic text files to an analyzable data frame.  GitHub Repository:  http://github.com/bryanvictor/bibwrangler .  DOI: 
+Victor, B.G., Perron, B.E. & Yochum, C.J. (2015).  BibWrangleR: Software tool for converting bibliographic text files to an analyzable data frame.  GitHub Repository:  http://github.com/bryanvictor/bibwrangler .  DOI: 
    
 ##License
 
