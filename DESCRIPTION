@@ -7,3 +7,6 @@ Description: This package takes text files that have been exported from database
 Depends: R (>= 3.2.0)
 License: GPL-3
 LazyData: true
+Imports:
+    dplyr,
+    stringr

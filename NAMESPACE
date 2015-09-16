@@ -2,3 +2,4 @@
 
 export(ebscoBWR.f)
 export(proQuestBWR.f)
+import(dplyr)
