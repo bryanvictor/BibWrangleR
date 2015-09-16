@@ -1,6 +1,6 @@
 Package: BibWrangleR
 Title: Software Tool for Converting Bibliographic Text Files into an Analyzable Data Frame
-Version: 0.1.0
+Version: 0.1.1
 Date: 2015-09-16
 Authors@R: c(
     person(c("Bryan", "G."), "Victor", email="bryanvictor@gmail.com", role=c("aut", "cre")),
