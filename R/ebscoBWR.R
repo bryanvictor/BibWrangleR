@@ -445,27 +445,12 @@ ebscoBWR.f <- function(path, rmDuplicates = TRUE, firstAbstractOnly=TRUE, csv=FA
   # Reorder variables
   DF <- select(DF, articleID, attributes, record)
 
-  rm(blank, path, sub.1, sub.2, sub.3, sub.4, sub.5, variables.to.keep)
-  #_______________________________________________________________________________
-  #                        8. OUTPUT
-  #-------------------------------------------------------------------------------
-  #
-  # This final section places a datafile in the global environment, which is
-  # called ebscoBWR.df.  If csv is specified as TRUE in the ebscoBWR function call,
-  # a csv file is written to the user's current working directory.  A few messages
-  # are written to the user's screen, providing a warning message and a few
-  # quality checks to ensure the number of articles matches the number of sources.
-  #_______________________________________________________________________________
+  # write to CSV if necessary
+  if (csv) {
+    write.csv(DF, "ebscoBWR.csv")
+    message("The `ebscoBWR.csv` file can be found in your working directory: ", getwd())
+    return(invisible(DF))
+  }
 
-  ebscoBWR.df <<- DF
-
-  rm(DF)
-  if(csv == TRUE){write.csv(ebscoBWR.df, "ebscoBWR.csv")}
-
-  cat(
-    "****************************************************\n          Wrangling is complete\n****************************************************")
-
-  if(csv == TRUE){cat(
-    "\nThe `ebscoBWR.csv` file can be found in your working directory:\n", getwd())}
+  DF
 }
-
