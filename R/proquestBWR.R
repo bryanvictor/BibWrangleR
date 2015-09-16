@@ -196,27 +196,12 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
     rownames(DF) <- NULL
     DF <- select(DF, articleID, attributes, record)
 
-    #_______________________________________________________________________________
-    #                        6. OUTPUT
-    #-------------------------------------------------------------------------------
-    #
-    # This final section places a datafile in the global environment, which is
-    # called bwr.df.  If csv is specified as TRUE in the ebscoBWR function call,
-    # a csv file is written to the user's current working directory.  A few messages
-    # are written to the user's screen, providing a warning message and a few
-    # quality checks to ensure the number of articles matches the number of sources.
-    #_______________________________________________________________________________
+  # write to CSV if necessary
+  if (csv) {
+    write.csv(DF, "proQuestBWR.csv")
+    message("The `proQuestBWR.csv` file can be found in your working directory: ", getwd())
+    return(invisible(DF))
+  }
 
-    proQuestBWR.df <<- DF
-    if(csv == TRUE){write.csv(proQuestBWR.df, file="proQuestBWR.csv")}
-
-    cat(
-        "****************************************************
-              Wrangling is complete
-****************************************************")
-
-    if(csv == TRUE){cat(
-        "\nThe `proQuestBWR.csv` file can be found in your working directory:\n", getwd())}
-
+  DF
 }
-
