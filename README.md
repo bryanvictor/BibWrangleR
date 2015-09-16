@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.31039.svg)](http://dx.doi.org/10.5281/zenodo.31039)
+
+
 ##About the package
 
 The BibWrangleR package was designed for conducting bibliometric research on scholarly articles.  The primary purpose of the package is to take raw text files of bibliometric data obtained from database search aggregators such as ProQuest and transform these files into an analyzable data frame.      
@@ -137,7 +140,7 @@ This will ensure that articles from PsycINFO are read in first and then retained
 
 Suggested citation:
 
-Victor, B.G., Perron, B.E. & Yochum, C.J. (2015).  BibWrangleR: Software tool for converting bibliographic text files to an analyzable data frame.  GitHub Repository:  http://github.com/bryanvictor/bibwrangler .  DOI: 
+Victor, B.G., Perron, B.E. & Yochum, C.J. (2015).  BibWrangleR: Software tool for converting bibliographic text files to an analyzable data frame. _Zenodo_.  DOI: 10.5281/zenodo.31039
    
 ##License
 
