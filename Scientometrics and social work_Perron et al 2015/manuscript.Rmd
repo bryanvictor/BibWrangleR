@@ -1,8 +1,7 @@
 ---
-title: 'Examining a Quarter Century of Publishing Trends in Social Work Research:
-  A Data Science Perspective'
+title: 'Building a foundation for scientometric research: an open source, data science approach'
 author: ''
-date: "May 26, 2015"
+date: "October 7, 2015"
 output: html_document
 ---
 
@@ -21,11 +20,10 @@ library(gridExtra)
 source("./Functions/pretty.R")
 
 # Load data files
-load("./Data/HistoricalDatabase.RData")
+load("./Data/Social_Work_Research_Database.rds")
 hodge.df <- readLines("./Data/hodge.txt", n = -1)
 scopus.df <- read.csv("./Data/scopus.csv")
 abb.df <- read.csv("./Data/master.csv")
-sangam.df <- read.csv("./Data/sangam.csv")
 
 # Create colour palette for consistent plotting
 # http://colorbrewer2.org/?type=diverging&scheme=PuOr&n=4
