@@ -1,7 +1,7 @@
 ---
-title: 'Building a foundation for scientometric research: an open source, data science approach'
+title: 'Laying the foundations for scientometric research in social work scholar: A data science approach'
 author: ''
-date: "October 7, 2015"
+date: "December 1, 2015"
 output: html_document
 ---
 
@@ -20,10 +20,11 @@ library(gridExtra)
 source("./Functions/pretty.R")
 
 # Load data files
-load("./Data/Social_Work_Research_Database.rds")
+load("./Data/HistoricalDatabase.RData")
 hodge.df <- readLines("./Data/hodge.txt", n = -1)
 scopus.df <- read.csv("./Data/scopus.csv")
 abb.df <- read.csv("./Data/master.csv")
+sangam.df <- read.csv("./Data/sangam.csv")
 
 # Create colour palette for consistent plotting
 # http://colorbrewer2.org/?type=diverging&scheme=PuOr&n=4
@@ -95,6 +96,11 @@ sd_Articles <- sd(table1$n)
 print(table1)
 ```
 
+
+
+
+
+
 ### Figure 1 - Small Multiples
 
 This figure is for the manuscript.  Please note that the rendering is optimized for the manuscript, not an online rendering.  
@@ -145,25 +151,25 @@ hd_annotate <- combined_reduced %>%
   mutate(label = paste0("N=", pretty(N)))
 
 small_multiples_paper <- ggplot(combined_reduced,  aes(Year, Documents, colour = DataBase)) +
-  geom_line(size = 1, alpha = .80) + 
+  geom_line(size = .5) + 
   facet_wrap(~ Journal) +
   theme_bw() + 
   theme(strip.text.x = element_text(size = 14)) +
   theme(legend.position = "bottom", legend.text = element_text(size = 14)) + 
   scale_colour_discrete(guide = guide_legend(title = "Database"), 
     breaks = c("HD", "Scopus"), labels = c("Historical Database", "Scopus")) + 
-  scale_colour_manual(values = c(cp[2], cp[4]), labels = c("Social Work Research Database", "Scopus"), 
+  scale_colour_manual(values = c("black", "#999999"), labels = c("Social Work Research Database", "Scopus"), 
     guide = guide_legend(title = "")) + 
   ylab("Number of Articles") + 
   xlab("\nYear") +
-  annotate("segment", x = 1992, xend = 1995, y = 140, yend = 140, colour = cp[2], size = 1, alpha = .80) + 
-  annotate("segment", x = 1992, xend = 1995, y = 120, yend = 120, colour = cp[4], size = 1, alpha = .80) +
+  annotate("segment", x = 1992, xend = 1995, y = 140, yend = 140, colour = "black", size = 1, alpha = .80) + 
+  annotate("segment", x = 1992, xend = 1995, y = 120, yend = 120, colour = "#999999", size = 1, alpha = .80) +
   geom_text(data = scopus_annotate_paper, aes(x = 1999, y =  120, label = label), colour = "black", size = 5) +
   geom_text(data = hd_annotate, aes(x = 1999, y =  140, label = label), colour = "black", size = 5)
 
 #------------Create high quality jpeg-----------------
 
-# ggsave(small_multiples_paper, file = "Figure_1_small_multiples.jpg", dpi =  1200, height = 8, width = 12, units = "in")
+#ggsave(small_multiples_paper, file = "Figure_1_small_multiples.jpg", dpi =  1200, height = 8, width = 12, units = "in")
 
 print(small_multiples_paper)
 ```
@@ -297,28 +303,28 @@ n.journals.year <- left_join(n.journals.year, n.year, by = "articleID", copy=TRU
 
 
 
-exp.047 <- c(29, rep(NA, 24)) 
+exp.047 <- c(31, rep(NA, 24)) 
 for(i in 2:25){
     exp.047[i] <- exp.047[i-1] + exp.047[i-1]*.047
 } 
 
-exp.0321 <- c(29, rep(NA, 24)) 
+exp.0307 <- c(31, rep(NA, 24)) 
 for(i in 2:25){
-    exp.0321[i] <- exp.0321[i-1] + exp.0321[i-1]*.0321
+    exp.0307[i] <- exp.0307[i-1] + exp.0307[i-1]*.0307
 }
 
 
 n.journals.year$Price <- exp.047
-n.journals.year$SWHD <- exp.0321
+n.journals.year$SWHD <- exp.0307
 n.journals.year <- mutate(n.journals.year, Journal.count = as.numeric(Journal.count))
 n.journals.year <- as.data.frame(n.journals.year)
 
 years <- c(1989, 2005, 2013, 2013)
-points <- c(29, n.journals.year$Journal.count[c(17,25)], max(n.journals.year$exp.05))
+points <- c(31, n.journals.year$Journal.count[c(17,25)], max(n.journals.year$exp.05))
 annotate.df <- data.frame(years, points)
 
 
-cols = c("Observed Growth" = cp[1], "3.21% CAGR" = cp[4], "4.7% CAGR" = cp[3])
+cols = c("Observed Growth" = cp[1], "3.07% CAGR" = cp[4], "4.7% CAGR" = cp[3])
 
 
 figure2 <- ggplot(n.journals.year, aes(record.y, 
@@ -331,15 +337,15 @@ figure2 <- ggplot(n.journals.year, aes(record.y,
     scale_y_continuous(breaks = c(seq(0, 100, 10)), limits = c(20, 95)) +
     theme(axis.title.x = element_text(vjust=-0.5), axis.title.y = element_text(vjust=.75)) + 
     geom_line(aes(x = record.y, y = Price, colour = "Estimated 5% CAGR"),
-        data = n.journals.year,   colour = cp[2], alpha = .80) +
+        data = n.journals.year,   colour = "#999999", alpha = .80) +
     geom_line(aes(x = record.y, y = SWHD, colour = "Estimated 4% CAGR"), 
-        data = n.journals.year,  colour = cp[2], alpha = .80) +
-    geom_line(aes(colour = "Observed Growth"), colour = cp[4], size = 1.5) + 
-    stat_smooth(method = "lm", se = FALSE, colour = cp[3]) +
-    annotate("text", x = 2016.5, y = 60, label = "3.2% CAGR", size = 5) +
-    annotate("text", x = 2016.5, y = 73, label = "Linear growth", size = 5) + 
-    annotate("text", x = 2016.5, y = 90, label = "4.7% CAGR", size = 5) + 
-    annotate("text", x = 2017.5, y = 65, label = "Observed growth", size = 5) +
+        data = n.journals.year,  colour = "#999999", alpha = .80) +
+    geom_line(aes(colour = "Observed Growth"), colour = "black", size = 1.5) + 
+    stat_smooth(method = "lm", se = FALSE, colour = "#999999") +
+    annotate("text", x = 2014.5, y = 60, label = "3.07% CAGR", size = 4) +
+    annotate("text", x = 2016, y = 74.5, label = "Linear growth", size = 4) + 
+    annotate("text", x = 2015.5, y = 95, label = "4.7% CAGR", size = 4) + 
+    annotate("text", x = 2016.5, y = 67, label = "Observed growth", size = 4) +
     scale_x_continuous(limits = c(1989, 2020), breaks = c(1989, 1993, 1997, 2001, 2005, 2009, 2013)) +
     #ggtitle("Figure 2. Observed Versus Estimated Growth of Journals (1989-2013)") + 
    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
@@ -355,6 +361,27 @@ figure2 <- ggplot(n.journals.year, aes(record.y,
 print(figure2)
 ```
 
+
+
+```{r Linear Growth}
+
+n.journals.year <- filter(full.df, attributes == "journal") %>%
+    select(articleID, record)
+
+n.year <- filter(full.df, attributes == "pubYear") %>%
+    select(articleID, record)
+
+n.journals.year <- left_join(n.journals.year, n.year, by = "articleID", copy=TRUE) %>%
+    group_by(record.y) %>%
+    summarise(Journal.count = n_distinct(record.x)) %>%
+    mutate(record.y = as.numeric(record.y)) 
+
+n.journals.year$yearCount <-  c(1:nrow(n.journals.year))
+
+
+
+```
+
 ### Figure 3 Annual Change
 
 ```{r Figure 3 Annual Change, eval=TRUE}
@@ -368,7 +395,7 @@ annualChange.df$year <- c(1989:2013)
 figure3 <- ggplot(annualChange.df, aes(year, annualChange.numeric, fill =annualChange.dichotomous)) + 
     theme_bw() + 
     geom_bar(stat="identity") +
-    scale_fill_manual(values = cp[c(3,1)], limits = c("Increase", "Decrease")) + 
+    scale_fill_manual(values = c("black", "#999999"), limits = c("Increase", "Decrease")) + 
     theme(legend.position = c(1,1), legend.justification = c(1,1), legend.title = element_blank()) + 
     ylab("Percent change") +
     xlab("Year")  +
