@@ -1,0 +1,450 @@
+---
+title: "Authorship in Social Work"
+author: "Bryan Victor"
+date: "May 5, 2016"
+output: word_document
+---
+
+Begin by setting your working directory to the folder containing the data files
+
+```{r data initialization}
+
+library(dplyr)
+library(ggplot2)
+load("Social_Work_Research_Database.rds")
+h_index <- read.csv("h_index.csv")
+
+```
+
+```{r articles per year}
+
+year.df <- full.df %>%
+  filter(attributes == "pubYear") %>%
+  select(id = articleID, pubYear = record)
+
+authors.df <- full.df %>%
+  filter(attributes == "author") %>%
+  select(id = articleID, author = record)
+
+journals.df <- full.df %>%
+  filter(attributes == "journal") %>%
+  select(id = articleID, journal = record)
+
+auth_journal_year <- left_join(authors.df, journals.df)
+auth_journal_year <- left_join(auth_journal_year, year.df)
+
+
+total_article_count <- auth_journal_year %>%
+  group_by(journal) %>%
+  summarise(N=length(unique(id)))
+
+auth_journal_year <- auth_journal_year[order(auth_journal_year$journal, auth_journal_year$pubYear),]
+
+time_frame <- auth_journal_year %>%
+  group_by(journal) %>%
+  summarise(First=first(pubYear),
+            Last=last(pubYear))
+
+median_authors <- auth_journal_year %>%
+  group_by(id) %>%
+  mutate(n_authors=n()) %>%
+  ungroup()%>%
+  select(-author)%>%
+  unique()%>%
+  group_by(journal, pubYear)%>%
+  summarise(median_authors = median(n_authors))
+
+med_auth89 <- median_authors %>%
+  filter(pubYear==1989) %>%
+  select(-pubYear)
+
+med_auth13 <- median_authors %>%
+  filter(pubYear==2013) %>%
+  select(-pubYear)
+  
+table1<-left_join(total_article_count, time_frame)
+table1 <- left_join(table1, med_auth13)
+
+table1 <- mutate(table1, range = paste(First,Last, sep="-"))
+
+table1 <- select(table1, journal, median_authors, N, range)
+
+table1 <- table1[order(-table1$median_authors),]
+
+knitr::kable(table1)
+
+```
+
+
+```{r mean and median authors over time}
+
+n_authors <- authors.df %>%
+  group_by(id) %>%
+  summarise(n=n())
+
+n_authors <- n_authors%>% 
+  left_join(year.df) %>%
+  group_by(pubYear) %>%
+  mutate(n = as.numeric(n)) %>%
+  summarise(median.n = median(n),
+            average.n = mean(n),
+            min.n = min(n),
+            max.n = max(n),
+            std.dev  = sd(n) )
+
+n_authors2 <- n_authors%>% 
+  select(median.n, average.n, std.dev) %>%
+  rename(Median = median.n, Average = average.n, Standard_Deviation =std.dev)
+
+
+n_authors2$year <- c(1989:2013)
+
+
+cp <- c("#fdb864", "#e66101", "#b2abd2", "#5e3c99" )
+
+n_authors2_melted <- reshape2::melt(n_authors2, id.vars = c("year", "Standard_Deviation"))
+n_authors3_melted <- filter(n_authors2_melted, variable == "Average")
+
+n_authors2_melted$year <- as.numeric(n_authors2_melted$year)
+
+plot_author_count <- ggplot(n_authors2_melted, aes(x = year, y = value, group=variable, colour = variable)) + 
+  theme_bw() + 
+    xlab("") +
+  geom_point(data = n_authors3_melted, aes(size = Standard_Deviation), colour = "#e66101") + 
+  geom_line() +
+  scale_x_continuous(breaks=c(seq(1989, 2013, 4))) +
+  scale_y_continuous(limits = c(.75,2.5)) +
+  ylab("Number of Authors") +
+  labs(size = "Standard deviation") +
+  labs(colour = "") + 
+  scale_colour_manual(values = c("#b2abd2", "#e66101")) +
+  theme(axis.title.x = element_text(vjust=-0.5), axis.title.y = element_text(vjust=.75)) 
+```
+
+```{r Percent of Articles - Number of Authors}
+n_authors <- authors.df %>%
+  group_by(id) %>%
+  summarise(n=n())%>%
+  left_join(year.df)
+
+n_authors_grouped <- n_authors %>%
+  mutate(n = ifelse(n >= 4, "4+", n)) %>%
+  group_by(pubYear) %>%
+  mutate(n.year = n()) %>%
+  group_by(pubYear, n) %>%
+  summarize(N =  n()) %>%
+  group_by(pubYear) %>%
+  mutate(N.year.overall = sum(N)) %>%
+  mutate(N.percent = (N/N.year.overall)*100)
+
+n_authors_grouped$pubYear <- as.numeric(n_authors_grouped$pubYear)
+
+cp <- c("#fdb864", "#e66101", "#b2abd2", "#5e3c99" )
+
+
+#Figure 1b
+
+auth_percentage <- ggplot(n_authors_grouped, aes(pubYear, N.percent, group = n, colour = as.factor(n))) + 
+  geom_line(size = 1.5) + 
+  scale_colour_manual(values = cp) +
+  labs(colour = "Number of Authors") +
+  ylim(c(0,65)) + 
+  theme(axis.title.x = element_text(vjust=-0.5), axis.title.y = element_text(vjust=.75), 
+        legend.position = "bottom") +
+  theme(axis.text.x = element_text(size=8), 
+        title = element_text(size = 10), plot.title=element_text(size=10)) +
+  theme_bw() +
+  scale_x_continuous(breaks = c(seq(1989, 2013, 4)), limits = c(1988, 2014)) +
+  xlab("Publication Year") +
+  ylab("Percent of Articles") +
+  theme(plot.title = element_text(hjust = -1)) 
+
+```
+
+
+```{r plot authors over time in same frame}
+
+#Combine Figures 1a and 1b
+
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+
+  numPlots = length(plots)
+
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                    ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+
+ if (numPlots==1) {
+    print(plots[[1]])
+
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
+}
+
+multiplot(plot_author_count, auth_percentage)
+```
+
+
+```{r 7 year authorship means}
+
+year <- full.df %>%
+  filter(attributes=="pubYear") %>%
+  select(articleID, -attributes, year=record)
+
+author <- full.df %>%
+  filter(attributes=="author") %>%
+  select(articleID, -attributes, author=record)
+
+journal <- full.df %>%
+  filter(attributes=="journal") %>%
+  select(articleID, -attributes, journal=record)
+
+temp <- left_join(author, journal)
+
+auth_journal_yr <- left_join(temp, year)
+
+authors_per_article <- auth_journal_yr %>%
+  filter(year>=2007) %>%
+  group_by(articleID) %>%
+  mutate(author_count=length(author)) %>%
+  select(-author) %>%
+  unique()
+
+seven <- authors_per_article %>%
+  group_by(journal) %>%
+  summarise(avg_authorship = mean(author_count),
+            sd_authorship =sd(author_count))
+
+seven_with_h <-na.omit(left_join(seven, h_index))
+
+seven_with_h <- seven_with_h %>%
+  mutate(journal_rank = rank(-h_index)) %>%
+  mutate(author_rank = rank(-avg_authorship))
+
+```
+
+
+```{r Top 20 H-Index}
+
+top <- seven_with_h %>%
+  filter(journal_rank <= 20)
+
+top_ids <- top$journal
+
+auth_journal_year <- auth_journal_year[auth_journal_year$journal %in% top_ids,]
+
+cp <- c("#5e3c99","#fdb864")
+
+n_authors <- auth_journal_year %>%
+  group_by(id) %>%
+  mutate(N=length(author))%>%
+  ungroup()%>%
+  select(-author)%>%
+  unique()
+
+n_authors_grouped2 <- n_authors %>%
+  mutate(n = ifelse(N >= 2, "2+", "Sole author")) %>%
+  group_by(journal, pubYear) %>%
+  mutate(n.year = n()) %>%
+  group_by(journal, pubYear, n) %>%
+  summarize(N =  n()) %>%
+  group_by(journal, pubYear) %>%
+  mutate(N.year.overall = sum(N)) %>%
+  mutate(N.percent = (N/N.year.overall)*100)
+
+n_authors_grouped2$journal <- gsub("Social Work", "SW", n_authors_grouped2$journal)
+n_authors_grouped2$journal <- gsub("Journal", "J.", n_authors_grouped2$journal)
+n_authors_grouped2$journal <- gsub("Disability", "Dis.", n_authors_grouped2$journal)
+n_authors_grouped2$journal <- gsub("Rehabilitation", "Rehab.", n_authors_grouped2$journal)
+n_authors_grouped2$journal <- gsub("Palliative", "Pall.", n_authors_grouped2$journal)
+n_authors_grouped2$journal <- gsub("International", "Int.", n_authors_grouped2$journal)
+n_authors_grouped2$journal <- gsub("Diversity", "Div.", n_authors_grouped2$journal)
+
+n_authors_grouped2$pubYear <- as.numeric(n_authors_grouped2$pubYear)
+
+#Insufficent data for International Journal of Social Welfare prior to 2002.  Need to remove years prior to that
+
+
+IJSW <- filter(n_authors_grouped2, journal=="Int. J. of Social Welfare")
+IJSW <- filter(IJSW, pubYear > 2001)
+
+n_authors_grouped2 <- filter(n_authors_grouped2, journal!="Int. J. of Social Welfare")
+
+n_authors_grouped2 <- rbind( n_authors_grouped2, IJSW)
+
+
+top_20_hindex <- ggplot(n_authors_grouped2, aes(pubYear, N.percent, group = n, colour = as.factor(n))) + 
+  geom_line(size = .8) + 
+  facet_wrap(~journal)+
+  scale_colour_manual(values = cp) +
+  labs(colour = "Number of Authors") +
+  #ggtitle("Figure 1b. Percentage of annual article count by number of authors, 1989-2013") +
+  ylim(c(0,100)) + 
+  theme(axis.title.x = element_text(vjust=-0.5), axis.title.y = element_text(vjust=.75), 
+        legend.position = "bottom") +
+  theme(axis.text = element_text( size=4), 
+        title = element_text(size = 10), plot.title=element_text(size=10)) +
+  theme_bw() +
+  scale_x_continuous(breaks = c(seq(1989, 2013, 4)), limits = c(1988, 2014)) +
+  xlab("Publication Year") +
+  ylab("Percent of Articles") +
+  theme(plot.title = element_text(hjust = -1))+
+  theme(axis.text.x = element_text(angle = 50, hjust = 1, size=7.5)) +
+  theme(strip.text = element_text(size = 7.5))+
+  theme(axis.title.x= element_text(size=9)) +
+  theme(axis.title.y= element_text(size=9)) +
+  theme(legend.text= element_text(size=7)) +
+  theme(legend.title= element_text(size=8)) +
+  theme(axis.text.y = element_text(size=7.5)) 
+  #scale_colour_grey(start = .3, end = .7)
+
+#ggsave("top20_bw.tiff", height=5, width=7.5, units='in', dpi=600)
+                            
+```
+
+```{r slope graph}
+slope <- select(seven_with_h, journal, author_rank, journal_rank, h_index)
+slope <- slope %>%
+  mutate(change = ifelse(journal_rank>author_rank, "decrease", 
+                  ifelse(author_rank > journal_rank, "increase", "no change"))) %>%
+  mutate(auth_point = 43 - author_rank) %>%
+  mutate(journal_point = 43 - journal_rank)
+
+slope$journal <- gsub("Social Work", "SW", slope$journal)
+slope$journal <- gsub("Journal", "J.", slope$journal)
+slope$journal <- gsub("Disability", "Dis.", slope$journal)
+slope$journal <- gsub("Rehabilitation", "Rehab.", slope$journal)
+slope$journal <- gsub("Palliative", "Pall.", slope$journal)
+slope$journal <- gsub("International", "Int.", slope$journal)
+slope$journal <- gsub("Diversity", "Div.", slope$journal)
+
+```
+
+```{r}
+slope_plot <- filter(slope, change=="decrease"|change=="no change")
+
+
+l_auth<-paste(slope_plot$journal," ", (slope_plot$author_rank))
+
+l_rank_hindex <-paste((slope_plot$journal_rank), "(",(slope_plot$h_index),")")
+
+l_journ_decrease<-data.frame(l_journ_decrease=c("Asian SW & Policy Review;  Indian J. of SW", "Child & Adolescent SW J.", "China J. of SW","European J. of SW; J.of Family SW\nSW in Mental Health; J. of Teaching SW", "J. of Ethnic & Cultural Div. in SW\nJ. of Evidence-Based SW\nJ. of SW Practice in the Addictions\nSW With Groups", "J. of Gerontological SW\nJ. of Social Service Research", "J. of SW in End-of-Life & Pall. Care\nJ. of SW\nSW Education",  "J. of SW in Dis. & Rehab.",  "Research on SW Practice", "SW & Social Sciences Review",  "SW in Health Care", "SW in Public Health" , "SW Research", "", "", "", "", "", "", "", "", "", ""))
+
+j_points <- data.frame(j_points=c(3.5, 31.5, 1.5, 8.5, 13.5, 27.5, 19, 6, 40, 5, 33, 24, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+
+slope_plot <- cbind(slope_plot, l_journ_decrease)
+slope_plot <- cbind(slope_plot, j_points) 
+
+slope_plot <- mutate(slope_plot, coloring="#e66101")
+
+p<-ggplot(slope_plot) +
+  geom_segment(aes(x=0,xend=24,y=auth_point,yend=journal_point, color=coloring),size=.75)+
+  scale_colour_identity()
+
+p<-p + theme(panel.background = element_blank())
+p<-p + theme(panel.grid=element_blank())
+p<-p + theme(axis.ticks=element_blank())
+p<-p + theme(axis.text=element_blank())
+p<-p + theme(panel.border=element_blank())
+p<-p + theme(legend.position="none")
+
+
+p<-p + xlab("") + ylab("")
+#p<-p + theme(axis.title.y=element_text(vjust=3))
+p<-p + xlim(-25, 68)
+p<-p + ylim(0,46)
+
+l <- p + geom_text(label = l_auth, x = -1,
+            y = slope_plot$auth_point, size=5, hjust=1) 
+
+s <- l + geom_text(label = l_rank_hindex, x = 26,
+            y = slope_plot$journal_point, size=5, hjust=0) 
+
+g <- s + geom_text(label = slope_plot$l_journ_decrease, x = 36,
+            y = slope_plot$j_points, size=5, hjust=0)
+
+h <- g + geom_text(label = "Average Authorship Rank", x = -1,
+            y = 45, size=6, hjust=1)
+
+i <- h + geom_text(label = "Journal H-Index Rank (Score)", x = 26,
+            y = 45, size=6, hjust=0)
+
+print(i)
+#ggsave(filename = "decreasing_slopegraph.tiff", width = 12, height=11, dpi = 300)
+```
+
+```{r}
+slope_plot <- filter(slope, change=="increase")
+
+l_auth<-paste(slope_plot$journal," ", (slope_plot$author_rank))
+
+l_rank_hindex <-paste((slope_plot$journal_rank), "(",(slope_plot$h_index),")")
+
+l_journ_decrease<-data.frame(l_journ_decrease=c("Administration in SW", "Affilia;  Clinical SW J." , "Australian SW\nQualitative SW", "British J. of SW", "Child & Family SW", "Families in Society;  J. of SW Education",   "Health & SW;  Social Service Review", "Int. J. of Social Welfare", "Int. SW", "J. of Religion & Spirituality in SW\nMaatskaplike Werk", "J. of SW Practice", "Psychoanalytic SW", "Smith College Studies in SW", "SW", "", "", "", "", ""))
+
+j_points <- data.frame(j_points=c(29, 25.5, 19, 41, 34, 35.5, 38.5, 31.5, 30, 13.5, 23, 1.5, 22, 42, 0, 0, 0,0, 0))
+
+slope_plot <- cbind(slope_plot, l_journ_decrease)
+slope_plot <- cbind(slope_plot, j_points)            
+
+slope_plot <- mutate(slope_plot, coloring="#5e3c99")
+
+p<-ggplot(slope_plot) +
+  geom_segment(aes(x=0,xend=24,y=auth_point,yend=journal_point, color=coloring),size=.75)+
+  scale_colour_identity()
+
+p<-p + theme(panel.background = element_blank())
+p<-p + theme(panel.grid=element_blank())
+p<-p + theme(axis.ticks=element_blank())
+p<-p + theme(axis.text=element_blank())
+p<-p + theme(panel.border=element_blank())
+p<-p + theme(legend.position="none")
+
+
+p<-p + xlab("") + ylab("")
+#p<-p + theme(axis.title.y=element_text(vjust=3))
+p<-p + xlim(-25, 68)
+p<-p + ylim(0,46)
+
+l <- p + geom_text(label = l_auth, x = -1,
+            y = slope_plot$auth_point, size=5, hjust=1) 
+
+s <- l + geom_text(label = l_rank_hindex, x = 26,
+            y = slope_plot$journal_point, size=5, hjust=0) 
+
+g <- s + geom_text(label = slope_plot$l_journ_decrease, x = 36,
+            y = slope_plot$j_points, size=5, hjust=0)
+
+h <- g + geom_text(label = "Average Authorship Rank", x = -1,
+            y = 45, size=6, hjust=1)
+
+i <- h + geom_text(label = "Journal H-Index Rank (Score)", x = 26,
+            y = 45, size=6, hjust=0)
+
+print(i)
+
+#ggsave(filename = "increasing_slopegraph.tiff", width = 12, height=11, dpi = 300)
+
+```
+
