@@ -1,0 +1,822 @@
+---
+title: "Untitled"
+author: "Bryan Victor"
+date: "December 22, 2015"
+output: html_document
+---
+
+The data for this paper comes from the Web of Science database.  Only disciplinary social work journals with articles from all 5 years (2005-2009) were included.  (18 journals; 3066 articles) 
+
+```{r initialize data frame}
+
+setwd("/Users/Bryan/Desktop/Git/manuscripts/coauth")
+
+library(dplyr)
+library(stringr)
+
+DF <- read.csv("full_df.csv")
+
+names(DF) <- tolower(names(DF))
+names(DF) <- gsub("\\.", "_", names(DF))
+
+#Assign article IDs
+DF <- DF %>%
+  mutate(articleID = 1:nrow(DF))
+
+#Remove journals without five years of data
+
+fivefull <- DF %>%
+  group_by(source_title) %>%
+  summarise(N=length(unique(publication_year))) %>%
+  filter(N==5)
+
+ids <- fivefull$source_title
+
+DF <- DF[DF$source_title %in% ids,]
+
+DF <- mutate(DF, articleID_wos=1:nrow(DF))
+
+duplicates <- DF$title
+duplicates <- tolower(duplicates)
+duplicates <- gsub(" ", "", duplicates)
+duplicates <- gsub("[[:punct:]]", "", duplicates)
+duplicates <- substring(duplicates, 1, 50)
+duplicates <- duplicated(duplicates)
+
+
+DF <- cbind(DF, duplicates)
+  
+DF <- filter(DF, duplicates==FALSE)
+```
+
+#Variable construction
+
+This section creates xxx variables that will be used in the analysis.  They include:
+
+1.  Number of authors per article
+2.  Citations year 1 - year 5
+3.  Total citations 5 full calendar years after publication
+4.  5 year h-index (2005-2009) of the journal in which the article was published
+
+
+```{r Variable construction}
+
+# 1. Number of authors per article
+DF <- DF %>%
+  mutate(n_authors = str_count(authors, ";") + 1)
+
+DF <-DF %>%
+  mutate(coauthored = ifelse(n_authors>1, 1, 0))
+
+#2. Citation counts years 1 - 5
+
+cites05 <- DF %>%
+  filter(publication_year==2005) %>%
+  select(articleID, year0=x2005, year1=x2006, year2=x2007, year3=x2008, year4=x2009, year5=x2010) %>%
+  mutate(total_cites = year0+year1+year2+year3+year4+year5)
+
+
+cites06 <- DF %>%
+  filter(publication_year==2006) %>%
+  select(articleID, year0=x2006, year1=x2007, year2=x2008, year3=x2009, year4=x2010, year5=x2011) %>%
+  mutate(total_cites = year0+year1+year2+year3+year4+year5)
+
+cites07 <- DF %>%
+  filter(publication_year==2007) %>%
+  select(articleID, year0=x2007, year1=x2008, year2=x2009, year3=x2010, year4=x2011, year5=x2012) %>%
+  mutate(total_cites = year0+year1+year2+year3+year4+year5)
+
+cites08 <- DF %>%
+  filter(publication_year==2008) %>%
+  select(articleID, year0=x2008, year1=x2009, year2=x2010, year3=x2011, year4=x2012, year5=x2013) %>%
+  mutate(total_cites = year0+year1+year2+year3+year4+year5)
+
+cites09 <- DF %>%
+  filter(publication_year==2009) %>%
+  select(articleID, year0=x2009, year1=x2010, year2=x2011, year3=x2012, year4=x2013, year5=x2014) %>%
+  mutate(total_cites = year0+year1+year2+year3+year4+year5)
+
+cites <- rbind(cites05, cites06, cites07, cites08, cites09)
+
+DF <- left_join(DF, cites)
+
+DF <- within(DF, quartile <- as.integer(cut(total_cites, quantile(total_cites, probs=0:4/4), include.lowest=TRUE)))
+
+DF <- mutate(DF, quartile = 5-quartile)
+
+DF$cited <- ifelse(DF$total_cites == 0, 0, 1)
+
+#h-index using articles published between 2005-2009 and their citations 5 years after publication
+
+hindex <- DF %>%
+  group_by(source_title) %>%
+  arrange(desc(total_cites)) %>%
+  mutate(ranking = 1:length(source_title)) %>%
+  filter(total_cites>=ranking) %>%
+  summarise(hindex=max(ranking))
+
+DF <- left_join(DF, hindex)
+
+#Page count
+
+#DF$beginning_page <- as.numeric(DF$beginning_page)
+#DF$ending_page <- as.numeric(DF$ending_page)
+
+#DF <- DF %>%
+  #mutate(page_count = ending_page - beginning_page + 1)
+
+```
+
+```{r Figure 2 Histogram}
+
+ggplot(DF, aes(total_cites)) +
+  geom_histogram(col="grey10", 
+                 fill="blue4", 
+                 alpha = .8,
+                 binwidth = 1) +
+  theme_bw() +
+  scale_x_continuous(breaks=seq(0,120,15), limits = c(0,120)) +
+  xlab("5-Year Total Citations") +
+  ylab("Count") +
+  geom_segment(aes(x = 13, y = 489, xend = 2.5, yend = 489), 
+               arrow = arrow(length = unit(0.25, "cm"))) +
+  geom_segment(aes(x = 15, y = 314, xend = 4.5, yend = 314), 
+               arrow = arrow(length = unit(0.25, "cm"))) +
+  geom_segment(aes(x = 17, y = 217, xend = 6.5, yend = 217), 
+               arrow = arrow(length = unit(0.25, "cm"))) +
+  annotate("text", x = 23, y = 315, label = "median = 3", size = 4.5) +
+  annotate("text", x = 27, y = 218, label = "3rd quartile = 5", size = 4.5) +
+  annotate("text", x = 22.5, y = 490, label = "1st quartile = 1", size = 4.5)
+
+```
+
+
+The page number obtained via Web of Science appear to be incorrect in a large number of cases calling into question the validity of this variable in the Web of Science data.  Page data is therefore pulled from the Social Work Research Database.
+
+```{r page count}
+
+library(tidyr)
+
+ebsco_full <- readRDS("ebsco_full.RDS")
+
+ebsco <- filter(ebsco_full, attributes=="article")
+
+
+ebsco$ebsco.titles <- ebsco$record
+ebsco$ebsco.titles <- tolower(ebsco$ebsco.titles)
+ebsco$ebsco.titles <- gsub("[[:punct:]]", "", ebsco$ebsco.titles)
+ebsco$ebsco.titles <- gsub(" ", "", ebsco$ebsco.titles) 
+ebsco$ebsco.titles <- substring(ebsco$ebsco.titles, 1, 45)
+ebsco$ebsco.dup <- duplicated(ebsco$ebsco.titles)
+
+ebsco <- ebsco %>%
+  filter(ebsco.dup==FALSE) %>%
+  select(-ebsco.dup)
+
+ebsco.titles <- ebsco$ebsco.titles
+
+wos <- DF%>%
+  select(articleID_wos, title)
+
+wos$wos.titles <- tolower(wos$title)
+wos$wos.titles <- gsub("[[:punct:]]", "", wos$wos.titles)
+wos$wos.titles <- gsub(" ", "", wos$wos.titles) 
+wos$wos.titles <- substring(wos$wos.titles, 1, 45)
+wos.dup <- duplicated(wos$wos.titles)
+
+wos <- cbind(wos, wos.dup)
+
+wos <- wos %>%
+  filter(wos.dup==FALSE) %>%
+  select(articleID_wos, ebsco.titles=wos.titles, -wos.dup)
+
+wos <- left_join(wos, ebsco)
+
+temp_ids <- wos$articleID
+
+ebsco_wos <- ebsco_full[ebsco_full$articleID %in% temp_ids, ]
+ebsco_wos <- filter(ebsco_wos, attributes=="pages")
+
+pages <- select(ebsco_wos, articleID, record)
+
+nums <- pages %>% 
+  separate(record, into = paste(c("first_page", "last_page"), sep = "-"))
+
+nums$first_page<- gsub("[[:alpha:]]", "", nums$first_page)
+
+nums$first_page <- as.numeric(nums$first_page)
+nums$last_page <- as.numeric(nums$last_page)
+nums <- nums %>%
+  mutate(count = last_page - first_page + 1)
+
+nums <- mutate(nums, count = ifelse(is.na(count), first_page + 1, count))
+
+wos <- left_join(wos, nums)
+
+wos <- select(wos, articleID_wos, page_count=count)
+
+DF <- left_join(DF, wos)
+
+DF <- DF %>%
+  mutate(page_count = ifelse(page_count > 100, NA, page_count))
+```
+
+
+```{r ProQuest}
+
+missing <- filter(DF, is.na(page_count))
+
+PQ_full <- readRDS("proquest.RDS")
+
+PQ <- filter(PQ_full, attributes=="article")
+
+PQ$PQ.titles <- PQ$record
+PQ$PQ.titles <- tolower(PQ$PQ.titles)
+PQ$PQ.titles <- gsub("[[:punct:]]", "", PQ$PQ.titles)
+PQ$PQ.titles <- gsub(" ", "", PQ$PQ.titles) 
+PQ$PQ.titles <- substring(PQ$PQ.titles, 1, 45)
+PQ$PQ.dup <- duplicated(PQ$PQ.titles)
+
+PQ <- PQ %>%
+  filter(PQ.dup==FALSE) %>%
+  select(-PQ.dup)
+
+PQ.titles <- PQ$PQ.titles
+
+wos <- missing%>%
+  select(articleID_wos, title)
+
+wos$wos.titles <- tolower(wos$title)
+wos$wos.titles <- gsub("[[:punct:]]", "", wos$wos.titles)
+wos$wos.titles <- gsub(" ", "", wos$wos.titles) 
+wos$wos.titles <- substring(wos$wos.titles, 1, 45)
+wos.dup <- duplicated(wos$wos.titles)
+
+wos <- cbind(wos, wos.dup)
+
+wos <- wos %>%
+  filter(wos.dup==FALSE) %>%
+  select(articleID_wos, PQ.titles=wos.titles, -wos.dup)
+
+wos <- left_join(wos, PQ)
+
+temp_ids <- wos$articleID
+
+PQ_wos <- PQ_full[PQ_full$articleID %in% temp_ids, ]
+PQ_wos <- filter(PQ_wos, attributes=="pages")
+
+pages <- select(PQ_wos, articleID, record)
+
+nums <- pages %>% 
+  separate(record, into = paste(c("first_page", "last_page"), sep = "-"))
+
+nums$first_page<- gsub("[[:alpha:]]", "", nums$first_page)
+
+nums$first_page <- as.numeric(nums$first_page)
+nums$last_page <- as.numeric(nums$last_page)
+nums <- nums %>%
+  mutate(count = last_page - first_page + 1)
+
+nums <- mutate(nums, count = ifelse(is.na(count), first_page + 1, count))
+
+wos <- left_join(wos, nums)
+
+wos <- select(wos, articleID_wos, page_count_temp=count)
+
+DF <- left_join(DF, wos)
+
+DF <- DF %>%
+  mutate(page_count = ifelse(is.na(page_count), page_count_temp, page_count))
+
+```
+
+```{r Ebsco probabalistic}
+
+no_page <- filter(DF, is.na(page_count))
+
+no_page_titles <- no_page$title
+
+ebsco <- filter(ebsco_full, attributes=="article")
+
+match_vector <- 99
+
+for(i in 1:length(no_page_titles)) {
+  match <- agrep(no_page_titles[i], ebsco$record)
+  if(length(match)==0){
+    match <- NA
+  }
+  match_vector <- rbind(match_vector, match)
+}
+
+match_vector <- match_vector[2:length(match_vector),]
+
+match_vector <- as.data.frame(match_vector)
+
+match_filter <- match_vector %>%
+  na.omit %>%
+  arrange(match_vector)
+
+ebsco_filter <- ebsco %>%
+  filter(row_number()%in% match_vector$match_vector)
+
+ebsco_filter <- cbind(ebsco_filter, match_filter)
+
+ebsco_ids <- ebsco_filter$articleID
+
+ebsco_wos <- ebsco_full[ebsco_full$articleID %in% ebsco_ids, ]
+
+ebsco_wos <- filter(ebsco_wos, attributes=="pages")
+
+pages <- select(ebsco_wos, articleID, record)
+
+nums <- pages %>% 
+  separate(record, into = paste(c("first_page", "last_page"), sep = "-"))
+
+nums$first_page<- gsub("[[:alpha:]]", "", nums$first_page)
+
+nums$first_page <- as.numeric(nums$first_page)
+nums$last_page <- as.numeric(nums$last_page)
+nums <- nums %>%
+  mutate(count = last_page - first_page + 1)
+
+nums <- mutate(nums, count = ifelse(is.na(count), first_page + 1, count))
+
+wos <- no_page %>%
+  select(articleID_wos, title)
+
+temp_df <- cbind(no_page, match_vector)
+
+temp_df <- select(temp_df, -articleID)
+
+temp_df <- left_join(temp_df, ebsco_filter)
+
+temp_df <- select(temp_df, articleID_wos, articleID)
+
+temp_df <- left_join(temp_df, nums)
+
+new_pages <- select(temp_df, articleID_wos, count)
+
+DF <- left_join(DF, new_pages)
+
+DF <- DF %>%
+  mutate(page_count = ifelse(is.na(page_count), count, page_count))
+
+DF <- select(DF, -count)
+
+DF <- DF %>%
+  mutate(page_count = ifelse(page_count > 100, NA, page_count))
+
+```
+
+```{r}
+
+no_page <- filter(DF, is.na(page_count))
+
+no_page_titles <- no_page$title
+
+PQ <- filter(PQ_full, attributes=="article")
+
+match_vector <- 99
+
+for(i in 1:length(no_page_titles)) {
+  match <- agrep(no_page_titles[i], PQ$record)
+  if(length(match)==0){
+    match <- NA
+  }
+  match_vector <- rbind(match_vector, match)
+}
+
+match_vector <- match_vector[2:length(match_vector),]
+
+match_vector <- as.data.frame(match_vector)
+
+match_filter <- match_vector %>%
+  na.omit %>%
+  arrange(match_vector)
+
+PQ_filter <- PQ %>%
+  filter(row_number()%in% match_vector$match_vector)
+
+PQ_filter <- cbind(PQ_filter, match_filter)
+
+PQ_ids <- PQ_filter$articleID
+
+PQ_wos <- PQ_full[PQ_full$articleID %in% PQ_ids, ]
+
+PQ_wos <- filter(PQ_wos, attributes=="pages")
+
+pages <- select(PQ_wos, articleID, record)
+
+nums <- pages %>% 
+  separate(record, into = paste(c("first_page", "last_page"), sep = "-"))
+
+nums$first_page<- gsub("[[:alpha:]]", "", nums$first_page)
+
+nums$first_page <- as.numeric(nums$first_page)
+nums$last_page <- as.numeric(nums$last_page)
+nums <- nums %>%
+  mutate(count = last_page - first_page + 1)
+
+nums <- mutate(nums, count = ifelse(is.na(count), first_page + 1, count))
+
+wos <- no_page %>%
+  select(articleID_wos, title)
+
+temp_df <- cbind(no_page, match_vector)
+
+temp_df <- select(temp_df, -articleID)
+
+temp_df <- left_join(temp_df, PQ_filter)
+
+temp_df <- select(temp_df, articleID_wos, articleID)
+
+temp_df <- left_join(temp_df, nums)
+
+new_pages <- select(temp_df, articleID_wos, count)
+
+DF <- left_join(DF, new_pages)
+
+DF <- DF %>%
+  mutate(page_count = ifelse(is.na(page_count), count, page_count))
+
+DF <- select(DF, -count)
+
+```
+
+
+
+```{r import manually obtained page counts}
+
+page_count_manual <- read.csv("page_count.csv")
+
+DF <- left_join(DF, page_count_manual)
+
+rm(page_count_manual)
+
+DF <- mutate(DF, page_count = ifelse(is.na(page_count), page_count_manual, page_count))
+
+```
+
+```{r}
+
+library(BibWrangleR)
+
+SWA <- ebscoBWR.f(path="./SWA")
+
+SWA <- SWA %>%
+  filter(attributes == "article")
+
+SWA_titles <- select(SWA, record)
+
+SWA_titles$record <- tolower(SWA_titles$record)
+SWA_titles$record <- gsub(" ", "", SWA_titles$record)
+SWA_titles$record <- gsub("[[:punct:]]", "", SWA_titles$record)
+SWA_titles$record <- substring(SWA_titles$record, 1, 50)
+SWA.dup <- duplicated(SWA_titles$record)
+
+SWA_titles <- cbind(SWA_titles, SWA.dup)
+SWA_titles <-filter(SWA_titles, SWA.dup==FALSE)
+
+wos <- DF%>%
+  select(articleID_wos, title)
+
+wos$wos.titles <- tolower(wos$title)
+wos$wos.titles <- gsub("[[:punct:]]", "", wos$wos.titles)
+wos$wos.titles <- gsub(" ", "", wos$wos.titles) 
+wos$wos.titles <- substring(wos$wos.titles, 1, 50)
+wos.dup <- duplicated(wos$wos.titles)
+table(wos.dup)
+
+SWA_match <- wos$wos.titles%in%SWA_titles$record
+wos <- cbind(wos, SWA_match)
+wos <- select(wos, articleID_wos, SWA_match)
+
+DF <- left_join(DF, wos)
+
+not_indexed <- filter(DF, SWA_match == FALSE)
+
+ni_titles <- not_indexed$title
+
+match_vector <- 99
+
+
+for(i in 1:length(ni_titles)) {
+  match <- agrep(ni_titles[i], SWA$record)
+  if(length(match)==0){
+    match <- NA
+  }
+  match_vector <- rbind(match_vector, match)
+}
+
+match_vector <- match_vector[2:length(match_vector),]
+
+match_vector <- as.data.frame(match_vector)
+
+not_indexed <- cbind(not_indexed, match_vector)
+
+not_indexed <- select(not_indexed, articleID_wos, match_vector)
+
+DF <- left_join(DF, not_indexed)
+
+DF <- mutate(DF, indexed_SWA = ifelse(SWA_match == TRUE | match_vector>=1, 1, 0))
+                               
+
+DF <- select(DF, -match_vector)
+rm(match_vector)
+```
+
+```{r indexed on psycINFO}
+
+psyc <- ebscoBWR.f(path = "./psycINFO")
+
+psyc <- psyc %>%
+  filter(attributes == "article")
+  
+psyc_titles <- select(psyc, record)
+
+psyc_titles$record <- tolower(psyc_titles$record)
+psyc_titles$record <- gsub(" ", "", psyc_titles$record)
+psyc_titles$record <- gsub("[[:punct:]]", "", psyc_titles$record)
+psyc_titles$record <- substring(psyc_titles$record, 1, 50)
+psyc.dup <- duplicated(psyc_titles$record)
+
+psyc_titles <- cbind(psyc_titles, psyc.dup)
+psyc_titles <-filter(psyc_titles, psyc.dup==FALSE)
+
+wos <- DF%>%
+  select(articleID_wos, title)
+
+wos$wos.titles <- tolower(wos$title)
+wos$wos.titles <- gsub("[[:punct:]]", "", wos$wos.titles)
+wos$wos.titles <- gsub(" ", "", wos$wos.titles) 
+wos$wos.titles <- substring(wos$wos.titles, 1, 50)
+wos.dup <- duplicated(wos$wos.titles)
+table(wos.dup)
+
+psyc_match <- wos$wos.titles%in%psyc_titles$record
+wos <- cbind(wos, psyc_match)
+wos <- select(wos, articleID_wos, psyc_match)
+
+DF <- left_join(DF, wos)
+
+not_indexed <- filter(DF, psyc_match == FALSE)
+
+ni_titles <- not_indexed$title
+
+match_vector <- 99
+
+
+for(i in 1:length(ni_titles)) {
+  match <- agrep(ni_titles[i], psyc$record)
+  if(length(match)==0){
+    match <- NA
+  }
+  match_vector <- rbind(match_vector, match)
+}
+
+match_vector <- match_vector[2:length(match_vector),]
+
+match_vector <- as.data.frame(match_vector)
+
+not_indexed <- cbind(not_indexed, match_vector)
+
+not_indexed <- select(not_indexed, articleID_wos, match_vector)
+
+DF <- left_join(DF, not_indexed)
+
+DF <- mutate(DF, indexed_psyc = ifelse(psyc_match == TRUE | match_vector >= 1, 1, 0))
+
+DF <- select(DF, -match_vector)
+rm(match_vector)
+
+```
+
+
+
+
+```{r Indexed on PubMed}
+
+pubMed_clean <- read.csv("./PubMed/PubMed.csv", stringsAsFactors = FALSE, fileEncoding="latin1")
+
+pubMed_clean <- filter(pubMed_clean, year >= 2004 & year <= 2010)
+
+pubMed <- select(pubMed_clean, title)
+
+pubMed$title <- tolower(pubMed$title)
+pubMed$title <- gsub(" ", "", pubMed$title)
+pubMed$title <- gsub("[[:punct:]]", "", pubMed$title)
+pubMed$title <- substring(pubMed$title, 1, 50)
+pubMed.dup <- duplicated(pubMed$title)
+
+pubMed <- cbind(pubMed, pubMed.dup)
+pubMed<-filter(pubMed, pubMed.dup==FALSE)
+
+wos <- DF%>%
+  select(articleID_wos, title)
+
+wos$wos.titles <- tolower(wos$title)
+wos$wos.titles <- gsub("[[:punct:]]", "", wos$wos.titles)
+wos$wos.titles <- gsub(" ", "", wos$wos.titles) 
+wos$wos.titles <- substring(wos$wos.titles, 1, 50)
+wos.dup <- duplicated(wos$wos.titles)
+table(wos.dup)
+
+pubMed_match <- wos$wos.titles%in%pubMed$title
+wos <- cbind(wos, pubMed_match)
+wos <- select(wos, articleID_wos, pubMed_match)
+
+DF <- left_join(DF, wos)
+
+not_indexed <- filter(DF, pubMed_match == FALSE)
+
+ni_titles <- not_indexed$title
+
+match_vector <- 99
+
+
+for(i in 1:length(ni_titles)) {
+  match <- agrep(ni_titles[i], pubMed_clean$title)
+  if(length(match)==0){
+    match <- NA
+  }
+  match_vector <- rbind(match_vector, match)
+}
+
+match_vector <- match_vector[2:length(match_vector),]
+
+match_vector <- as.data.frame(match_vector)
+
+not_indexed <- cbind(not_indexed, match_vector)
+
+not_indexed <- select(not_indexed, articleID_wos, match_vector)
+
+DF <- left_join(DF, not_indexed)
+
+DF <- mutate(DF, indexed_pubMed = ifelse(pubMed_match == TRUE | match_vector >= 1, 1, 0))
+
+
+
+```
+
+```{r years active}
+
+years_active <- read.csv("years_active.csv")
+
+DF <- left_join(DF, years_active)
+
+```
+
+
+```{r model frame}
+
+model_frame <- DF %>%
+  select(articleID=articleID_wos,
+         title,
+         authors,
+         n_authors,
+         coauthored,
+         journal=source_title,
+         hindex,
+         pub_year=publication_year,
+         page_count,
+         year0,
+         year1,
+         year2,
+         year3,
+         year4,
+         year5,
+         total_cites, 
+         quartile,
+         indexed_pubMed,
+         indexed_psycINFO = indexed_psyc,
+         indexed_SWA,
+         years_active, 
+         cited)
+
+model_frame$indexed_pubMed[is.na(model_frame$indexed_pubMed)] <- 0
+model_frame$indexed_psycINFO[is.na(model_frame$indexed_psycINFO)] <- 0
+model_frame$indexed_SWA[is.na(model_frame$indexed_SWA)] <- 0
+
+model_frame <- model_frame %>%
+  mutate(authors_factor = ifelse(n_authors >=4, "4+", n_authors)) %>%
+  mutate(database_factor = indexed_pubMed + indexed_psycINFO + indexed_SWA)
+
+model_frame$database_factor <- as.factor(model_frame$database_factor)
+
+
+coverage <- model_frame %>%
+  group_by(journal) %>%
+  summarise(N = length(journal),
+            coauthored = round(sum(coauthored)/length(journal)*100, digits=1),
+            SWA_coverage = round(sum(indexed_SWA/length(journal))*100, digits=1),
+            psycINFO_coverage = round(sum(indexed_psycINFO/length(journal))*100, digits=1),
+            pubMed_coverage = round(sum(indexed_pubMed/length(journal))*100, digits=1))
+
+#saveRDS(model_frame, file="analytic_frame.RDS")
+```
+
+```{r, eval=FALSE}
+
+model_frame <- readRDS("analytic_frame.RDS")
+
+### NEED TO BE UPDATED TO REFLECT CHANGES IN MODEL FRAME
+
+
+table1 <- model_frame %>%
+  group_by(journal, hindex, pubMed, psycINFO) %>%
+  summarise(N=length(journal),
+            percent_coauth = mean(coauthored),
+            percent_no_cite = mean(no_cite)) 
+
+table1 <- select(table1, N, hindex, percent_coauth, pubMed, psycINFO)
+table1$percent_coauth <- round(table1$percent_coauth*100, digits=0)
+
+table2 <- model_frame %>%
+  mutate(authors = ifelse(n_authors >=4, "4+", n_authors)) %>%
+  group_by(authors) %>%
+  summarise(N=length(authors),
+            avg=mean(total_cites),
+            sd=sd(total_cites))
+
+table3 <- model_frame %>%
+   mutate(authors = ifelse(n_authors >=4, "4+", n_authors)) %>%
+  group_by(pub_year, authors) %>%
+summarise (avg=mean(total_cites)) 
+
+table3$avg = round(table3$avg, digits=1)
+
+ggplot(table3, aes(x=authors, y=avg, fill=authors)) +
+  geom_bar(stat="identity") +
+  facet_grid(~pub_year) +
+  scale_fill_grey(start = .6, end = .25) +
+  theme_bw() +
+  xlab("Authors per Article") +
+  ylab("Average Citations 5 Years after Publication") +
+  geom_text(data=table3, aes(x=authors, y=avg+0.2, label=avg, size=3)) +
+  theme(legend.position="none")
+
+table4 <- model_frame %>%
+   mutate(authors = ifelse(n_authors >=4, "4+", n_authors)) %>%
+  group_by(pub_year, authors) %>%
+summarise (avg=1-mean(cited)) 
+
+table4$avg = round(table4$avg*100, digits=1)
+
+ggplot(table4, aes(x=authors, y=avg, fill=authors)) +
+  geom_bar(stat="identity") +
+  facet_grid(~pub_year) +
+  scale_fill_grey(start = .6, end = .25) +
+  theme_bw() +
+  xlab("Authors per Article") +
+  ylab("Percentage of articles not cited five years after publication") +
+  geom_text(data=table4, aes(x=authors, y=avg+0.8, label=avg, size=3)) +
+  theme(legend.position="none")
+
+
+cor05 <- model_frame %>%
+  filter(pub_year==2005)
+
+cor06 <- model_frame %>%
+  filter(pub_year==2006)
+
+cor07 <- model_frame %>%
+  filter(pub_year==2007)
+
+cor08 <- model_frame %>%
+  filter(pub_year==2008)
+
+cor09 <- model_frame %>%
+  filter(pub_year==2009)
+
+cor.test(cor05$total_cites, cor05$n_authors)
+cor.test(cor06$total_cites, cor06$n_authors)
+cor.test(cor07$total_cites, cor07$n_authors)
+cor.test(cor08$total_cites, cor08$n_authors)
+cor.test(cor09$total_cites, cor09$n_authors)
+cor.test(model_frame$total_cites, model_frame$n_authors)
+
+
+ANOVA <- model_frame %>%
+  mutate(authors = ifelse(n_authors >=4, "4+", n_authors))
+
+fit <- aov(total_cites~authors, data=ANOVA)
+
+TukeyHSD(fit)
+```
+
+
+```{r, eval=FALSE}
+
+
+library(lme4)
+
+mymodel <-
+glmmadmb(total_cites ~ authors_factor + pub_year + page_count + database_factor + years_active
+(1 | journal), data=model_frame, zeroInflation=TRUE, 
+                     family="nbinom")
+
+```
+
+```{r, eval=FALSE}
+summary(logit.fit)
+```

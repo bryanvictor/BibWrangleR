@@ -40,6 +40,7 @@ total_article_count <- auth_journal_year %>%
 
 auth_journal_year <- auth_journal_year[order(auth_journal_year$journal, auth_journal_year$pubYear),]
 
+
 time_frame <- auth_journal_year %>%
   group_by(journal) %>%
   summarise(First=first(pubYear),
