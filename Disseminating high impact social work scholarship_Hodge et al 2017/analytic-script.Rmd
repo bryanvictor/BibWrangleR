@@ -9,7 +9,7 @@ The data for this paper comes from the Web of Science database.  Only disciplina
 
 ```{r initialize data frame}
 
-setwd("/Users/Bryan/Desktop/Git/manuscripts/coauth")
+setwd("C:/Users/bvictor/Desktop/Git/BibWrangleR/Disseminating high impact social work scholarship_Hodge et al 2017")
 
 library(dplyr)
 library(stringr)
@@ -129,9 +129,13 @@ DF <- left_join(DF, hindex)
 
 ```{r Figure 2 Histogram}
 
+library(ggplot2)
+
+tiff(file = "figure 2.tif", width = 2800, height = 2800, units = "px", res = 400) 
+
 ggplot(DF, aes(total_cites)) +
   geom_histogram(col="grey10", 
-                 fill="blue4", 
+                 fill="grey20", 
                  alpha = .8,
                  binwidth = 1) +
   theme_bw() +
@@ -144,10 +148,12 @@ ggplot(DF, aes(total_cites)) +
                arrow = arrow(length = unit(0.25, "cm"))) +
   geom_segment(aes(x = 17, y = 217, xend = 6.5, yend = 217), 
                arrow = arrow(length = unit(0.25, "cm"))) +
-  annotate("text", x = 23, y = 315, label = "median = 3", size = 4.5) +
-  annotate("text", x = 27, y = 218, label = "3rd quartile = 5", size = 4.5) +
-  annotate("text", x = 22.5, y = 490, label = "1st quartile = 1", size = 4.5)
+  annotate("text", x = 25, y = 315, label = "median = 3", size = 4) +
+  annotate("text", x = 30, y = 218, label = "3rd quartile = 5", size = 4) +
+  annotate("text", x = 25, y = 490, label = "1st quartile = 1", size = 4)
 
+
+dev.off() 
 ```
 
 
@@ -658,14 +664,6 @@ DF <- mutate(DF, indexed_pubMed = ifelse(pubMed_match == TRUE | match_vector >= 
 
 ```
 
-```{r years active}
-
-years_active <- read.csv("years_active.csv")
-
-DF <- left_join(DF, years_active)
-
-```
-
 
 ```{r model frame}
 
@@ -690,7 +688,6 @@ model_frame <- DF %>%
          indexed_pubMed,
          indexed_psycINFO = indexed_psyc,
          indexed_SWA,
-         years_active, 
          cited)
 
 model_frame$indexed_pubMed[is.na(model_frame$indexed_pubMed)] <- 0
@@ -820,3 +817,12 @@ glmmadmb(total_cites ~ authors_factor + pub_year + page_count + database_factor 
 ```{r, eval=FALSE}
 summary(logit.fit)
 ```
+
+```{r}
+
+index <- model_frame %>%
+  group_by(journal) %>%
+  mutate(yesPsyc = )
+
+```
+

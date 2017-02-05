@@ -28,7 +28,7 @@ proQuestBWR.f <- function(path, rmDuplicates=TRUE, csv = FALSE){
 
   full.df <- tbl_df(full.df) #Convert to dplyr table for easier reading
   full.df <- filter(full.df, record != "") #Eliminate empy rows
-  full.df <- filter(full.df, record = !(is.na(attributes))) #Eliminate missing
+  full.df <- filter(full.df, !is.na(attributes)) #Eliminate missing
   full.df$attributes <- gsub(" ", "", full.df$attributes)
   full.df$attributes <- gsub(":", "", full.df$attributes)
 
