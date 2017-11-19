@@ -1,0 +1,2414 @@
+TI- Psychoanalytic concepts in mental hygiene.
+PS- Publication Status: Fully Published
+AU- Kenworthy, M. E.
+AF- Kenworthy, M. E.
+SO- Family
+VI- 7
+SD- 1926
+YR- 1926
+PM- 1926
+PG- 213-223
+PC- 11
+SP- 213
+PN- 11
+LA- English
+KP- REGRESSION
+KP- VS. PROGRESSION VALUE OF EXPERIENCES
+KP- MENTAL ABILITY AND BODY TYPE
+KP- HYGIENE
+KP- VALUE OF EXPERIENCES FOR
+KP- CRIME
+KP- AND PSYCHOSES
+KP- CHILDHOOD AND ADOLESCENCE
+KP- NERVOUS AND MENTAL DISORDERS
+AB- All the experiences which come to an individual may be classified according as they are constructive in the sense of being of value for a progressive growth toward stable adult integration, or destructive if they have the obverse effect. The entire history of a child may be analyzed from this point of view, and each experience put into its proper setting. It then becomes the problem of the mental hygienist to determine for that individual the value of different types of behavior and select the environmental factors which will lead to integration and avoid regression toward infantile reactions. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19270101
+AN- 1927-00164-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1927-00164-001&site=ehost-live&scope=site
+
+TI- Socio-psychological status of children from marginal families.
+PS- Publication Status: Fully Published
+AU- Blanchard, P.
+AU- Paynter, R. H.
+AF- Blanchard, P.
+AF- Paynter, R. H.
+SO- Family
+VI- 13
+SD- 1927
+YR- 1927
+PM- 1927
+PG- 3-10
+PC- 8
+SP- 3
+PN- 8
+LA- English
+KP- DEPENDENT CHILDREN
+KP- SOCIO-PSYCHOLOGICAL STATUS
+KP- CHILD
+KP- DEPENDENT
+KP- CHILDHOOD AND ADOLESCENCE
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- The authors suggest a method for the checking of social welfare activities, so as to obtain definite information upon which to decide whether their influence is dysgenic or eugenic in nature and whether their work is for the good or ill of contemporaneous society. They studied 80 children, from 23 marginal families, who were receiving aid. The percentage of intellectually inferior children was somewhat larger than in the general population. But the percentage of behavior difficulties was small, and the children showed normal emotional reactions and family relationships. On the whole, they seemed likely to develop into well-adjusted and socially desirable adults. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19270501
+AN- 1927-01167-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1927-01167-001&site=ehost-live&scope=site
+
+TI- Parent-child relationship: projection of ambition.
+PS- Publication Status: Fully Published
+AU- Young, K.
+AF- Young, K.
+SO- Family
+VI- 8
+SD- 1927
+YR- 1927
+PM- 1927
+PG- 67-73
+PC- 7
+SP- 67
+PN- 7
+LA- English
+KP- PROJECTION
+KP- PARENTAL
+KP- PARENTS
+KP- PROJECTION BY
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+KP- SPECIAL MENTAL CONDITIONS
+AB- In a family the ideal interrelationship, in which each member influences and is influenced by every other member, rarely exists. The natural circularity of response is broken by attitudes of authority, domination and sense of superiority of parents toward children. The father or mother commands; the child obeys. Very little reciprocal stimulation is permitted. If the parent has harbored some unfulfilled desire or ambition for fame, money, education, social prestige, or what-not, he or she projects this ambition upon one or more of the children. The parent tries to live in the children, instead of allowing them to develop their own desires and ambitions. The projection occurs most frequently from father to son and from mother to daughter. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19270801
+AN- 1927-01816-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1927-01816-001&site=ehost-live&scope=site
+
+TI- The psychology of the woman who works.
+PS- Publication Status: Fully Published
+AU- Groves, E. R.
+AF- Groves, E. R.
+SO- Family
+VI- 8
+SD- 1927
+YR- 1927
+PM- 1927
+PG- 92-97
+PC- 6
+SP- 92
+PN- 6
+LA- English
+KP- WORK
+KP- WOMAN
+KP- WORKING
+KP- HOME
+KP- AND WOMAN
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- "The woman of character who by free choice publicly admits that, though she is happy in her home and willing to undertake its management, the family task is not a complete means of satisfying her desires, any more than it would be in the case of men required to assume the management of the household, helps to bring social thinking regarding the home to the level where women may have in fuller measure the expression of their finer selves without the race being left for its perpetuation to women of an inferior type who are content to become servants and breeders." (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19270801
+AN- 1927-01811-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1927-01811-001&site=ehost-live&scope=site
+
+TI- Toward the rediscovery of the individual in industry.
+PS- Publication Status: Fully Published
+AU- Adie, D. C.
+AF- Adie, D. C.
+SO- Family
+VI- 8
+SD- 1927
+YR- 1927
+PM- 1927
+PG- 295-300
+PC- 6
+SP- 295
+PN- 6
+LA- English
+KP- INDUSTRIAL DISABILITY
+KP- RELATIONS
+KP- INDIVIDUAL VS. CLASS INSTRUCTION
+KP- IN INDUSTRY
+KP- INDUSTRIAL AND PERSONNEL PROBLEMS
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- The growth of the industrial organism has put all the emphasis upon production and neglected the individual worker. The efficient administration of labor relationships depends upon the clearness with which we see economic conditions and possibilities on the one hand and human factors on the other. Monotony is probably less important to the worker than theorists believe it to be. The possibility of betterment in industrial relations depends upon the development of plans along lines similar to those of the "case work method." (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Industrial & Organizational Psychology (3600)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19280401
+AN- 1928-01029-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1928-01029-001&site=ehost-live&scope=site
+
+TI- Social implications of mental testing.
+PS- Publication Status: Fully Published
+AU- Regensberg, J.
+AF- Regensberg, J.
+SO- Family
+VI- 7
+SD- 1927
+YR- 1927
+PM- 1927
+PG- 295-300
+PC- 6
+SP- 295
+PN- 6
+LA- English
+KP- MENTAL ABILITY AND BODY TYPE
+KP- TESTS
+KP- DIAGNOSTIC SIGNIFICANCE
+KP- EMOTIONAL EXCITATION
+KP- FACTORS
+KP- MENTAL TESTS
+KP- DIAGNOSIS
+KP- MENTAL TESTS IN
+AB- The scores obtained in intelligence tests must always be interpreted in the light of the emotional responses of the child. A number of social and emotional factors may make a test score unreliable for diagnostic purposes, so that it is at times necessary to ignore the test score because of the greater value of other factors. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychometrics & Statistics & Methodology (2200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19270401
+AN- 1927-00978-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1927-00978-001&site=ehost-live&scope=site
+
+TI- Spiritual diagnosis.
+PS- Publication Status: Fully Published
+AU- Scriven, G. B.
+AF- Scriven, G. B.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 17-19
+PC- 3
+SP- 17
+PN- 3
+LA- English
+KP- RELIGION IN CHILD TRAINING
+KP- PSYCHOLOGY OF
+KP- AND PSYCHOTHERAPY
+KP- PSYCHOTHERAPY
+KP- HEALING
+KP- SPIRITUAL
+KP- SPECIAL MENTAL CONDITIONS
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- The pastor who diagnoses and treats the spiritual difficulties of those who come to him creates nothing new. He seeks to remove difficulties either in the individual of in his environment which block or kill his spiritual life. To accomplish this end he needs the fullest possible information about the religious and emotional experiences of the client, his intellectual and emotional capacities, and his environment. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19280601
+AN- 1928-01548-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1928-01548-001&site=ehost-live&scope=site
+
+TI- The development of diverse patterns of behavior among children in the same family.
+PS- Publication Status: Fully Published
+AU- Brown, L. G.
+AF- Brown, L. G.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 35-39
+PC- 5
+SP- 35
+PN- 5
+LA- English
+KP- SIBLING BEHAVIOR PATTERNS
+KP- FAMILY AND BEHAVIOR
+KP- BEHAVIOR
+KP- OF SIBLINGS
+KP- CHILDHOOD AND ADOLESCENCE
+AB- The second or third child in a family, discovering that the first-born has his rôle already defined, tries to gain recognition on the same basis, but soon finds that the latter has progressed too far in his development to be surpassed. Other fields of endeavor must therefore be sought. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19281001
+AN- 1928-02894-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1928-02894-001&site=ehost-live&scope=site
+
+TI- Methods of research in studying the family.
+PS- Publication Status: Fully Published
+AU- Jocher, K.
+AF- Jocher, K.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 80-85
+PC- 6
+SP- 80
+PN- 6
+LA- English
+KP- RESEARCH BUREAUS
+KP- METHODS IN FAMILY STUDY
+KP- FAMILY AND BEHAVIOR
+KP- SIZE AND CHARACTER
+KP- STUDY
+KP- RESEARCH METHODS IN
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- The family is considered a legitimate field of research by the various social sciences, none of which, unaided by the others, could make a complete study of family life. The statistical and case-work methods, which have been used in research in these sciences, have been applied generally to problems of family disorganization. There is a need for research to discover the principles of successful family relationships. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19281201
+AN- 1928-03603-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1928-03603-001&site=ehost-live&scope=site
+
+TI- Social attitudes as they are affected by financial dependency and relief-giving.
+PS- Publication Status: Fully Published
+AU- Marcus, G.
+AF- Marcus, G.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 135-140
+PC- 6
+SP- 135
+PN- 6
+LA- English
+KP- SOCIAL ADAPTATION
+KP- ATTITUDE
+KP- AND DEPENDENCY
+KP- DEPENDENCE AND INTELLIGENCE
+KP- AND SOCIAL ATTITUDE
+KP- ATTITUDE AND BEHAVIOR
+KP- SOCIAL
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- The case worker often finds that the giving of relief seems to result in a loss of self-respect in formerly self-reliant clients. This deterioration in the client is wrongly attributed to the effect of relief itself, whereas it is due to an emotional dependency produced either by the feeling of insecurity following social maladjustment, or to personality difficulties existing previous to the granting of relief. It is the function of the case worker to evaluate the personality assets and liabilities of the client in order to prevent emotional dependency rather than to discourage dependency merely by reducing or withholding relief, which is the "modus operandi of the family case worker until she establishes contact as the basis for influence." (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19290301
+AN- 1929-01236-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-01236-001&site=ehost-live&scope=site
+
+TI- Personality and its development as it is affected by financial dependency and relief-giving.
+PS- Publication Status: Fully Published
+AU- Schumacher, H. C.
+AF- Schumacher, H. C.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 140-144
+PC- 5
+SP- 140
+PN- 5
+LA- English
+KP- PERSONALITY
+KP- AND DEPENDENCY
+KP- DEPENDENCE AND INTELLIGENCE
+KP- AND PERSONALITY
+KP- CHILDHOOD AND ADOLESCENCE
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- The child of dependent parents is likely to develop non-aggressive traits and tends to become emotionally dependent on the agency as he has been on his parents. It is therefore necessary to obtain an adequate history of the client in order to evaluate the degree of dependency and to stress the desirability of self-help on the part of the children in dependent families. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19290301
+AN- 1929-01313-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-01313-001&site=ehost-live&scope=site
+
+TI- The effect of foster home placement on the personality of children.
+PS- Publication Status: Fully Published
+AU- Bissell, E. E.
+AF- Bissell, E. E.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 157-162
+PC- 6
+SP- 157
+PN- 6
+LA- English
+KP- PERSONALITY
+KP- CHILD
+KP- FOSTER BROTHER
+KP- HOMES
+KP- CHILD PERSONALITY IN
+KP- FOSTER HOMES
+KP- CHILDHOOD AND ADOLESCENCE
+AB- The practice of frequent change of foster homes for behavior problem children, as well as the lack of training and understanding of the majority of foster parents, has a deleterious effect on the personality of these children. A more professional attitude and better training on the part of foster parents are needed. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19290301
+AN- 1929-01294-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-01294-001&site=ehost-live&scope=site
+
+TI- The influence of the nursery school on family life in the village.
+PS- Publication Status: Fully Published
+AU- Schofield, W. H.
+AF- Schofield, W. H.
+SO- Family
+VI- 9
+SD- 1928
+YR- 1928
+PM- 1928
+PG- 278-279
+PC- 2
+SP- 278
+PN- 2
+LA- English
+KP- NURSERY SCHOOL
+KP- AND FAMILY LIFE
+KP- FAMILY
+KP- LIFE
+KP- AND NURSEY SCHOOL
+KP- EDUCATIONAL PSYCHOLOGY
+MN- No terms assigned
+CL- Educational Psychology (3500)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19301201
+AN- 1930-05114-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1930-05114-001&site=ehost-live&scope=site
+
+TI- Parental attitudes in the modern novel.
+PS- Publication Status: Fully Published
+AU- Borst, H.
+AF- Borst, H.
+SO- Family
+VI- 10
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 113-115
+PC- 3
+SP- 113
+PN- 3
+LA- English
+KP- PARENT ASSOCIATION AND INDIVIDUAL PSYCHOLOGY
+KP- ATTITUDE TO CHILD
+KP- IN NOVEL
+KP- ATTITUDE AND BEHAVIOR
+KP- PARENTAL
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- Citations from modern novels illustrating family influences and attitudes. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19291001
+AN- 1929-04092-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-04092-001&site=ehost-live&scope=site
+
+TI- Parent-child isolations.
+PS- Publication Status: Fully Published
+AU- Duncan, W. L.
+AF- Duncan, W. L.
+SO- Family
+VI- 10
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 115-118
+PC- 4
+SP- 115
+PN- 4
+LA- English
+KP- FAMILY
+KP- AND CHILD
+KP- CHILD
+KP- AND FAMILY
+KP- CHILDHOOD AND ADOLESCENCE
+AB- Case studies of conflicts between parents and children of the following types: the college-trained child and his uneducated parents, the Indian youth and his parents, and the second generation immigrant and his parents. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19300601
+AN- 1930-02460-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1930-02460-001&site=ehost-live&scope=site
+
+TI- What it means to be crippled.
+PS- Publication Status: Fully Published
+AU- Markey, O. B.
+AF- Markey, O. B.
+SO- Family
+VI- 10
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 118-121
+PC- 4
+SP- 118
+PN- 4
+LA- English
+KP- HANDICAPPED
+KP- GUIDANCE FOR
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- A plea is made for the unsentimental treatment of physically handicapped individuals and for the development of a constructive program of vocational guidance and placement, as well as psychiatric service. Several case studies are included. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19291001
+AN- 1929-04150-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-04150-001&site=ehost-live&scope=site
+
+TI- The inter-relation between family and state hospital social work.
+PS- Publication Status: Fully Published
+AU- Land, T. E.
+AF- Land, T. E.
+SO- Family
+VI- 10
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 135-138
+PC- 4
+SP- 135
+PN- 4
+LA- English
+KP- SOCIAL ADAPTATION
+KP- WORK
+KP- FAMILY AND HOSPITAL
+KP- HOSPITAL AND FAMILY SOCIAL WORK
+KP- FAMILY AFFECTION IN EVOLUTION
+KP- AND SOCIAL WORK
+KP- NERVOUS AND MENTAL DISORDERS
+AB- The author indicates the division of responsibility between the family agency and the hospital social service department in the treatment of psychiatric cases. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19291001
+AN- 1929-04065-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-04065-001&site=ehost-live&scope=site
+
+TI- Treatment of alcoholics.
+PS- Publication Status: Fully Published
+AU- Grant, J. M.
+AF- Grant, J. M.
+SO- Family
+VI- 10
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 138-143
+PC- 6
+SP- 138
+PN- 6
+LA- English
+KP- PSYCHOTHERAPY
+KP- OF ALCOHOLISM
+KP- ALCOHOLISM
+KP- TREATMENT
+KP- NERVOUS AND MENTAL DISORDERS
+KP- SPECIAL MENTAL CONDITIONS
+AB- A study of ten case records revealed the following principles and techniques of treatment: the need to know the problems of both husband and wife, the importance of obtaining the client's emotional acceptance of certain ideas, the importance of emotional release during the interview and the satisfaction of ego and sex demands. Wider recognition should be given to the underlying causes of alcoholism. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19300601
+AN- 1930-02353-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1930-02353-001&site=ehost-live&scope=site
+
+TI- Report on a study of one hundred cases of desertion.
+PS- Publication Status: Fully Published
+AU- O'Neill, E. F.
+AU- Glover, R. J.
+AF- O'Neill, E. F.
+AF- Glover, R. J.
+SO- Family
+VI- 9
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 287-291
+PC- 5
+SP- 287
+PN- 5
+LA- English
+KP- DESERTION
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- Though other factors are discernible, difference of religion and mixture of nationality are prominent influences in producing deserters; 14 women and 86 men, all of whom constituted new cases for Roman Catholic diocesan bureaus since November, 1926, in six scattered American cities were studied. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19291201
+AN- 1929-04884-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-04884-001&site=ehost-live&scope=site
+
+TI- The responsibility of the social worker in assisting the school to develop a social attitude toward the child.
+PS- Publication Status: Fully Published
+AU- Holbrook, D. H.
+AF- Holbrook, D. H.
+SO- Family
+VI- 9
+SD- 1929
+YR- 1929
+PM- 1929
+PG- 309-314
+PC- 6
+SP- 309
+PN- 6
+LA- English
+KP- SOCIAL ADAPTATION
+KP- WORKER
+KP- SCHOOL ACHIEVEMENT
+KP- AND SOCIAL WORKER
+KP- CHILD
+KP- PROBLEM
+KP- SOCIAL WORKER AND SCHOOL
+KP- CHILDHOOD AND ADOLESCENCE
+AB- The social worker can aid the teacher in seeing the child as a whole instead of considering only a segment of his life. The teacher must be given an understanding of case work methods and the need for social treatment. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19291001
+AN- 1929-04243-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1929-04243-001&site=ehost-live&scope=site
+
+TI- Studies of breakdowns in family income: broken families.
+PS- Publication Status: Fully Published
+AU- Bucklin, D. R.
+AF- Bucklin, D. R.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 3-13
+PC- 11
+SP- 3
+PN- 11
+LA- English
+KP- FAMILY
+KP- CHARACTER IN
+KP- CHARACTER
+KP- IN FAMILY
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+KP- SPECIAL MENTAL CONDITIONS
+AB- Differences of personal character rather than external circumstances were the chief factors in bringing about the disintegration of 167 out of 745 dependent families. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19301101
+AN- 1930-04380-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1930-04380-001&site=ehost-live&scope=site
+
+TI- Laughter and its place in social case work.
+PS- Publication Status: Fully Published
+AU- Ferguson, M. R.
+AF- Ferguson, M. R.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 19-24
+PC- 6
+SP- 19
+PN- 6
+LA- English
+KP- LAUGHTER
+KP- AND CASE WORK
+KP- CASE HISTORY
+KP- WORK AND LAUGHTER
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- A review of the theories of laughter and a plea for the more frequent use of laughter-producing devices in case work technique as an aid in reducing tension and inducing an objective attitude in clients of social agencies. Examples from case records are given. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310301
+AN- 1931-01550-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-01550-001&site=ehost-live&scope=site
+
+TI- A literary case history.
+PS- Publication Status: Fully Published
+AU- Wallerstein, H.
+AF- Wallerstein, H.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 26-28
+PC- 3
+SP- 26
+PN- 3
+LA- English
+KP- CASE HISTORY
+KP- LITERARY
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+AB- Incidents and characterizations from Ultima Thule by Henry Handel Richardson are cited to illustrate the point that this novel is similar in content and form to a social case history. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310201
+AN- 1931-01139-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-01139-001&site=ehost-live&scope=site
+
+TI- Families of intellectually gifted students.
+PS- Publication Status: Fully Published
+AU- Conklin, A. M.
+AF- Conklin, A. M.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 99-106
+PC- 8
+SP- 99
+PN- 8
+LA- English
+KP- STUDENT ADJUSTMENT
+KP- GIFTED
+KP- FAMILY OF
+KP- EVOLUTION AND HEREDITY
+MN- No terms assigned
+CL- Physiological Psychology & Neuroscience (2500)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310101
+AN- 1931-00194-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-00194-001&site=ehost-live&scope=site
+
+TI- A sociological case study of farm families.
+PS- Publication Status: Fully Published
+AU- Sanderson, D.
+AU- Foster, R. G.
+AF- Sanderson, D.
+AF- Foster, R. G.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 107-114
+PC- 8
+SP- 107
+PN- 8
+LA- English
+KP- FARM FAMILY
+KP- FAMILY
+KP- FORM
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310101
+AN- 1931-00587-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-00587-001&site=ehost-live&scope=site
+
+TI- Bereavement as a problem for family research and technique.
+PS- Publication Status: Fully Published
+AU- Eliot, T. D.
+AF- Eliot, T. D.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 114-115
+PC- 2
+SP- 114
+PN- 2
+LA- English
+KP- BEREAVEMENT
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310101
+AN- 1931-00481-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-00481-001&site=ehost-live&scope=site
+
+TI- Some guiding principles in understanding personality.
+PS- Publication Status: Fully Published
+AU- Allport, G. W.
+AF- Allport, G. W.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 124-128
+PC- 5
+SP- 124
+PN- 5
+LA- English
+KP- PERSONALITY
+KP- STUDY
+KP- SPECIAL MENTAL CONDITIONS
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310101
+AN- 1931-00237-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-00237-001&site=ehost-live&scope=site
+
+TI- Individual implications of the family pattern.
+PS- Publication Status: Fully Published
+AU- Plant, J. S.
+AF- Plant, J. S.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 128-132
+PC- 5
+SP- 128
+PN- 5
+LA- English
+KP- FAMILY
+KP- PATTERN
+KP- SPECIAL MENTAL CONDITIONS
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310101
+AN- 1931-00313-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-00313-001&site=ehost-live&scope=site
+
+TI- The size of family among a group of college and non-college married women.
+PS- Publication Status: Fully Published
+AU- Goodsell, W.
+AF- Goodsell, W.
+SO- Family
+VI- 11
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 132-133
+PC- 2
+SP- 132
+PN- 2
+LA- English
+KP- FERTILITY AND ABILITY
+KP- AND EDUCATION
+KP- EDUCATION
+KP- AND FERTILITY
+KP- EVOLUTION AND HEREDITY
+MN- No terms assigned
+CL- Physiological Psychology & Neuroscience (2500)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310101
+AN- 1931-00197-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-00197-001&site=ehost-live&scope=site
+
+TI- The relative value of case study and statistics.
+PS- Publication Status: Fully Published
+AU- White, R. C.
+AF- White, R. C.
+SO- Family
+VI- 10
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 259-265
+PC- 7
+SP- 259
+PN- 7
+LA- English
+KP- STATISTICS
+KP- AND CASE STUDY
+KP- CASE HISTORY
+KP- STUDY AND STATISTICS
+KP- SPECIAL MENTAL CONDITIONS
+KP- BIOMETRY AND STATISTICS
+AB- The case study method involves facts of a non-numerical nature, is particularistic, and may throw light on factors that will be of service to a statistical analysis. The function of statistics is to study the distribution of measurable traits in social groups and to generalize from random samples. The two methods do not conflict but supplement each other. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+CL- Psychometrics & Statistics & Methodology (2200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310301
+AN- 1931-01473-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-01473-001&site=ehost-live&scope=site
+
+TI- The contribution of case work to the 'hygiene' of living.
+PS- Publication Status: Fully Published
+AU- Nichols, M. S.
+AF- Nichols, M. S.
+SO- Family
+VI- 10
+SD- 1930
+YR- 1930
+PM- 1930
+PG- 275-279
+PC- 5
+SP- 275
+PN- 5
+LA- English
+KP- CASE HISTORY
+KP- WORK AND LAUGHTER
+KP- VALUE
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+KP- SPECIAL MENTAL CONDITIONS
+AB- Social case work has contributed to the development of personality by direct contact with individuals, spreading knowledge to these individuals as well as adding to the store of knowledge by case records. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19310301
+AN- 1931-01574-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1931-01574-001&site=ehost-live&scope=site
+
+TI- Treatment in short time contacts.
+PS- Publication Status: Fully Published
+AU- McCord, E.
+AF- McCord, E.
+SO- Family
+VI- 12
+SD- 1931
+YR- 1931
+PM- 1931
+PG- 191-193
+PC- 3
+SP- 191
+PN- 3
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19320601
+AN- 1932-02454-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1932-02454-001&site=ehost-live&scope=site
+
+TI- A way of understanding: an approach to case work with negro families.
+PS- Publication Status: Fully Published
+AU- Reynolds, B. C.
+AF- Reynolds, B. C.
+SO- Family
+VI- 12
+SD- 1931
+YR- 1931
+PM- 1931
+PG- 203-208
+PC- 6
+SP- 203
+PN- 6
+LA- English
+KP- NEGRO
+KP- CASE WORK
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19320501
+AN- 1932-01914-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1932-01914-001&site=ehost-live&scope=site
+
+TI- Personality and the parent-child relationship.
+PS- Publication Status: Fully Published
+AU- Mathews, J.
+AF- Mathews, J.
+SO- Family
+VI- 12
+SD- 1931
+YR- 1931
+PM- 1931
+PG- 208-213
+PC- 6
+SP- 208
+PN- 6
+LA- English
+KP- PERSONALITY
+KP- AND PARENT-CHILD RELATION
+KP- CHILD
+KP- AND PARENT HOSTILITY
+KP- RELATION
+KP- AND PERSONALITY
+KP- CHILDHOOD AND ADOLESCENCE
+KP- SPECIAL MENTAL CONDITIONS
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19320501
+AN- 1932-01974-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1932-01974-001&site=ehost-live&scope=site
+
+TI- Mental hygiene aspects of the family.
+PS- Publication Status: Fully Published
+AU- Plant, J. S.
+AF- Plant, J. S.
+SO- Family
+VI- 13
+SD- 1932
+YR- 1932
+PM- 1932
+PG- 39-45; 90-99; 118-126
+PC- 7
+SP- 39
+PN- 7
+LA- English
+KP- HYGIENE
+KP- FAMILY
+KP- MENTAL HYGIENE
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+KP- NERVOUS AND MENTAL DISORDERS
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19330401
+AN- 1933-01483-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1933-01483-001&site=ehost-live&scope=site
+
+TI- Contributions to psychological factors in anti-social behavior.
+PS- Publication Status: Fully Published
+AU- Alexander, F.
+AF- Alexander, F.
+SO- Family
+VI- 13
+SD- 1932
+YR- 1932
+PM- 1932
+PG- 142-147
+PC- 6
+SP- 142
+PN- 6
+LA- English
+KP- CRIME
+KP- FACTORS
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19330401
+AN- 1933-01442-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1933-01442-001&site=ehost-live&scope=site
+
+TI- Psychological realities and case work.
+PS- Publication Status: Fully Published
+AU- Marcus, G.
+AF- Marcus, G.
+SO- Family
+VI- 13
+SD- 1932
+YR- 1932
+PM- 1932
+PG- 147-150
+PC- 4
+SP- 147
+PN- 4
+LA- English
+KP- CASE RECORD AND STATISTICS
+KP- WORK
+KP- PSYCHOLOGY
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19330401
+AN- 1933-01479-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1933-01479-001&site=ehost-live&scope=site
+
+TI- The integration of the erotic component in man.
+PS- Publication Status: Fully Published
+AU- Emery, E. Van N.
+AF- Emery, E. Van N.
+SO- Family
+VI- 13
+SD- 1932
+YR- 1932
+PM- 1932
+PG- 255-266
+PC- 12
+SP- 255
+PN- 12
+LA- English
+KP- SEX
+KP- DEVELOPMENT
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+KP- SPECIAL MENTAL CONDITIONS
+AB- The problems which sex and the love life present to the individual may be traced in the development of the child's sensory experiences. These present two divergent patterns: the erotic patterns of child behavior and the development of his love life. Both originate as a result of pleasurable sensory stimulation very early in life, but separate early and develop as isolated developmental trends. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19330701
+AN- 1933-02940-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1933-02940-001&site=ehost-live&scope=site
+
+TI- What is a juvenile delinquent?
+PS- Publication Status: Fully Published
+AU- Courthial, A.
+AF- Courthial, A.
+SO- Family
+VI- 14
+SD- 1933
+YR- 1933
+PM- 1933
+PG- 169-171
+PC- 3
+SP- 169
+PN- 3
+LA- English
+KP- DELINQUENCY
+KP- CHILD
+KP- CHILD ABILITIES
+KP- SOCIAL FUNCTIONS OF THE INDIVIDUAL
+KP- CHILDHOOD AND ADOLESCENCE
+AB- Legally, a delinquent is a transgressor of the law. Psychologically, the delinquent is a child seeking emotional satisfactions which he cannot find in the environment in which he lives. He is differentiated from other children by a greater degree of egocentrism and by a lack of emotional balance. A persistence in old habits and a lack of suggestibility to new leads are also traits characteristic of such children. Emotions are more important than intelligence in determining the degree of adjustment. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19340101
+AN- 1934-00476-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1934-00476-001&site=ehost-live&scope=site
+
+TI- Restricted applications of psychoanalysis to social work.
+PS- Publication Status: Fully Published
+AU- Horney, K.
+AF- Horney, K.
+SO- Family
+VI- 15
+SD- 1934
+YR- 1934
+PM- 1934
+PG- 169-173
+PC- 5
+SP- 169
+PN- 5
+LA- English
+KP- SOCIAL ACTIVITY
+KP- WORK IN HYPOPHRENIA
+KP- PSYCHOANALYSIS AND
+KP- PSYCHOANALYSIS
+KP- SOCIAL WORK AND
+KP- SPECIAL MENTAL CONDITIONS
+AB- The author points out the desirability of some knowledge of the psychoanalytic technique in the preparation for social work. The object is not that the worker may attempt to analyze or treat the deeper neuroses, but that she may be able to recognize the difference between a deep-seated neurosis and a minor conflict and attempt to relieve the immediate situation in both cases. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19341201
+AN- 1934-05926-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1934-05926-001&site=ehost-live&scope=site
+
+TI- Security, cultural restraints, intra-social dependencies, and hostilities.
+PS- Publication Status: Fully Published
+AU- Kardiner, A.
+AF- Kardiner, A.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- n
+PC- 1
+SP- n
+PN- 1
+LA- English
+KP- SOCIAL ABILITY
+KP- BEHAVIOR
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380401
+AN- 1938-02013-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02013-001&site=ehost-live&scope=site
+
+TI- Alcoholism and family case work.
+PS- Publication Status: Fully Published
+AU- Lewis, M. F.
+AF- Lewis, M. F.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 39-44
+PC- 6
+SP- 39
+PN- 6
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK
+KP- ALCOHOL RELATIONSHIPS
+KP- FAMILY
+KP- SOCIAL BIOLOGY
+KP- ALCOHOL AND
+KP- ALCOHOLISM
+KP- FAMILY RELATIONSHIPS AND
+KP- PERSONALITY AND CHARACTER
+KP- FUNCTIONAL DISORDERS
+AB- Examination of the case records of alcoholics in the light of modern theory suggests that the alcoholic man suffers from a conflict between masculine and feminine impulses. In his drinking bouts he works out a wish for the companionship of men and the desire to receive by mouth something potent enough to overwhelm him. These impulses are accompanied by an enormous amount of hostility toward his wife and children. The relationship between the man and his wife is extremely complicated. The woman finds an outlet for her aggressive impulses in a partnership with a man who is partially dependent and who creates situations that almost force her to punish him. Both partners, therefore, alternate between a "masculine" and a "feminine" position. Since cure of chronic alcoholism is extremely difficult, the goal of the case worker should be a diminution of the number of sprees and a lengthening of the intervals between. The author feels this is best done by assisting the man to achieve a masculine role in the face of society and by supporting the woman's desire to help her husband. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Personality Psychology (3100)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19371001
+AN- 1937-04628-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1937-04628-001&site=ehost-live&scope=site
+
+TI- A psychiatrist's services in a family agency.
+PS- Publication Status: Fully Published
+AU- Johnson, G. B.
+AF- Johnson, G. B.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 50-54
+PC- 5
+SP- 50
+PN- 5
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK
+KP- PSYCHIATRIST IN
+KP- PSYCHIATRY
+KP- SOCIAL BEHAVIOR AND
+KP- FAMILY
+KP- SOCIAL BIOLOGY
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- FUNCTIONAL DISORDERS
+AB- This article describes the plan whereby the Family Service Society of Buffalo makes most efficient use of the psychiatric services of Samuel W. Hartwell. Four case histories in which psychiatric advice was of great value are reviewed. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19371001
+AN- 1937-04655-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1937-04655-001&site=ehost-live&scope=site
+
+TI- Vocational adjustment service in a family agency.
+PS- Publication Status: Fully Published
+AU- Newman, I. A.
+AF- Newman, I. A.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 54-58
+PC- 5
+SP- 54
+PN- 5
+LA- English
+KP- VOCATION ADJUSTMENT SERVICE
+KP- SOCIAL ABILITY
+KP- WORK
+KP- VOCATIONAL ADJUSTMENT
+KP- ADJUSTMENT
+KP- VOCATIONAL
+KP- SERVICE
+KP- EDUCATIONAL PSYCHOLOGY (INCL. VOCATIONAL GUIDANCE)
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+AB- In this article the vocational and placement service offered by the Jewish Social Service Bureau of Cleveland is described. The services include: psychological testing; vocational guidance for young persons; occupational counseling for adults; assistance in obtaining vocational training or retraining; placement at normal employment, sheltered employment, or made work; and scholarship investigation. Two case histories are reviewed. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Educational Psychology (3500)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19371001
+AN- 1937-04784-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1937-04784-001&site=ehost-live&scope=site
+
+TI- The development of a professional self.
+PS- Publication Status: Fully Published
+AU- Reynolds, B. C.
+AF- Reynolds, B. C.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 61-66
+PC- 6
+SP- 61
+PN- 6
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK
+KP- PROFESSIONAL ATTITUDE
+KP- ATTITUDE
+KP- PROFESSIONAL
+KP- SOCIAL WORK
+KP- INDUSTRIAL AND PERSONNEL PROBLEMS
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+AB- The unique skill of social case work lies in the professional use of a relationship for the solving of problems of life adjustment. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Industrial & Organizational Psychology (3600)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19371001
+AN- 1937-04735-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1937-04735-001&site=ehost-live&scope=site
+
+TI- The inner significance and the outward expression of children's problems.
+PS- Publication Status: Fully Published
+AU- Green, R.
+AF- Green, R.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 85-90
+PC- 6
+SP- 85
+PN- 6
+LA- English
+KP- CHILD
+KP- PROBLEM
+KP- CHILDHOOD AND ADOLESCENCE
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19371001
+AN- 1937-04844-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1937-04844-001&site=ehost-live&scope=site
+
+TI- Community of interest and the measurement of marriage adjustment.
+PS- Publication Status: Fully Published
+AU- Kirkpatrick, C.
+AF- Kirkpatrick, C.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 133-137
+PC- 5
+SP- 133
+PN- 5
+LA- English
+KP- MARRIAGE
+KP- ADJUSTMENT
+KP- MARITAL
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380401
+AN- 1938-02016-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02016-001&site=ehost-live&scope=site
+
+TI- A social science approach to case work with the American Indian.
+PS- Publication Status: Fully Published
+AU- Mekeel, H. S.
+AF- Mekeel, H. S.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 204-207
+PC- 4
+SP- 204
+PN- 4
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK ABILITY
+KP- INDIAN
+KP- SOCIAL WORK
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380501
+AN- 1938-02561-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02561-001&site=ehost-live&scope=site
+
+TI- The diagnostic process in continuing treatment.
+PS- Publication Status: Fully Published
+AU- Finlayson, A. D.
+AF- Finlayson, A. D.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 228-233
+PC- 6
+SP- 228
+PN- 6
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK ABILITY
+KP- DIAGNOSIS IN
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380501
+AN- 1938-02535-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02535-001&site=ehost-live&scope=site
+
+TI- The clinical psychologist's approach to personality problems.
+PS- Publication Status: Fully Published
+AU- Rogers, C. R.
+AF- Rogers, C. R.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 233-245
+PC- 13
+SP- 233
+PN- 13
+LA- English
+KP- PERSONALITY
+KP- DISORDER
+KP- PERSONALITY AND CHARACTER
+MN- No terms assigned
+CL- Personality Psychology (3100)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380501
+AN- 1938-02509-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02509-001&site=ehost-live&scope=site
+
+TI- The use of psychological recommendations by social workers.
+PS- Publication Status: Fully Published
+AU- Hubbard, R. M.
+AF- Hubbard, R. M.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 246-252
+PC- 7
+SP- 246
+PN- 7
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK ABILITY
+KP- PSYCHOLOGY IN
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380501
+AN- 1938-02547-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02547-001&site=ehost-live&scope=site
+
+TI- A child's new organization of self in a brief treatment situation.
+PS- Publication Status: Fully Published
+AU- Dawley, A.
+AF- Dawley, A.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 268-272
+PC- 5
+SP- 268
+PN- 5
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK ABILITY
+KP- CHILD
+KP- SOCIAL ATTITUDE
+KP- WORK
+KP- CHILDHOOD AND ADOLESCENCE
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380501
+AN- 1938-02674-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02674-001&site=ehost-live&scope=site
+
+TI- Some implications for case work of Rank's psychology.
+PS- Publication Status: Fully Published
+AU- Marcus, G. F.
+AF- Marcus, G. F.
+SO- Family
+VI- 18
+SD- 1937
+YR- 1937
+PM- 1937
+PG- 272-277
+PC- 6
+SP- 272
+PN- 6
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK ABILITY
+KP- PSYCHOLOGY IN
+KP- PSYCHOANALYSIS
+KP- SOCIAL WORK AND
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- DREAMS
+KP- HYPNOSIS
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Health & Mental Health Treatment & Prevention (3300)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380501
+AN- 1938-02559-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-02559-001&site=ehost-live&scope=site
+
+TI- Social case work and mental health.
+PS- Publication Status: Fully Published
+AU- Marcus, G. F.
+AF- Marcus, G. F.
+SO- Family
+VI- 19
+SD- 1938
+YR- 1938
+PM- 1938
+PG- 99-105
+PC- 7
+SP- 99
+PN- 7
+LA- English
+KP- SOCIAL ABILITY
+KP- WORK ABILITY
+KP- PRINCIPLES
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- FUNCTIONAL DISORDERS
+AB- The mental health which is the case worker's objective is defined as autonomy within the inevitable limitations; the process of fostering it will involve discipline of the worker's impulse to help and a careful selection and application of the agency assets available. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380901
+AN- 1938-04896-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-04896-001&site=ehost-live&scope=site
+
+TI- A foster home agency experiments with a nursery school.
+PS- Publication Status: Fully Published
+AU- Langer, M. F.
+AF- Langer, M. F.
+SO- Family
+VI- 19
+SD- 1938
+YR- 1938
+PM- 1938
+PG- 228-233
+PC- 6
+SP- 228
+PN- 6
+LA- English
+KP- NURSERY SCHOOL ADJUSTMENT
+KP- FOSTER HOME AND
+KP- FOSTER CARE
+KP- NURSERY SCHOOL AND
+KP- CHILDHOOD AND ADOLESCENCE
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19390501
+AN- 1939-02763-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1939-02763-001&site=ehost-live&scope=site
+
+TI- Family situations and mental hygiene.
+PS- Publication Status: Fully Published
+AU- Choate, A. B.
+AF- Choate, A. B.
+SO- Family
+VI- 18
+SD- 1938
+YR- 1938
+PM- 1938
+PG- 314-315
+PC- 2
+SP- 314
+PN- 2
+LA- English
+KP- MENTAL HYGIENE
+KP- FAMILY AND
+KP- FAMILY
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- FUNCTIONAL DISORDERS
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380801
+AN- 1938-04230-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-04230-001&site=ehost-live&scope=site
+
+TI- Play groups as a treatment process in a family agency.
+PS- Publication Status: Fully Published
+AU- Leach, J. M.
+AF- Leach, J. M.
+SO- Family
+VI- 18
+SD- 1938
+YR- 1938
+PM- 1938
+PG- 342-346
+PC- 5
+SP- 342
+PN- 5
+LA- English
+KP- PLAY
+KP- GROUPS IN SOCIAL WORK
+KP- CHILD
+KP- GROUPS
+KP- CHILDHOOD AND ADOLESCENCE
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380801
+AN- 1938-04429-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-04429-001&site=ehost-live&scope=site
+
+TI- The concept of resistance.
+PS- Publication Status: Fully Published
+AU- Aptekar, H.
+AF- Aptekar, H.
+SO- Family
+VI- 18
+SD- 1938
+YR- 1938
+PM- 1938
+PG- 346-349
+PC- 4
+SP- 346
+PN- 4
+LA- English
+KP- RESISTANCE
+KP- CONCEPT
+KP- PERSONALITY AND CHARACTER
+MN- No terms assigned
+CL- Personality Psychology (3100)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19380801
+AN- 1938-04194-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1938-04194-001&site=ehost-live&scope=site
+
+TI- A contribution from psychology to the understanding of family life today.
+PS- Publication Status: Fully Published
+AU- Hill, L. B.
+AF- Hill, L. B.
+SO- Family
+VI- 19,  5
+SD- 1938
+YR- 1938
+PM- 1938
+LA- English
+KP- MENSTRUATION DISTURBANCE
+KP- HYGIENE
+KP- FAMILY
+KP- MENTAL HYGIENE
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- PSYCHOANALYSIS
+KP- DREAMS
+KP- HYPNOSIS
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Health & Mental Health Treatment & Prevention (3300)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19390101
+AN- 1939-00418-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1939-00418-001&site=ehost-live&scope=site
+
+TI- Normality and maturity.
+PS- Publication Status: Fully Published
+AU- Levine, M.
+AF- Levine, M.
+SO- Family
+VI- 21
+SD- 1940
+YR- 1940
+PM- 1940
+PG- 18-26
+PC- 9
+SP- 18
+PN- 9
+LA- English
+KP- NORMALITY
+KP- MATURITY
+KP- CHILDHOOD AND ADOLESCENCE
+AB- (Educ. Abstr. V: 529). (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19400801
+AN- 1940-04307-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1940-04307-001&site=ehost-live&scope=site
+
+TI- Emotional elements in illness: responsibilities of the medical social worker.
+PS- Publication Status: Fully Published
+AU- Bartlett, H. M.
+AF- Bartlett, H. M.
+SO- Family
+VI- 21
+SD- 1940
+YR- 1940
+PM- 1940
+PG- 39-47
+PC- 9
+SP- 39
+PN- 9
+LA- English
+KP- SOCIAL
+KP- WORK
+KP- DISEASE
+KP- PSYCHIC FACTORS
+KP- PSYCHOLOGICAL FACTORS
+KP- SOCIAL WORK
+KP- FUNCTIONAL DISORDERS
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19401101
+AN- 1940-05512-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1940-05512-001&site=ehost-live&scope=site
+
+TI- Contributions of Freud and Rank to case work.
+PS- Publication Status: Fully Published
+AU- Garrett, A.
+AU- Robinson, V. P.
+AF- Garrett, A.
+AF- Robinson, V. P.
+SO- Family
+VI- 20
+SD- 1940
+YR- 1940
+PM- 1940
+PG- 302-304
+PC- 3
+SP- 302
+PN- 3
+LA- English
+KP- PSYCHOANALYSIS
+KP- CASE WORK
+KP- PSYCHOANALYSIS AND
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- DREAMS
+KP- HYPNOSIS
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Health & Mental Health Treatment & Prevention (3300)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19400701
+AN- 1940-03638-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1940-03638-001&site=ehost-live&scope=site
+
+TI- How the client's current adjustment affects treatment possibilities.
+PS- Publication Status: Fully Published
+AU- Silbert, L.
+AF- Silbert, L.
+SO- Family
+VI- 20
+SD- 1940
+YR- 1940
+PM- 1940
+PG- 331-340
+PC- 10
+SP- 331
+PN- 10
+LA- English
+KP- SOCIAL
+KP- WORK
+KP- ADJUSTMENT
+KP- TREATMENT
+KP- CASE WORK
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19400701
+AN- 1940-03676-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1940-03676-001&site=ehost-live&scope=site
+
+TI- Treatment of the adolescent in family case work.
+PS- Publication Status: Fully Published
+AU- Friedman, H. L.
+AU- Meyer, B.
+AF- Friedman, H. L.
+AF- Meyer, B.
+SO- Family
+VI- 22
+SD- 1941
+YR- 1941
+PM- 1941
+PG- 20-26
+PC- 7
+SP- 20
+PN- 7
+LA- English
+KP- CASE WORK
+KP- ADOLESCENT
+KP- ADOLESCENCE
+KP- CHILDHOOD AND ADOLESCENCE
+AB- Problems faced by the family case worker in dealing with normal adolescents are discussed. Through reporting two extensive case histories, the following generalizations emerge: "The worker's attitude is of more importance than what she actually says." She must strive for consistency, "especially in the face of the adolescent's inconsistency and changability." The adolescent's tendency to imitate may be used by the worker to offer acceptable standards of ethics, thus helping to solve the conflict between super-ego and id. Avenues of sublimation must be provided in terms of needs of the particular individual, and should not be presented in a haphazard manner. Relief-giving must be handled tactfully, since the adolescent may be acutely embarrassed by his newly felt lack of money. Sex education can be given effectively, for the case worker is often the only person with whom the adolescent can talk naturally on this subject. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19410501
+AN- 1941-02411-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1941-02411-001&site=ehost-live&scope=site
+
+TI- Transference in case work.
+PS- Publication Status: Fully Published
+AU- Garrett, A.
+AF- Garrett, A.
+SO- Family
+VI- 22
+SD- 1941
+YR- 1941
+PM- 1941
+PG- 42-46
+PC- 5
+SP- 42
+PN- 5
+LA- English
+KP- TRANSFERENCE
+KP- SOCIAL WORK
+KP- SOCIAL
+KP- WORK
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- FUNCTIONAL DISORDERS
+AB- "There is little question but that varying degrees of transference and counter-transference exist in all case work situations and that these are the dynamic vehicles through which the treatment" offered by the social case worker operates. Transference as it operates in analysis is distinguished from transference in the case work situation. Strengthening the ego, dilution of transference, and identification are discussed. Illustrative case histories are presented. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19410801
+AN- 1941-03502-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1941-03502-001&site=ehost-live&scope=site
+
+TI- Diagnostic criteria—the concept of normal and abnormal.
+PS- Publication Status: Fully Published
+AU- Maeder, L. M. A.
+AF- Maeder, L. M. A.
+SO- Family
+VI- 22
+SD- 1941
+YR- 1941
+PM- 1941
+PG- 171-179
+PC- 9
+SP- 171
+PN- 9
+LA- English
+KP- CASE WORK
+KP- ABNORMALITY
+KP- CONCEPTION
+KP- CONCEPT
+KP- FUNCTIONAL DISORDERS
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+AB- [Abstracted review, original not seen.] As the case worker must disclose to her client his abnormal position in order to create understanding on his part, she must have a clear distinction between normal and abnormal. The author defines normal as the socially accepted desirable standards of behavior found in the laws and mores. The normal person is one who properly combines the 4 layers of the general psychical energy stream: purely sensual and sexual, tender or affectionate layer, object relationship segment, and the more nearly intellectual and impersonal sublimated area. The object relationship, the normal relationship of maturity, predominates in social case work. Abnormality may be due to a lack of development (as in delinquency) or to distortion (as in psychosis). (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19420401
+AN- 1942-01518-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1942-01518-001&site=ehost-live&scope=site
+
+TI- Case work service for unmarried mothers.
+PS- Publication Status: Fully Published
+AU- Brenner, R. F.
+AF- Brenner, R. F.
+SO- Family
+VI- 22
+SD- 1941
+YR- 1941
+PM- 1941
+PG- 211-219; 269-276
+PC- 9
+SP- 211
+PN- 9
+LA- English
+KP- MOTHER
+KP- UNMARRIED
+KP- CASE WORK
+KP- UNMARRIED MOTHER
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+AB- This is the report of a seminar of the St. Louis Children's Aid Society and the St. Louis Provident Association. The seminar studied and examined a group of current cases of unmarried mothers for a period of two years. The importance of establishing rapport between caseworker and unmarried mother cannot be sufficiently stressed. Relationships of unmarried mothers to caseworkers, men, their babies, and their own parents are discussed. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19420901
+AN- 1942-03666-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1942-03666-001&site=ehost-live&scope=site
+
+TI- Psychiatric social work in national defense.
+PS- Publication Status: Fully Published
+AU- McBee, M.
+AF- McBee, M.
+SO- Family
+VI- 22
+SD- 1942
+YR- 1942
+PM- 1942
+PG- 320-322
+PC- 3
+SP- 320
+PN- 3
+LA- English
+KP- SOCIAL
+KP- WORK
+KP- PSYCHIATRY
+KP- NATIONAL DEFENSE
+KP- PSYCHIATRIC SOCIAL WORK
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+KP- FUNCTIONAL DISORDERS
+MN- No terms assigned
+CL- Social Psychology (3000)
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19420801
+AN- 1942-03212-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1942-03212-001&site=ehost-live&scope=site
+
+TI- Techniques of intake interviewing in marital problems.
+PS- Publication Status: Fully Published
+AU- Berkowitz, S.
+AF- Berkowitz, S.
+SO- Family
+VI- 24
+SD- 1943
+YR- 1943
+PM- 1943
+PG- 209-214
+PC- 6
+SP- 209
+PN- 6
+LA- English
+KP- SOCIAL
+KP- WORK
+KP- INTAKE INTERVIEW
+KP- TECHNIQUE
+KP- MARRIAGE
+KP- PROBLEMS
+KP- INTAKE INTERVIEW TECHNIQUE
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+MD- Interview
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19440601
+AN- 1944-01763-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1944-01763-001&site=ehost-live&scope=site
+
+TI- The impact of the war upon the husband-wife relationship in the rural family.
+PS- Publication Status: Fully Published
+AU- Twente, E. E.
+AF- Twente, E. E.
+SO- Family
+VI- 24
+SD- 1943
+YR- 1943
+PM- 1943
+PG- 226-231
+PC- 6
+SP- 226
+PN- 6
+LA- English
+KP- WAR
+KP- MARRIAGE
+KP- RELATIONS
+KP- RURAL
+KP- FAMILY
+KP- HUSBAND-WIFE RELATIONS
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19441201
+AN- 1944-03828-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1944-03828-001&site=ehost-live&scope=site
+
+TI- Treatment of problems of dependency related to permanent physical handicap.
+PS- Publication Status: Fully Published
+AU- Fitzsimmons, M. R.
+AF- Fitzsimmons, M. R.
+SO- Family
+VI- 23
+SD- 1943
+YR- 1943
+PM- 1943
+PG- 329-336
+PC- 8
+SP- 329
+PN- 8
+LA- English
+KP- HANDICAPPED
+KP- DEPENDENCY PROBLEMS
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19441101
+AN- 1944-03546-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1944-03546-001&site=ehost-live&scope=site
+
+TI- A delinquent adolescent.
+PS- Publication Status: Fully Published
+AU- Mitchell, M.
+AF- Mitchell, M.
+SO- Family
+VI- 25
+SD- 1944
+YR- 1944
+PM- 1944
+PG- 83-88
+PC- 6
+SP- 83
+PN- 6
+LA- English
+KP- SEX
+KP- DELINQUENCY
+KP- THERAPY
+KP- CASE
+KP- TREATMENT
+KP- CRIME AND DELINQUENCY
+AB- The author describes the case of an adolescent girl, aged 17, the child of divorced parents, whose early life was spent with various relatives and whose mother at no time showed affection toward her. Later the mother remarried a man whom the girl greatly disliked and of whose young daughter she became intensely jealous. With advancing age her behavior showed increased maladjustment. Serious sexual delinquency eventually led her mother to seek help from a social agency. The girl was enabled to obtain a better understanding of herself; later she secured a job in a defense plant where she has made a good record. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19451001
+AN- 1945-02698-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1945-02698-001&site=ehost-live&scope=site
+
+TI- The client with severe personality disturbances.
+PS- Publication Status: Fully Published
+AU- Quinn, J. P.
+AF- Quinn, J. P.
+SO- Family
+VI- 25
+SD- 1944
+YR- 1944
+PM- 1944
+PG- 88-95
+PC- 8
+SP- 88
+PN- 8
+LA- English
+KP- PERSONALITY
+KP- MOTHER
+KP- FAMILY EFFECT
+KP- PERSONALITY DISTURBANCE
+KP- FAMILY
+KP- MOTHER PERSONALITY
+KP- FUNCTIONAL DISORDERS
+KP- GENERAL SOCIAL PROCESSES (INCL. AESTHETICS)
+AB- Three cases are reported, in each of which the personality disturbances of a mother had a disrupting effect upon home and family. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19451001
+AN- 1945-02620-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1945-02620-001&site=ehost-live&scope=site
+
+TI- Mental hazards in old age.
+PS- Publication Status: Fully Published
+AU- Wagner, M. W.
+AF- Wagner, M. W.
+SO- Family
+VI- 25
+SD- 1944
+YR- 1944
+PM- 1944
+PG- 132-137
+PC- 6
+SP- 132
+PN- 6
+LA- English
+KP- MENTAL HYGIENE
+KP- AGED
+KP- AGE
+KP- OLD
+KP- MENTAL BEHAVIOR
+KP- HYGIENE
+KP- FUNCTIONAL DISORDERS
+AB- Few young people who fail to learn to face the realities of life make a happy adjustment to the great realities of the process of aging. That much can be done to help old persons find satisfaction during their declining years is evidenced by the work of Lillien Martin in her clinic for older people. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Psychological & Physical Disorders (3200)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19451001
+AN- 1945-02631-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1945-02631-001&site=ehost-live&scope=site
+
+TI- Placement resulting from psychosexual disturbance in a mother-son relationship.
+PS- Publication Status: Fully Published
+AU- Kuhlmann, F. M.
+AF- Kuhlmann, F. M.
+SO- Family
+VI- 25
+SD- 1944
+YR- 1944
+PM- 1944
+PG- 143-151
+PC- 9
+SP- 143
+PN- 9
+LA- English
+KP- MOTHER
+KP- CHILD RELATIONS
+KP- OEDIPUS COMPLEX
+KP- CHILD (III. EDUCATION
+KP- PERSONALITY
+KP- SOCIAL BEHAVIOR)
+KP- MOTHER RELATIONS
+KP- CHILDHOOD AND ADOLESCENCE
+AB- A case is described in which placement in an institution for dependent children was recommended and carried out for a boy of 9 years of age whose widowed mother had developed an unhealthy sexual attitude toward him. The mother herself had been reared by elderly people and had little contact with persons of her own age. She had received no sex information and was greatly shocked by her early marital experience. She continued to maintain an attitude of childish dependence toward her mother, who lived with her throughout her married life and after she became widowed. Both mother and grandmother fondled the boy excessively. Night terrors in which the lad dreamed that his father (to whom he had been closely attached) came out of his coffin and whipped him severely were diagnosed as evidences of an extreme Oedipus conflict. Under these circumstances, removal from the home was advised. After a few months in the children's home, the boy seemed to be making a good adjustment. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19451101
+AN- 1945-03218-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1945-03218-001&site=ehost-live&scope=site
+
+TI- Emotional aspects of wartime separations.
+PS- Publication Status: Fully Published
+AU- Rosenbaum, M.
+AF- Rosenbaum, M.
+SO- Family
+VI- 24
+SD- 1944
+YR- 1944
+PM- 1944
+PG- 337-341
+PC- 5
+SP- 337
+PN- 5
+LA- English
+KP- WAR
+KP- SEPARATION
+KP- EMOTION
+KP- WAR SEPARATION
+KP- GENERAL SOCIAL PROCESSES (INCL. ESTHETICS)
+MN- No terms assigned
+CL- Social Psychology (3000)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19441001
+AN- 1944-03222-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1944-03222-001&site=ehost-live&scope=site
+
+TI- The parent-child relationship as a factor in child placement.
+PS- Publication Status: Fully Published
+AU- Hutchinson, D.
+AF- Hutchinson, D.
+SO- Family
+VI- 27
+SD- 1946
+YR- 1946
+PM- 1946
+PG- 47-51
+PC- 5
+SP- 47
+PN- 5
+LA- English
+KP- CHILD
+KP- FOSTER
+KP- PLACEMENT
+KP- PARENT-CHILD RELATIONSHIP
+KP- PARENT
+KP- FOSTER FAMILY
+KP- FOSTER CARE
+KP- SUCCESS
+KP- CHILDHOOD AND ADOLESCENCE
+AB- A study is made of the effects of rejection, the guilty mother, and the child's illusion and neglect, on the success of child placement. Foster family care is seen to be a valuable service for certain types of children. The over-all need for further study is pointed out to enable the social worker to see more clearly what conditions are and with what techniques foster family care can be used in those cases where parent-child relationships are destructive. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Developmental Psychology (2800)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19470301
+AN- 1947-00935-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1947-00935-001&site=ehost-live&scope=site
+
+TI- A description of the Rorschach method.
+PS- Publication Status: Fully Published
+AU- Siegel, M. G.
+AF- Siegel, M. G.
+SO- Family
+VI- 27
+SD- 1946
+YR- 1946
+PM- 1946
+PG- 51-58
+PC- 8
+SP- 51
+PN- 8
+LA- English
+KP- RORSCHACH
+KP- CLINICAL USE
+KP- PERSONALITY AND CHARACTER
+AB- The author presents a brief consideration of the basic principles of the Rorschach method in order to clarify the nature of the test. Its use as a gauge for the effectiveness of treatment as well as for diagnostic and prognostic purposes is pointed out. Consideration is made of the techniques involved in administering and scoring the test, specifically mentioning the significance of the various scoring categories. Emphasis is placed upon the use of this projective technique as a method which reveals the internal organization of the individual and the underlying strata of the personality. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Personality Psychology (3100)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19470101
+AN- 1947-00172-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1947-00172-001&site=ehost-live&scope=site
+
+TI- The Rorschach test in diagnosis and prognosis.
+PS- Publication Status: Fully Published
+AU- Siegel, M. G.
+AF- Siegel, M. G.
+SO- Family
+VI- 27
+SD- 1946
+YR- 1946
+PM- 1946
+PG- 102-109
+PC- 8
+SP- 102
+PN- 8
+LA- English
+KP- RORSCHACH
+KP- CLINICAL USE
+KP- PERSONALITY AND CHARACTER
+AB- A study is made of the Rorschach test as a diagnostic tool in a test battery. The test can be used as an aid in discriminating between a neurosis and a psychosis, between a conversion hysteria and a genuine organic disease, between a neurosis and a primary behavior disorder, or between a schizoid personality and an active psychotic process. It also reveals to the therapist such significant factors as aggression or passivity, flexibility or rigidity, quality of the affective reaction, hidden complexes, anxiety manifestations and the manner of coping with such anxiety. Two cases treated are appended. (PsycINFO Database Record (c) 2012 APA, all rights reserved)
+MN- No terms assigned
+CL- Personality Psychology (3100)
+PT- Journal
+PT- Peer-Reviewed Status-Unknown
+AT- Journal Article
+MT- Print
+RD- 19470101
+AN- 1947-00173-001
+UR- http://proxy.lib.umich.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=1947-00173-001&site=ehost-live&scope=site
