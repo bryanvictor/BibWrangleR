@@ -180,6 +180,9 @@ ebscoBWR.f <- function(path, rmDuplicates = TRUE, firstAbstractOnly=TRUE, csv=FA
     #lower to address this problem.  Further testing should consider stripping
     #white space.
     DF.temp$record <- tolower(DF.temp$record)
+    DF.temp$record <- gsub("[[:punct:]]", "", DF.temp$record)
+    DF.temp$record <- gsub("[[:space:]]", "", DF.temp$record)
+    
 
     #Find duplicated records - duplicates are marked as true
     DF.temp <- DF.temp[duplicated(DF.temp$record), ]
@@ -215,6 +218,7 @@ ebscoBWR.f <- function(path, rmDuplicates = TRUE, firstAbstractOnly=TRUE, csv=FA
   holder <- mutate(holder, YR = gsub("[[:digit:]]{2}/[[:digit:]]{2}/", "", YR))
   holder <- mutate(holder, YR = gsub("[[:punct:]]", "", YR))
   holder <- mutate(holder, YR = gsub("[[:blank:]]", "", YR))
+  holder <- mutate(holder, YR = strtrim(YR, 4))
   
   holder$YR[holder$YR == "90"] <- "1990"
   holder$YR[holder$YR == "91"] <- "1991"
