@@ -202,6 +202,40 @@ ebscoBWR.f <- function(path, rmDuplicates = TRUE, firstAbstractOnly=TRUE, csv=FA
   #unique number of journal title entries
   #_______________________________________________________________________________
 
+  ##Articles drawn from MEDLINE and CINAHL have the year embedded in the journal title string.
+  #The year needs to be extracted before journal title field is cleaned.  
+  
+  
+  holder <- filter(DF, grepl(".*\\(.*\\)\\,\\s[[:digit:]]*\\-[[:digit:]]*\\.", record))
+  holder <- filter(holder, attributes == "SO")
+  
+  holder <- mutate(holder, YR = gsub(".*\\(.*\\)\\,\\s[[:digit:]]*\\-[[:digit:]]*\\.", "", record))
+  holder <- mutate(holder, YR = gsub("\\;.*", "", YR))
+  holder <- mutate(holder, YR = gsub("[[:alpha:]]", "", YR))
+  holder <- mutate(holder, YR = gsub("[[:digit:]]{2}/[[:digit:]]{2}/", "", YR))
+  holder <- mutate(holder, YR = gsub("[[:punct:]]", "", YR))
+  holder <- mutate(holder, YR = gsub("[[:blank:]]", "", YR))
+  
+  holder$YR[holder$YR == "90"] <- "1990"
+  holder$YR[holder$YR == "91"] <- "1991"
+  holder$YR[holder$YR == "92"] <- "1992"
+  holder$YR[holder$YR == "93"] <- "1993"
+  holder$YR[holder$YR == "94"] <- "1994"
+  holder$YR[holder$YR == "95"] <- "1995"
+  holder$YR[holder$YR == "96"] <- "1996"
+  holder$YR[holder$YR == "97"] <- "1997"
+  holder$YR[holder$YR == "98"] <- "1998"
+  holder$YR[holder$YR == "99"] <- "1999"
+  
+  merge <- select(holder, attributes, record = YR, articleID)
+  merge <- mutate(merge, attributes = "YR")
+  
+  DF <- rbind(DF, merge)
+  
+  rm(holder, merge)
+
+  ##Now remove special issue titles
+
   DF$record[DF$attributes == "SO"] <- gsub(" Special Issue", "",
                                            DF$record[DF$attributes == "SO"])
 
@@ -279,7 +313,12 @@ ebscoBWR.f <- function(path, rmDuplicates = TRUE, firstAbstractOnly=TRUE, csv=FA
   DF <- rbind(DF, DF.temp)
   DF <- arrange(DF, articleID)
 
-
+ ##Add additional code to extract data from articles indexed in MEDLINE and CINAHL
+  
+  
+  
+  
+  
   #_______________________________________________________________________________
   #                            6a. AUTHOR FIELD FIX - DIGITS
   #-------------------------------------------------------------------------------
